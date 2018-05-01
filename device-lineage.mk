@@ -14,6 +14,9 @@ PRODUCT_COPY_FILES += \
 # Google Assistant
 PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += device/google/crosshatch/overlay-lineage
+
 # Utilities
 PRODUCT_PACKAGES += \
     libjson \
