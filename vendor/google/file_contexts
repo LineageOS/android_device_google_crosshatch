@@ -1,0 +1,10 @@
+# dev nodes
+/dev/citadel0                                   u:object_r:citadel_device:s0
+
+/vendor/bin/hw/android\.hardware\.authsecret@1\.0-service\.citadel    u:object_r:hal_authsecret_citadel_exec:s0
+/vendor/bin/hw/android\.hardware\.oemlock@1\.0-service\.citadel       u:object_r:hal_oemlock_citadel_exec:s0
+/vendor/bin/hw/android\.hardware\.weaver@1\.0-service\.citadel        u:object_r:hal_weaver_citadel_exec:s0
+/vendor/bin/hw/android\.hardware\.keymaster@4\.0-service.citadel      u:object_r:hal_keymaster_citadel_exec:s0
+/vendor/bin/hw/citadeld                                               u:object_r:citadeld_exec:s0
+/vendor/bin/hw/init_citadel                                           u:object_r:init_citadel_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.secure_element@1\.0-service-disabled   u:object_r:hal_secure_element_default_exec:s0
