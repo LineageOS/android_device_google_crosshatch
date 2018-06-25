@@ -1,4 +1,3 @@
-dontaudit surfaceflinger firmware_file:dir search;
 dontaudit surfaceflinger vendor_file:file read;
 dontaudit surfaceflinger kernel:system module_request;
 dontaudit surfaceflinger vendor_default_prop:file read;
