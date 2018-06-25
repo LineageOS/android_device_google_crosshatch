@@ -1,0 +1,2 @@
+allow hal_fingerprint_default hal_pixelstats_hwservice:hwservice_manager find;
+allow hal_fingerprint_default pixelstats_system:binder call;
