@@ -1,16 +1,3 @@
-hal_attribute(pixelstats)
-
-# pixelstats system
-type pixelstats_system, domain, coredomain;
-
-add_hwservice(pixelstats_system, hal_pixelstats_hwservice)
-
-hal_server_domain(pixelstats_system, hal_pixelstats)
-init_daemon_domain(pixelstats_system)
-type pixelstats_system_exec, exec_type, file_type;
-
-# FIXME unix_socket_send(pixelstats_system, statsdw, statsd)
-
 # pixelstats vendor
 type pixelstats_vendor, domain;
 
@@ -21,3 +8,5 @@ get_prop(pixelstats_vendor, hwservicemanager_prop)
 hwbinder_use(pixelstats_vendor)
 allow pixelstats_vendor hal_pixelstats_hwservice:hwservice_manager find;
 binder_call(pixelstats_vendor, pixelstats_system)
+
+unix_socket_connect(pixelstats_vendor, chre, chre)
