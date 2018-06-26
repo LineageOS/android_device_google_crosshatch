@@ -1,2 +1,3 @@
 type sysfs_pstore, sysfs_type, fs_type;
 type ramoops_vendor_data_file, file_type, data_file_type, mlstrustedobject;
+type sysfs_display, sysfs_type, fs_type;
