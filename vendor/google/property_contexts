@@ -1,2 +1,4 @@
 # ramoops
 vendor.ramoops.                    u:object_r:vendor_ramoops_prop:s0
+
+persist.vendor.radio.no_wait_for_card u:object_r:vendor_radio_prop:s0
