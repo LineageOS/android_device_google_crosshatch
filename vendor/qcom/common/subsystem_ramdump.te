@@ -23,7 +23,10 @@ userdebug_or_eng(`
   allow subsystem_ramdump ssr_log_file:dir rw_dir_perms;
   allow subsystem_ramdump ssr_log_file:file create_file_perms;
 
+  allow subsystem_ramdump proc_sysrq:file w_file_perms;
+
   set_prop(subsystem_ramdump, vendor_ssr_prop);
+  get_prop(subsystem_ramdump, vendor_ramdump_prop);
 
   dontaudit subsystem_ramdump kernel:system module_request;
 ')
