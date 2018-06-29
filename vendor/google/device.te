@@ -1,0 +1,2 @@
+type citadel_device, dev_type;
+type ramoops_device, dev_type;
