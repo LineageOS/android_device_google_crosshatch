@@ -7,3 +7,5 @@ init_daemon_domain(hal_keymaster_qti)
 dontaudit hal_keymaster_qti firmware_file:dir search;
 
 get_prop(hal_keymaster_qti, vendor_tee_listener_prop)
+get_prop(hal_keymaster_qti, vendor_security_patch_level_prop)
+
