@@ -3,8 +3,6 @@ type init_power_exec, exec_type, vendor_file_type, file_type;
 
 init_daemon_domain(init_power)
 
-set_prop(init_power, post_boot_prop)
-
 allow init_power vendor_shell_exec:file rx_file_perms;
 allow init_power vendor_toolbox_exec:file rx_file_perms;
 
