@@ -71,12 +71,12 @@ type firmware_file, fs_type, contextmount_type;
 type cnd_data_file, file_type, data_file_type;
 type location_data_file, file_type, data_file_type;
 
-type persist_file, file_type;
+type persist_file, file_type, vendor_persist_type;
 type persist_audio_file, file_type;
 type persist_camera_file, file_type;
-type persist_data_file, file_type;
+type persist_data_file, file_type, vendor_persist_type;
 type persist_display_file, file_type;
-type persist_drm_file, file_type;
+type persist_drm_file, file_type, vendor_persist_type;
 type persist_haptics_file, file_type;
 type persist_rfs_file, file_type;
 type persist_sensors_file, file_type;
@@ -119,7 +119,7 @@ type mpss_rfs_data_file, data_file_type, file_type;
 type rfs_tombstone_data_file, data_file_type, file_type;
 
 # used for /dsp files
-type adsprpcd_file, file_type;
+type adsprpcd_file, file_type, vendor_file_type;
 
 # msm_irqbalance
 type proc_irq, fs_type, proc_type;

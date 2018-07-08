@@ -3,7 +3,6 @@ allow tee self:capability { chown setgid setuid sys_admin sys_rawio };
 allow tee device:dir r_dir_perms;
 
 set_prop(tee, vendor_tee_listener_prop)
-set_prop(tee, keymaster_prop)
 get_prop(tee, hwservicemanager_prop)
 
 hwbinder_use(tee)
@@ -16,11 +15,11 @@ allow tee qdisplay_service:service_manager find;
 allow tee vendor_tui_data_file:file rw_file_perms;
 allow tee vendor_tui_data_file:dir search;
 
-allow tee firmware_file:dir search;
 allow tee block_device:dir { getattr search };
 allow tee ssd_block_device:blk_file rw_file_perms;
 allow tee sg_device:chr_file { rw_file_perms setattr };
 
+allow tee mnt_vendor_file:dir r_dir_perms;
 allow tee persist_file:dir r_dir_perms;
 allow tee persist_drm_file:dir create_dir_perms;
 allow tee persist_drm_file:file create_file_perms;
