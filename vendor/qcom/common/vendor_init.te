@@ -11,6 +11,7 @@ userdebug_or_eng(`
   allow vendor_init proc_sysrq:file w_file_perms;
 ')
 
+set_prop(vendor_init, vendor_camera_prop)
 set_prop(vendor_init, factory_ota_prop)
 set_prop(vendor_init, power_prop)
 set_prop(vendor_init, public_vendor_default_prop)
