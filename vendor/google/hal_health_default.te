@@ -16,3 +16,6 @@ allow hal_health_default sysfs_batteryinfo:file rw_file_perms;
 
 get_prop(hal_health_default, vendor_shutdown_prop)
 set_prop(hal_health_default, vendor_shutdown_prop)
+
+allow hal_health_default self:capability2 wake_alarm;
+allow hal_health_default mnt_vendor_file:dir search;
