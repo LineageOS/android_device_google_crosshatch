@@ -16,3 +16,6 @@ allow hal_audio_default audio_vendor_data_file:file create_file_perms;
 
 # For interfacing with PowerHAL
 hal_client_domain(hal_audio_default, hal_power)
+
+# Allow hal to take wakelock
+wakelock_use(hal_audio_default)
