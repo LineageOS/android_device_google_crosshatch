@@ -116,6 +116,13 @@ genfscon debugfs /ion                                 u:object_r:debugfs_ion:s0
 genfscon debugfs /ipc_logging                         u:object_r:debugfs_ipc:s0
 genfscon debugfs /tcpm/usbpd0                         u:object_r:debugfs_usb:s0
 genfscon debugfs /pd_engine/usbpd0                    u:object_r:debugfs_usb:s0
+genfscon debugfs /88e2000.qusb/tune1                  u:object_r:debugfs_usb:s0
+genfscon debugfs /88e2000.qusb/tune2                  u:object_r:debugfs_usb:s0
+genfscon debugfs /88e2000.qusb/tune3                  u:object_r:debugfs_usb:s0
+genfscon debugfs /88e2000.qusb/tune4                  u:object_r:debugfs_usb:s0
+genfscon debugfs /88e2000.qusb/tune5                  u:object_r:debugfs_usb:s0
+genfscon debugfs /88e2000.qusb/bias_ctrl_1            u:object_r:debugfs_usb:s0
+genfscon debugfs /88e2000.qusb/bias_ctrl_2            u:object_r:debugfs_usb:s0
 genfscon debugfs /ipc_logging/smblib/log              u:object_r:debugfs_usb:s0
 genfscon debugfs /msm_ipc_router                      u:object_r:debugfs_ipc:s0
 genfscon debugfs /mdp                                 u:object_r:debugfs_mdp:s0
