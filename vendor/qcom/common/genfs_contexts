@@ -101,6 +101,7 @@ genfscon sysfs /module/msm_poweroff                                     u:object
 genfscon sysfs /class/gpio/export                     u:object_r:sysfs_gpio_export:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm8998@0:pinctrl@c000 u:object_r:sysfs_pinctrl:s0
 genfscon sysfs /firmware/devicetree/base/soc/qcom,spmi@c440000/qcom,pm8998@0/pinctrl@c000/ u:object_r:sysfs_pinctrl:s0
+genfscon sysfs /firmware/devicetree/base/soc/i2c@88c000/nq@28/ese/loader_scripts_path       u:object_r:sysfs_devicetree_ese:s0
 genfscon sysfs /power/rpmh_stats/master_stats         u:object_r:sysfs_rpm:s0
 
 genfscon sysfs /devices/virtual/block/                                  u:object_r:sysfs_devices_block:s0
@@ -116,6 +117,13 @@ genfscon debugfs /ion                                 u:object_r:debugfs_ion:s0
 genfscon debugfs /ipc_logging                         u:object_r:debugfs_ipc:s0
 genfscon debugfs /tcpm/usbpd0                         u:object_r:debugfs_usb:s0
 genfscon debugfs /pd_engine/usbpd0                    u:object_r:debugfs_usb:s0
+genfscon debugfs /88e2000.qusb/tune1                  u:object_r:debugfs_usb:s0
+genfscon debugfs /88e2000.qusb/tune2                  u:object_r:debugfs_usb:s0
+genfscon debugfs /88e2000.qusb/tune3                  u:object_r:debugfs_usb:s0
+genfscon debugfs /88e2000.qusb/tune4                  u:object_r:debugfs_usb:s0
+genfscon debugfs /88e2000.qusb/tune5                  u:object_r:debugfs_usb:s0
+genfscon debugfs /88e2000.qusb/bias_ctrl_1            u:object_r:debugfs_usb:s0
+genfscon debugfs /88e2000.qusb/bias_ctrl_2            u:object_r:debugfs_usb:s0
 genfscon debugfs /ipc_logging/smblib/log              u:object_r:debugfs_usb:s0
 genfscon debugfs /msm_ipc_router                      u:object_r:debugfs_ipc:s0
 genfscon debugfs /mdp                                 u:object_r:debugfs_mdp:s0
