@@ -2,6 +2,7 @@ bootanim vendor_default_prop file 78460200
 cdsprpcd system_file dir 109882276
 dataservice_app vendor_default_prop file 78460200
 drmserver sdcardfs dir 77869200
+factory_ota_app vendor_default_prop file 78460200
 hal_graphics_composer_default mnt_vendor_file dir 80078218
 hal_keymaster_citadel exported3_system_prop file 110231496
 hal_rcsservice sysfs_soc dir 78460200
