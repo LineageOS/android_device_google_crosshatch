@@ -23,3 +23,4 @@ vendor.google_paintbox::IManagerService                         u:object_r:hal_p
 hardware.google.pixelstats::IPixelStats                         u:object_r:hal_pixelstats_hwservice:s0
 vendor.google.wireless_charger::IWirelessCharger                u:object_r:hal_wlc_hwservice:s0
 hardware.google.light::ILight                                   u:object_r:hal_light_hwservice:s0
+com.fingerprints.extension::IFingerprintSensorTest              u:object_r:hal_fingerprint_hwservice:s0

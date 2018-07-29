@@ -27,6 +27,7 @@
 /dev/block/platform/soc/1d84000\.ufshc/by-name/modem_[ab]      u:object_r:modem_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/modemst[12]     u:object_r:modem_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/ssd             u:object_r:ssd_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/persist         u:object_r:persist_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/product_[ab]    u:object_r:system_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/system_[ab]     u:object_r:system_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/vendor_[ab]     u:object_r:system_block_device:s0
