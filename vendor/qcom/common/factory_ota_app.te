@@ -17,3 +17,4 @@ binder_call(factory_ota_app, update_engine) # Allow Factory OTA to call Update E
 binder_call(update_engine, factory_ota_app) # Allow Update Engine to call the Factory OTA callback
 allow factory_ota_app update_engine_service:service_manager find;
 allow factory_ota_app nfc_service:service_manager find;
+allow factory_ota_app radio_service:service_manager find;
