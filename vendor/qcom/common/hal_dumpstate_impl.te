@@ -113,3 +113,10 @@ allow hal_dumpstate_impl debugfs_maxfg:file r_file_perms;
 # Dump PMIC votables
 allow hal_dumpstate_impl debugfs_pmic_votable:dir r_dir_perms;
 allow hal_dumpstate_impl debugfs_pmic_votable:file r_file_perms;
+
+userdebug_or_eng(`
+  # Citadel communication must be via citadeld
+  vndbinder_use(hal_dumpstate_impl)
+  binder_call(hal_dumpstate_impl, citadeld)
+  allow hal_dumpstate_impl citadeld_service:service_manager find;
+')
