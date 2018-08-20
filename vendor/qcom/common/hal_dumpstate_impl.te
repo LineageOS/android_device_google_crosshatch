@@ -109,6 +109,8 @@ allow hal_dumpstate_impl debugfs_fg_sram:file rw_file_perms;
 # Dump Maxim FG content
 allow hal_dumpstate_impl debugfs_maxfg:dir search;
 allow hal_dumpstate_impl debugfs_maxfg:file r_file_perms;
+allow hal_dumpstate_impl tmpfs:dir search;
+allow hal_dumpstate_impl maxfg_device:chr_file r_file_perms;
 
 # Dump PMIC votables
 allow hal_dumpstate_impl debugfs_pmic_votable:dir r_dir_perms;
