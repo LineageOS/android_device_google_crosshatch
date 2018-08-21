@@ -2,6 +2,7 @@
 /dev/citadel0                                                               u:object_r:citadel_device:s0
 /dev/access-metadata                                                        u:object_r:ramoops_device:s0
 /dev/access-ramoops                                                         u:object_r:ramoops_device:s0
+/dev/maxfg_history                                                          u:object_r:maxfg_device:s0
 
 /vendor/bin/hw/android\.hardware\.authsecret@1\.0-service\.citadel          u:object_r:hal_authsecret_citadel_exec:s0
 /vendor/bin/hw/android\.hardware\.oemlock@1\.0-service\.citadel             u:object_r:hal_oemlock_citadel_exec:s0
