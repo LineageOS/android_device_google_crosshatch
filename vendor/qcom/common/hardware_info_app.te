@@ -24,3 +24,7 @@ allow hardware_info_app sysfs_soc:dir search;
 allow hardware_info_app sysfs_soc:file { getattr open read };
 allow hardware_info_app sysfs_display:dir search;
 allow hardware_info_app sysfs_display:file { getattr open read };
+
+# Devices
+allow hardware_info_app tmpfs:dir search;
+allow hardware_info_app maxfg_device:chr_file r_file_perms;
