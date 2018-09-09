@@ -1,4 +1,5 @@
 recovery_only(`
-  allow fastbootd ab_block_device:blk_file rw_file_perms;
+  allow fastbootd ab_block_device:blk_file { w_file_perms ioctl };
+  allowxperm fastbootd ab_block_device:blk_file ioctl { BLKGETSIZE64 };
 ')
 
