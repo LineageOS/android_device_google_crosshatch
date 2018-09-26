@@ -26,3 +26,6 @@ allow hal_power_default pps_socket:sock_file write;
 
 # To get/set powerhal state property
 set_prop(hal_power_default, power_prop)
+
+# interact with thermal_config
+set_prop(hal_power_default, vendor_thermal_prop)
