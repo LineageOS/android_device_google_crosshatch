@@ -1,5 +1,5 @@
 type preloads_copy, domain, coredomain;
-type preloads_copy_exec, exec_type, file_type;
+type preloads_copy_exec, system_file_type, exec_type, file_type;
 
 init_daemon_domain(preloads_copy)
 
