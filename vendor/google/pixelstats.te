@@ -7,4 +7,4 @@ add_hwservice(pixelstats_system, hal_pixelstats_hwservice)
 
 hal_server_domain(pixelstats_system, hal_pixelstats)
 init_daemon_domain(pixelstats_system)
-type pixelstats_system_exec, exec_type, file_type;
+type pixelstats_system_exec, system_file_type, exec_type, file_type;
