@@ -26,4 +26,3 @@ allow mm-pp-daemon sysfs_leds:lnk_file read;
 r_dir_file(mm-pp-daemon, sysfs_leds)
 allow mm-pp-daemon sysfs_graphics:dir r_dir_perms;
 allow mm-pp-daemon sysfs_graphics:file rw_file_perms;
-allow mm-pp-daemon sysfs_data:file r_file_perms;

@@ -108,9 +108,6 @@ type wifi_vendor_log_data_file, file_type, data_file_type;
 type hal_neuralnetworks_data_file, file_type, data_file_type;
 type modem_stat_data_file, file_type, data_file_type;
 
-#data sysfs files
-type sysfs_data, fs_type, sysfs_type;
-
 #diag sysfs files
 type sysfs_diag, fs_type, sysfs_type;
 
