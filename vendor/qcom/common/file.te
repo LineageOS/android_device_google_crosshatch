@@ -111,8 +111,6 @@ type modem_stat_data_file, file_type, data_file_type;
 #diag sysfs files
 type sysfs_diag, fs_type, sysfs_type;
 
-type hexagon_halide_file, vendor_file_type, file_type;
-
 #rfs files
 type mpss_rfs_data_file, data_file_type, file_type;
 type rfs_tombstone_data_file, data_file_type, file_type;
