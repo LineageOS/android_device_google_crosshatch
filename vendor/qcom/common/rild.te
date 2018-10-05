@@ -19,10 +19,6 @@ allow rild self:socket ioctl;
 allowxperm rild self:socket ioctl msm_sock_ipc_ioctls;
 allow rild time_daemon:unix_stream_socket connectto;
 
-userdebug_or_eng(`
-  domain_auto_trans(rild, smlog_dump_exec, smlog_dump)
-')
-
 allow rild radio_vendor_data_file:dir rw_dir_perms;
 allow rild radio_vendor_data_file:file create_file_perms;
 
