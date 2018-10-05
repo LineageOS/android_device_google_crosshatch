@@ -125,7 +125,6 @@
 /vendor/bin/init\.qcom\.wlan\.sh                                     u:object_r:init-qcom-wlan-sh_exec:s0
 /vendor/bin/init\.insmod\.sh                                         u:object_r:init-insmod-sh_exec:s0
 /vendor/etc/init\.insmod\.cfg                                        u:object_r:init-insmod-sh_exec:s0
-/vendor/bin/init\.power\.sh     u:object_r:init_power_exec:s0
 /vendor/bin/init\.radio\.sh     u:object_r:init_radio_exec:s0
 /vendor/bin/ftmdaemon           u:object_r:ftmd_exec:s0
 /vendor/bin/hw/qcrild           u:object_r:rild_exec:s0
