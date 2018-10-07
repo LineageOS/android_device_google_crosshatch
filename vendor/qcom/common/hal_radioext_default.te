@@ -1,5 +1,6 @@
 type hal_radioext_default, domain;
 type hal_radioext_default_exec, exec_type, vendor_file_type, file_type;
+hal_server_domain(hal_radioext_default, hal_telephony)
 init_daemon_domain(hal_radioext_default)
 
 hwbinder_use(hal_radioext_default)
