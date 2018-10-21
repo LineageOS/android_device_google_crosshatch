@@ -8,7 +8,7 @@ userdebug_or_eng(`
   allow tcpdump_logger self:capability {net_raw};
   allow tcpdump_logger self:packet_socket { create setopt getopt ioctl read write };
   allowxperm tcpdump_logger self:packet_socket ioctl 0x8933;
-  allow tcpdump_logger system_file:file execute_no_trans;
+  allow tcpdump_logger tcpdump_exec:file rx_file_perms;
   allow tcpdump_logger tcpdump_vendor_data_file:dir create_dir_perms;
   allow tcpdump_logger tcpdump_vendor_data_file:file create_file_perms;
   allow tcpdump_logger radio_vendor_data_file:file create_file_perms;
