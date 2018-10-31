@@ -231,7 +231,6 @@
 
 # TODO: Remove them once no need to maintain the backward compatibility. (b/111219177)
 /persist                             u:object_r:rootfs:s0
-/firmware                            u:object_r:rootfs:s0
 /dsp                                 u:object_r:rootfs:s0
 
 # /persist
