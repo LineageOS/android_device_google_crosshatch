@@ -1,0 +1,7 @@
+type grilservice_app, domain;
+
+app_domain(grilservice_app)
+
+allow grilservice_app hal_radioext_hwservice:hwservice_manager find;
+allow grilservice_app activity_service:service_manager find;
+binder_call(grilservice_app, hal_radioext_default)

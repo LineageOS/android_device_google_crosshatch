@@ -1,0 +1,2 @@
+# Domain for grilservice
+user=_app isPrivApp=true seinfo=platform name=com.google.android.grilservice domain=grilservice_app levelFrom=all
