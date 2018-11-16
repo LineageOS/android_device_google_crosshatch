@@ -5,7 +5,7 @@ init_daemon_domain(hal_radioext_default)
 hwbinder_use(hal_radioext_default)
 get_prop(hal_radioext_default, hwservicemanager_prop)
 add_hwservice(hal_radioext_default, hal_radioext_hwservice)
-binder_call(hal_radioext_default, radio)
+binder_call(hal_radioext_default, grilservice_app)
 
 r_dir_file(hal_radioext_default, sysfs_msm_subsys)
 
