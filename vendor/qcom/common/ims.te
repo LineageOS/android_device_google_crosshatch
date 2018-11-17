@@ -24,6 +24,8 @@ allow ims ims_socket:sock_file write;
 allow ims self:netlink_generic_socket create_socket_perms_no_ioctl;
 allow ims netmgrd_socket:dir search;
 allow ims netmgrd_socket:sock_file w_file_perms;
+allow ims radio_vendor_data_file:dir rw_dir_perms;
+allow ims radio_vendor_data_file:file create_file_perms;
 allowxperm ims self:socket ioctl msm_sock_ipc_ioctls;
 allowxperm ims self:udp_socket ioctl RMNET_IOCTL_EXTENDED;
 
