@@ -1,3 +1,4 @@
+# TODO(118365266): bsschwar remove permissions related to power stats once power.stats HAL is finished
 allow hal_power_default sysfs_graphics:dir search;
 allow hal_power_default sysfs_graphics:file r_file_perms;
 
