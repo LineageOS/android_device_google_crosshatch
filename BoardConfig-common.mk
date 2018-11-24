@@ -189,7 +189,7 @@ ifeq ($(PRODUCT_USE_QC_SPECIFIC_SYMLINKS), true)
 BOARD_ROOT_EXTRA_SYMLINKS += /vendor/firmware_mnt:/firmware
 endif
 
-include device/google/crosshatch-sepolicy/crosshatch-sepolicy.mk
+include device/google/crosshatch/sepolicy/crosshatch-sepolicy.mk
 
 TARGET_FS_CONFIG_GEN := device/google/crosshatch/config.fs
 
