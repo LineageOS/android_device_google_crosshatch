@@ -58,7 +58,7 @@ BOARD_BOOT_HEADER_VERSION := 1
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 # DTBO partition definitions
-BOARD_PREBUILT_DTBOIMAGE := device/google/crosshatch-kernel/dtbo.img
+TARGET_NEEDS_DTBOIMAGE := true
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 
 TARGET_NO_BOOTLOADER ?= true
@@ -220,33 +220,6 @@ BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
-
-# Kernel modules
-ifeq (,$(filter-out blueline_gcc crosshatch_gcc, $(TARGET_PRODUCT)))
-BOARD_VENDOR_KERNEL_MODULES += \
-    $(wildcard device/google/crosshatch-kernel/gcc/*.ko)
-else ifeq (,$(filter-out blueline_kasan crosshatch_kasan, $(TARGET_PRODUCT)))
-BOARD_VENDOR_KERNEL_MODULES += \
-    $(wildcard device/google/crosshatch-kernel/kasan/*.ko)
-else ifeq (,$(filter-out blueline_kcfi crosshatch_kcfi, $(TARGET_PRODUCT)))
-BOARD_VENDOR_KERNEL_MODULES += \
-    $(wildcard device/google/crosshatch-kernel/kcfi/*.ko)
-else ifeq (,$(filter-out blueline_kernel_debug_memory crosshatch_kernel_debug_memory, $(TARGET_PRODUCT)))
-BOARD_VENDOR_KERNEL_MODULES += \
-    $(wildcard device/google/crosshatch-kernel/debug_memory/*.ko)
-else ifeq (,$(filter-out blueline_kernel_debug_locking crosshatch_kernel_debug_locking, $(TARGET_PRODUCT)))
-BOARD_VENDOR_KERNEL_MODULES += \
-    $(wildcard device/google/crosshatch-kernel/debug_locking/*.ko)
-else ifeq (,$(filter-out blueline_kernel_debug_hang crosshatch_kernel_debug_hang, $(TARGET_PRODUCT)))
-BOARD_VENDOR_KERNEL_MODULES += \
-    $(wildcard device/google/crosshatch-kernel/debug_hang/*.ko)
-else ifeq (,$(filter-out blueline_kernel_debug_api crosshatch_kernel_debug_api, $(TARGET_PRODUCT)))
-BOARD_VENDOR_KERNEL_MODULES += \
-    $(wildcard device/google/crosshatch-kernel/debug_api/*.ko)
-else
-BOARD_VENDOR_KERNEL_MODULES += \
-    $(wildcard device/google/crosshatch-kernel/*.ko)
-endif
 
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/b1c1-setup.sh
