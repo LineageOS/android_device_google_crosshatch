@@ -40,3 +40,5 @@ user=_app isPrivApp=true seinfo=platform name=com.google.android.connectivitymon
 user=_app seinfo=platform name=com.google.mds domain=modem_diagnostic_app type=app_data_file levelFrom=user
 
 user=_app seinfo=platform name=com.qualcomm.qti.services.secureui* domain=secure_ui_service_app levelFrom=all
+
+user=radio isPrivApp=true seinfo=platform name=com.google.RilConfigService domain=ril_config_service_app type=app_data_file
