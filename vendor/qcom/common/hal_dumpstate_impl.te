@@ -40,8 +40,6 @@ r_dir_file(hal_dumpstate_impl, sysfs_soc)
 r_dir_file(hal_dumpstate_impl, sysfs_thermal)
 r_dir_file(hal_dumpstate_impl, sysfs_easel)
 
-allow hal_dumpstate_impl sysfs_thermal:dir search;
-allow hal_dumpstate_impl sysfs_thermal:file r_file_perms;
 allow hal_dumpstate_impl sysfs_rpm:file r_file_perms;
 allow hal_dumpstate_impl sysfs_system_sleep_stats:file r_file_perms;
 
