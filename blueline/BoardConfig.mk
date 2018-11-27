@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Allow Lineage config to override others
+-include device/google/crosshatch/blueline/BoardConfigLineage.mk
+
 TARGET_BOOTLOADER_BOARD_NAME := blueline
 TARGET_SCREEN_DENSITY := 440
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 20

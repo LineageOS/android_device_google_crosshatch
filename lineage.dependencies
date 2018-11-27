@@ -1,0 +1,6 @@
+[
+  {
+    "repository": "android_kernel_google_msm-4.9",
+    "target_path": "kernel/google/msm-4.9"
+  }
+]
