@@ -1,0 +1,75 @@
+# Audio
+etc/firmware/dnd.descriptor
+etc/firmware/dnd.sound_model
+etc/firmware/music_detector.descriptor
+etc/firmware/music_detector.sound_model
+
+# Bluetooth
+lib64/libaptX_encoder.so
+lib64/libaptXHD_encoder.so
+
+# Easel
+-app/EaselServicePrebuilt/EaselServicePrebuilt.apk
+
+# Hotword
+-priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk;PRESIGNED
+-priv-app/HotwordEnrollmentTGoogleWCD9340/HotwordEnrollmentTGoogleWCD9340.apk;PRESIGNED
+-priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk;PRESIGNED
+
+# Listen
+lib64/liblistenjni.so
+lib64/liblistensoundmodel2.so
+lib/liblistenjni.so
+lib/liblistensoundmodel2.so
+
+# Permissions
+etc/permissions/privapp-permissions-bluecross.xml
+
+# Radio
+-app/embms/embms.apk
+-app/ims/ims.apk
+-app/QtiTelephonyService/QtiTelephonyService.apk
+-app/uceShimService/uceShimService.apk
+etc/permissions/embms.xml
+etc/permissions/qcrilhook.xml
+etc/permissions/telephonyservice.xml
+etc/sysconfig/qti_whitelist.xml
+etc/sysconfig/whitelist_com.android.omadm.service.xml
+-framework/com.qualcomm.qti.uceservice-V2.0-java.jar
+-framework/embmslibrary.jar
+-framework/PowerAnomalyDataModemInterface.jar
+-framework/PowerAnomalyQcril.jar
+-framework/qcrilhook.jar
+-framework/QtiTelephonyServicelibrary.jar
+-framework/vendor.qti.ims.callinfo-V1.0-java.jar
+lib64/lib-imsvideocodec.so
+lib64/lib-imsvtextutils.so
+lib64/lib-imsvt.so
+lib64/lib-imsvtutils.so
+lib64/libimscamera_jni.so
+lib64/libimsmedia_jni.so
+lib64/librcc.so
+lib/lib-imsvideocodec.so
+lib/lib-imsvtextutils.so
+lib/lib-imsvt.so
+lib/lib-imsvtutils.so
+lib/librcc.so
+-priv-app/CarrierSetup/CarrierSetup.apk
+-priv-app/CNEService/CNEService.apk
+-priv-app/DMService/DMService.apk
+-priv-app/OemDmTrigger/OemDmTrigger.apk
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+
+# Sprint
+etc/permissions/com.android.sdm.plugins.sprintdm.xml
+-priv-app/SprintDM/SprintDM.apk
+-priv-app/SprintHM/SprintHM.apk
+
+# VZW
+-app/vzw_msdc_api/vzw_msdc_api.apk
+etc/permissions/com.verizon.embms.xml
+etc/permissions/com.verizon.provider.xml
+etc/permissions/features-verizon.xml
+-framework/VerizonUnifiedSettings.jar;PRESIGNED
+-priv-app/VerizonAuthDialog/VerizonAuthDialog.apk;PRESIGNED
+-priv-app/WfcActivation/WfcActivation.apk;PRESIGNED
