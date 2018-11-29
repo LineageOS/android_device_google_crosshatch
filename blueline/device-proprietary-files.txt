@@ -1,0 +1,36 @@
+# Radio
+-app/atfwd/atfwd.apk
+-app/datastatusnotification/datastatusnotification.apk
+-app/ims/ims.apk
+-app/QAS_DVC_MSP/QAS_DVC_MSP.apk
+-app/QtiTelephonyService/QtiTelephonyService.apk
+-app/uceShimService/uceShimService.apk
+etc/permissions/com.qualcomm.ltebc.xml
+etc/permissions/com.qualcomm.qcrilmsgtunnel.xml
+etc/permissions/com.quicinc.cne.CNEService.xml
+etc/permissions/qcrilhook.xml
+etc/permissions/telephonyservice.xml
+-framework/com.qualcomm.qti.uceservice-V2.0-java.jar
+-framework/qcrilhook.jar
+-framework/QtiTelephonyServicelibrary.jar
+-framework/vendor.qti.ims.callinfo-V1.0-java.jar
+lib64/lib-imsvideocodec.so
+lib64/lib-imsvtextutils.so
+lib64/lib-imsvt.so
+lib64/lib-imsvtutils.so
+lib64/libimscamera_jni.so
+lib64/libimsmedia_jni.so
+lib64/librcc.so
+lib/lib-imsvideocodec.so
+lib/lib-imsvtextutils.so
+lib/lib-imsvt.so
+lib/lib-imsvtutils.so
+lib/librcc.so
+-priv-app/CNEService/CNEService.apk
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+
+# SecureUI
+lib/libsecureui_svcsock_system.so
+lib/vendor.qti.hardware.tui_comm@1.0.so
+lib64/libsecureui_svcsock_system.so
+lib64/vendor.qti.hardware.tui_comm@1.0.so
