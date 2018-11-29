@@ -209,7 +209,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := device/google/crosshatch/device_fr
 DEVICE_FRAMEWORK_MANIFEST_FILE := device/google/crosshatch/framework_manifest.xml
 
 # Userdebug only Vendor Interface Manifest
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
 DEVICE_MANIFEST_FILE += device/google/crosshatch/manifest_userdebug.xml
 endif
 
