@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "de6260be_08af4262",
+        "filename": "lineage_blueline.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2018-11-29T19:13:57Z",
+      "side": 1,
+      "message": "this needs to be crosshatch",
+      "revId": "3792e6fa782f288f33a997917256e4c14787b1d5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f106de5f_122fd1dc",
+        "filename": "lineage_blueline.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2018-11-29T19:13:57Z",
+      "side": 1,
+      "message": "this needs to be crosshatch",
+      "range": {
+        "startLine": 11,
+        "startChar": 23,
+        "endLine": 11,
+        "endChar": 31
+      },
+      "revId": "3792e6fa782f288f33a997917256e4c14787b1d5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
