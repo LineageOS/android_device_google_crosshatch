@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5af68955_5466b9c6",
+        "filename": "device-proprietary-files.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 883
+      },
+      "writtenOn": "2018-12-02T02:33:20Z",
+      "side": 1,
+      "message": "this needs to be presigned because it is updatable from google play store..",
+      "revId": "f8d53b2054434bbd5f809bd602b809198109a75f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
