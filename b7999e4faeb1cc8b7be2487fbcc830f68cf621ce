@@ -16,6 +16,24 @@
       "revId": "b7999e4faeb1cc8b7be2487fbcc830f68cf621ce",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5144e2e1_cb9c03b0",
+        "filename": "device-lineage.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2018-12-02T06:20:20Z",
+      "side": 1,
+      "message": "oh, awesome, didn\u0027t notice that in the makefile.\n\nI didn\u0027t know about PresencePolling, so that is probably needed.",
+      "parentUuid": "5709018c_dba0e51d",
+      "revId": "b7999e4faeb1cc8b7be2487fbcc830f68cf621ce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
