@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5709018c_dba0e51d",
+        "filename": "device-lineage.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2018-12-02T05:00:57Z",
+      "side": 1,
+      "message": "The xml comes with the rcsmanager jar so no need to call it here.\nhttps://android.googlesource.com/platform/external/ims/+/android-9.0.0_r16/rcs/rcsmanager/Android.mk\nAlso, i think PresencePolling should be added here, unless you purposely left it out for some reason.",
+      "revId": "b7999e4faeb1cc8b7be2487fbcc830f68cf621ce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
