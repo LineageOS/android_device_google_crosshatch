@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "17eeda68_64f79472",
+        "filename": "device-proprietary-files.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2018-12-02T03:28:26Z",
+      "side": 1,
+      "message": "assuming this needs to be presigned too?",
+      "range": {
+        "startLine": 75,
+        "startChar": 23,
+        "endLine": 75,
+        "endChar": 35
+      },
+      "revId": "f8d53b2054434bbd5f809bd602b809198109a75f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "5af68955_5466b9c6",
         "filename": "device-proprietary-files.txt",
         "patchSetId": 5
@@ -13,6 +36,24 @@
       "writtenOn": "2018-12-02T02:33:20Z",
       "side": 1,
       "message": "this needs to be presigned because it is updatable from google play store..",
+      "revId": "f8d53b2054434bbd5f809bd602b809198109a75f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ac39e05a_8f3e43ac",
+        "filename": "device-proprietary-files.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2018-12-02T03:28:26Z",
+      "side": 1,
+      "message": "ah, didn\u0027t realize that was the case.",
+      "parentUuid": "5af68955_5466b9c6",
       "revId": "f8d53b2054434bbd5f809bd602b809198109a75f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
