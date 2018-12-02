@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1049df_1046eecd",
+        "filename": "device-proprietary-files.txt",
+        "patchSetId": 7
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2018-12-02T19:19:47Z",
+      "side": 1,
+      "message": "This is the Pixel Visual Core app on the store (https://play.google.com/store/apps/details?id\u003dcom.google.android.imaging.easel.service), this ought to be presigned too.",
+      "range": {
+        "startLine": 14,
+        "startChar": 26,
+        "endLine": 14,
+        "endChar": 46
+      },
+      "revId": "761ec9daff25c95c0046d5e6dfea4f2a60e59195",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
