@@ -22,6 +22,30 @@
       "revId": "89c8f6c37c4f6ae09463b4535790eb1edf390559",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2f25f571_b9e39afd",
+        "filename": "device-proprietary-files.txt",
+        "patchSetId": 8
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 883
+      },
+      "writtenOn": "2018-12-03T14:45:40Z",
+      "side": 1,
+      "message": "It is looking for this anyways in aosp.\n\n12-03 09:26:45.321  1539  1539 E RankingHelper: createDefaultChannelIfNeeded - Exception: android.content.pm.PackageManager$NameNotFoundException: com.google.intelligence.sense",
+      "parentUuid": "799fa6e3_1d826420",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 65
+      },
+      "revId": "89c8f6c37c4f6ae09463b4535790eb1edf390559",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
