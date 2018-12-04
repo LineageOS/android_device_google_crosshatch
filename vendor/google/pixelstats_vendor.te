@@ -19,4 +19,4 @@ allow pixelstats_vendor sysfs_batteryinfo:dir search;
 allow pixelstats_vendor sysfs_batteryinfo:file r_file_perms;
 allow pixelstats_vendor sysfs_pixelstats:dir search;
 allow pixelstats_vendor sysfs_pixelstats:file rw_file_perms;
-allow pixelstats_vendor self:netlink_kobject_uevent_socket { create setopt bind read };
+allow pixelstats_vendor self:netlink_kobject_uevent_socket { create getopt setopt bind read };
