@@ -46,6 +46,30 @@
       "revId": "89c8f6c37c4f6ae09463b4535790eb1edf390559",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "07f93168_6f4b4ccf",
+        "filename": "device-proprietary-files.txt",
+        "patchSetId": 8
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2018-12-06T00:22:05Z",
+      "side": 1,
+      "message": "Yeah, as suspected, this won\u0027t work in AOSP builds.\n\nMy bet is .inteligence.sense calls to SystemUIGoogle, etc.",
+      "parentUuid": "2f25f571_b9e39afd",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 65
+      },
+      "revId": "89c8f6c37c4f6ae09463b4535790eb1edf390559",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
