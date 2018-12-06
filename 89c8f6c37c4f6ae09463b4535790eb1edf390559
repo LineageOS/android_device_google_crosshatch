@@ -70,6 +70,30 @@
       "revId": "89c8f6c37c4f6ae09463b4535790eb1edf390559",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "20b439b5_ce6337ae",
+        "filename": "device-proprietary-files.txt",
+        "patchSetId": 8
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 883
+      },
+      "writtenOn": "2018-12-06T02:08:58Z",
+      "side": 1,
+      "message": "No, I think you misunderstood me. It is looking for  com.google.intelligence.sense on AOSP as well. AOSP\u0027s RankingHelper binds to Intelligent Sense.",
+      "parentUuid": "07f93168_6f4b4ccf",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 65
+      },
+      "revId": "89c8f6c37c4f6ae09463b4535790eb1edf390559",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
