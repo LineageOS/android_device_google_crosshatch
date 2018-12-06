@@ -94,6 +94,30 @@
       "revId": "89c8f6c37c4f6ae09463b4535790eb1edf390559",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "938d791c_2bc4a2bb",
+        "filename": "device-proprietary-files.txt",
+        "patchSetId": 8
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2018-12-06T03:53:00Z",
+      "side": 1,
+      "message": "This does work in your notification dropdown, but not always on display mode. I\u0027m pretty sure it won\u0027t work without GMS though.",
+      "parentUuid": "20b439b5_ce6337ae",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 65
+      },
+      "revId": "89c8f6c37c4f6ae09463b4535790eb1edf390559",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
