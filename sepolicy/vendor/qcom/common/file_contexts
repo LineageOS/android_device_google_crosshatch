@@ -230,7 +230,7 @@
 /vendor/dsp(/.*)?       u:object_r:adsprpcd_file:s0
 
 # files in firmware
-/vender/firmware_mnt(/.*)?           u:object_r:firmware_file:s0
+/vendor/firmware_mnt(/.*)?           u:object_r:firmware_file:s0
 
 # TODO: Remove them once no need to maintain the backward compatibility. (b/111219177)
 /persist                             u:object_r:rootfs:s0
