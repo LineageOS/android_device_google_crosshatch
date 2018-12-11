@@ -53,6 +53,7 @@ type debugfs_sched_features, debugfs_type, fs_type;
 # /proc
 type proc_wifi_dbg, proc_type, fs_type;
 type proc_f2fs, proc_type, fs_type;
+type proc_swappiness, proc_type, fs_type;
 type proc_sysctl_autogroup, proc_type, fs_type;
 type proc_sysctl_schedboost, proc_type, fs_type;
 
