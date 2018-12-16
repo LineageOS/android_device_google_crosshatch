@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c5b5c22a_b09626ec",
+        "filename": "Android.mk",
+        "patchSetId": 8
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 883
+      },
+      "writtenOn": "2018-12-16T01:23:03Z",
+      "side": 1,
+      "message": "shouldn\u0027t the guard be extended to include the rest of the symlink?",
+      "revId": "e3a4fed42bac60cb63640eaa94d45fd7de2d00ee",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
