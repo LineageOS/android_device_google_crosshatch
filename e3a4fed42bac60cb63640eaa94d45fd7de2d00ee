@@ -16,6 +16,24 @@
       "revId": "e3a4fed42bac60cb63640eaa94d45fd7de2d00ee",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "108d3618_0ad5a0d3",
+        "filename": "Android.mk",
+        "patchSetId": 8
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2018-12-16T02:20:07Z",
+      "side": 1,
+      "message": "Yeah, you\u0027re right.",
+      "parentUuid": "c5b5c22a_b09626ec",
+      "revId": "e3a4fed42bac60cb63640eaa94d45fd7de2d00ee",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
