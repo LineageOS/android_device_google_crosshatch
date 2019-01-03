@@ -16,3 +16,6 @@ allow init-insmod-sh system_file:system module_load;
 allow init-insmod-sh vendor_file:system module_load;
 
 allow init-insmod-sh kernel:key search;
+
+# Caused by insmod wlan.ko.
+dontaudit init-insmod-sh debugfs_wlan:dir search;
