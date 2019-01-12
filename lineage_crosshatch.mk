@@ -19,8 +19,8 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=crosshatch \
-    PRIVATE_BUILD_DESC="crosshatch-user 9 PQ1A.181205.006 5108886 release-keys"
+    PRIVATE_BUILD_DESC="crosshatch-user 9 PQ1A.190105.004 5148680 release-keys"
 
-BUILD_FINGERPRINT := =google/crosshatch/crosshatch:9/PQ1A.181205.006/5108886:user/release-keys
+BUILD_FINGERPRINT := google/crosshatch/crosshatch:9/PQ1A.190105.004/5148680:user/release-keys
 
 $(call inherit-product-if-exists, vendor/google/crosshatch/crosshatch-vendor.mk)
