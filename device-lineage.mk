@@ -32,6 +32,10 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
 
+# Trust HAL
+PRODUCT_PACKAGES += \
+    vendor.lineage.trust@1.0-service
+
 # Utilities
 PRODUCT_PACKAGES += \
     libjson \
