@@ -18,6 +18,10 @@ PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 DEVICE_PACKAGE_OVERLAYS += device/google/crosshatch/overlay-lineage
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += device/google/crosshatch/overlay-lineage/lineage-sdk
 
+# Trust HAL
+PRODUCT_PACKAGES += \
+    vendor.lineage.trust@1.0-service
+
 # Utilities
 PRODUCT_PACKAGES += \
     libjson \
