@@ -13,6 +13,9 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := lineageos_crosshatch_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/msm-4.9
 
+# Manifests
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += device/google/crosshatch/lineage_compatibility_matrix.xml
+
 # vendor.img
 AB_OTA_PARTITIONS += vendor
 ifneq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
