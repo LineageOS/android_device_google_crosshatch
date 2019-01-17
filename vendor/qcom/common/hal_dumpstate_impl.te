@@ -120,3 +120,6 @@ userdebug_or_eng(`
   binder_call(hal_dumpstate_impl, citadeld)
   allow hal_dumpstate_impl citadeld_service:service_manager find;
 ')
+
+# Vibrator
+r_dir_file(hal_dumpstate_impl, sysfs_leds)
