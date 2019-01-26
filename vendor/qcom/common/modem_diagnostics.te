@@ -1,5 +1,6 @@
 # ModemDiagnosticSystem app
 type modem_diagnostic_app, domain;
+type modem_diagnostic_app_tmpfs, file_type;
 
 app_domain(modem_diagnostic_app)
 net_domain(modem_diagnostic_app)
