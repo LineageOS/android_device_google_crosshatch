@@ -1,4 +1,5 @@
 type factory_ota_app, domain, coredomain;
+type factory_ota_app_tmpfs, file_type;
 
 app_domain(factory_ota_app)
 net_domain(factory_ota_app)
