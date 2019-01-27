@@ -1,4 +1,5 @@
 type secure_ui_service_app, domain;
+type secure_ui_service_app_tmpfs, file_type;
 app_domain(secure_ui_service_app);
 
 binder_use(secure_ui_service_app);
