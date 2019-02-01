@@ -1,5 +1,4 @@
 type grilservice_app, domain;
-type grilservice_app_tmpfs, file_type;
 
 app_domain(grilservice_app)
 
