@@ -48,6 +48,11 @@ ifneq (\$(filter crosshatch blueline,\$(TARGET_DEVICE)),)
 EOF
 
     write_header "$BOARDMK"
+
+    cat << EOF >> "$BOARDMK"
+BOARD_PREBUILT_VENDORIMAGE := vendor/$VENDOR/$DEVICE/vendor-\$(TARGET_DEVICE).img
+EOF
+
     write_header "$PRODUCTMK"
 }
 
