@@ -1,5 +1,4 @@
 type tango_core, domain;
-type tango_core_tmpfs, file_type;
 
 app_domain(tango_core)
 
