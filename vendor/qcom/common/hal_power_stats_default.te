@@ -1,7 +1,10 @@
 # Allow power.stats hal to read from the following
-allow hal_power_stats sysfs_rpm:file r_file_perms;
-allow hal_power_stats sysfs_system_sleep_stats:file r_file_perms;
-allow hal_power_stats debugfs_wlan:dir r_dir_perms;
-allow hal_power_stats debugfs_wlan:file r_file_perms;
-allow hal_power_stats debugfs_easel:dir search;
-allow hal_power_stats debugfs_easel:file r_file_perms;
+r_dir_file(hal_power_stats, sysfs_rpm)
+r_dir_file(hal_power_stats, sysfs_system_sleep_stats)
+r_dir_file(hal_power_stats, debugfs_wlan)
+r_dir_file(hal_power_stats, debugfs_easel)
+
+# Allow power.stats hal to add the power_stats_service
+vndbinder_use(hal_power_stats)
+add_service(hal_power_stats_server, power_stats_service)
+
