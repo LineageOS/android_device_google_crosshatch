@@ -19,13 +19,10 @@ userdebug_or_eng(`
   allow hal_dumpstate_impl radio_vendor_data_file:file r_file_perms;
   allow hal_dumpstate_impl netmgr_data_file:dir r_dir_perms;
   allow hal_dumpstate_impl netmgr_data_file:file r_file_perms;
-  allow hal_dumpstate_impl debugfs_tzdbg:dir search;
-  allow hal_dumpstate_impl debugfs_tzdbg:file r_file_perms;
   allow hal_dumpstate_impl sysfs_usb_device:dir r_dir_perms;
   allow hal_dumpstate_impl sysfs_usb_device:file r_file_perms;
   allow hal_dumpstate_impl ssr_log_file:dir search;
   allow hal_dumpstate_impl ssr_log_file:file r_file_perms;
-  allow hal_dumpstate_impl sysfs_esim:file r_file_perms;
   allow hal_dumpstate_impl tcpdump_vendor_data_file:dir create_dir_perms;
   allow hal_dumpstate_impl tcpdump_vendor_data_file:file create_file_perms;
 
@@ -45,6 +42,7 @@ r_dir_file(hal_dumpstate_impl, sysfs_soc)
 r_dir_file(hal_dumpstate_impl, sysfs_thermal)
 r_dir_file(hal_dumpstate_impl, sysfs_easel)
 
+allow hal_dumpstate_impl sysfs_esim:file r_file_perms;
 allow hal_dumpstate_impl sysfs_rpm:file r_file_perms;
 allow hal_dumpstate_impl sysfs_system_sleep_stats:file r_file_perms;
 
@@ -58,6 +56,8 @@ allow hal_dumpstate_impl debugfs_ipc:dir r_dir_perms;
 allow hal_dumpstate_impl debugfs_ipc:file r_file_perms;
 allow hal_dumpstate_impl debugfs_f2fs:dir r_dir_perms;
 allow hal_dumpstate_impl debugfs_f2fs:file r_file_perms;
+allow hal_dumpstate_impl debugfs_tzdbg:dir search;
+allow hal_dumpstate_impl debugfs_tzdbg:file r_file_perms;
 allow hal_dumpstate_impl debugfs_ufs:dir r_dir_perms;
 allow hal_dumpstate_impl debugfs_ufs:file r_file_perms;
 allow hal_dumpstate_impl proc_stat:file r_file_perms;
