@@ -19,6 +19,5 @@ allow hal_tetheroffload_default ipa_vendor_data_file:dir w_dir_perms;
 allow hal_tetheroffload_default ipa_vendor_data_file:file create_file_perms;
 
 # Register to hwbinder service
-add_hwservice(hal_tetheroffload_default, hal_tetheroffload_hwservice)
 hwbinder_use(hal_tetheroffload_default)
 get_prop(hal_tetheroffload_default, hwservicemanager_prop)
