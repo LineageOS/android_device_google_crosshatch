@@ -1,0 +1,14 @@
+type modem_svc, domain;
+type modem_svc_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(modem_svc)
+
+allow modem_svc self:capability net_bind_service;
+allow modem_svc self:socket create_socket_perms;
+allowxperm modem_svc self:socket ioctl IPC_ROUTER_IOCTL_BIND_CONTROL_PORT;
+
+set_prop(modem_svc, vendor_modem_diag_prop)
+get_prop(modem_svc, exported2_default_prop)
+get_prop(modem_svc, exported3_radio_prop)
+
+dontaudit modem_svc kernel:system module_request;
