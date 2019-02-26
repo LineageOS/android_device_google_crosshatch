@@ -31,3 +31,6 @@ type ctl_vendor_rmt_storage_prop, property_type;
 
 #imsrcsservice
 type ctl_vendor_imsrcsservice_prop, property_type;
+
+#time service
+type vendor_time_service_prop, property_type;
