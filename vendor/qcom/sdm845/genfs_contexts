@@ -1,12 +1,2 @@
 genfscon sysfs /devices/platform/soc/soc:qcom,l3-cdsp/devfreq  u:object_r:sysfs_devfreq:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,l3-cdsp/devfreq/soc:qcom,l3-cdsp/userspace u:object_r:sysfs_devfreq_l3cdsp:s0
-
-#pmic sysfs_nodes
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/power_supply/pc_port u:object_r:sysfs_usb_c:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/power_supply/usb u:object_r:sysfs_usb_c:s0
-genfscon sysfs /class/qcom-battery u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,leds@d000/leds/red u:object_r:sysfs_graphics:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,leds@d000/leds/green u:object_r:sysfs_graphics:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,leds@d000/leds/blue u:object_r:sysfs_graphics:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,leds@d300/leds u:object_r:sysfs_leds:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-03/c440000.qcom,spmi:qcom,pmi8998@3:qcom,leds@d800/leds/wled u:object_r:sysfs_leds:s0
