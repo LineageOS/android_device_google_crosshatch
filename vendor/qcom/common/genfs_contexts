@@ -108,8 +108,6 @@ genfscon sysfs /firmware/devicetree/base/soc/qcom,spmi@c440000/qcom,pm8998@0/pin
 genfscon sysfs /firmware/devicetree/base/soc/i2c@88c000/nq@28/ese/loader_scripts_path       u:object_r:sysfs_devicetree_ese:s0
 genfscon sysfs /power/rpmh_stats/master_stats         u:object_r:sysfs_rpm:s0
 
-genfscon sysfs /devices/virtual/block/                                  u:object_r:sysfs_devices_block:s0
-
 genfscon sysfs /power/system_sleep/stats                                u:object_r:sysfs_system_sleep_stats:s0
 
 genfscon debugfs /kgsl/proc                           u:object_r:debugfs_kgsl:s0
