@@ -19,8 +19,8 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=blueline \
-    PRIVATE_BUILD_DESC="blueline-user 9 PQ2A.190205.001 5163636 release-keys"
+    PRIVATE_BUILD_DESC="blueline-user 9 PQ2A.190305.002 5240760 release-keys"
 
-BUILD_FINGERPRINT := google/blueline/blueline:9/PQ2A.190205.001/5163636:user/release-keys
+BUILD_FINGERPRINT := google/blueline/blueline:9/PQ2A.190305.002/5240760:user/release-keys
 
 $(call inherit-product-if-exists, vendor/google/crosshatch/crosshatch-vendor.mk)
