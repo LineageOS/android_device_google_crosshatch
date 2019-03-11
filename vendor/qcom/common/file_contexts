@@ -191,6 +191,7 @@
 
 # Vendor libs that are exposed to apps (those listed in /vendor/etc/public.libraries.txt
 # and their dependencies)
+/vendor/lib(64)?/libOpenCL-pixel\.so                 u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libOpenCL\.so                       u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libadsprpc\.so                      u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libcdsprpc\.so                      u:object_r:same_process_hal_file:s0
