@@ -21,7 +21,7 @@ type vendor_secure_element_prop, property_type;
 type vendor_device_prop, property_type;
 type vendor_radio_prop, property_type;
 type vendor_display_prop, property_type;
-type persist_nfc_prop, property_type;
+type vendor_nfc_prop, property_type;
 type vendor_bluetooth_log_prop, property_type;
 type vendor_usb_config_prop, property_type;
 type vendor_radio_sku_prop, property_type;
