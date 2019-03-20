@@ -12,6 +12,7 @@ userdebug_or_eng(`
 get_prop(ssr_detector_app, vendor_wifi_version)
 
 allow ssr_detector_app app_api_service:service_manager find;
+allow ssr_detector_app radio_service:service_manager find;
 
 # ssr_detector app's data type is system_app_data_file.
 allow ssr_detector_app system_app_data_file:dir create_dir_perms;
