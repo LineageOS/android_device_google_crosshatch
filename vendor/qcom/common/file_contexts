@@ -60,6 +60,7 @@
 /dev/nq-nci                                     u:object_r:nfc_device:s0
 /dev/ttyHS0                                     u:object_r:hci_attach_dev:s0
 /dev/wlan                                       u:object_r:wlan_device:s0
+/dev/socket/diag_router                         u:object_r:diag_socket:s0
 
 # Block device holding the GPT, where the A/B attributes are stored.
 /dev/block/sda                                  u:object_r:gpt_block_device:s0
