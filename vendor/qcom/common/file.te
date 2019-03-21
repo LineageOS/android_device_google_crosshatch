@@ -66,6 +66,7 @@ type chre_socket, file_type;
 type hal_bootctl_socket, file_type;
 type pps_socket, file_type;
 type location_socket, file_type;
+type diag_socket, file_type;
 
 type firmware_file, fs_type, contextmount_type;
 
