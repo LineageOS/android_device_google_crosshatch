@@ -1,0 +1,5 @@
+userdebug_or_eng(`
+  # Read /sys/kernel/debug/ion/heaps/system.
+  allow system_server debugfs_system_ion_heap:file r_file_perms;
+')
+dontaudit system_server debugfs_system_ion_heap:file r_file_perms;

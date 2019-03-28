@@ -12,4 +12,7 @@ userdebug_or_eng(`
   allow qlogd radio_vendor_data_file:dir create_dir_perms;
 
   set_prop(qlogd, vendor_modem_diag_prop)
+
+  allow qlogd self:socket create_socket_perms;
+  allowxperm qlogd self:socket ioctl msm_sock_ipc_ioctls;
 ')
