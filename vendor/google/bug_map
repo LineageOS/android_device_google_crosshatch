@@ -11,6 +11,7 @@ netmgrd system_file file 117232795
 platform_app vendor_default_prop file 79617173
 priv_app adsprpcd_file dir 127645532
 priv_app vendor_default_prop file 79617173
+ramdump ramdump capability 129500067
 shell sysfs_usb_c dir 126568362
 system_app vendor_default_prop file 79617173
 system_server vendor_default_prop file 79617173
