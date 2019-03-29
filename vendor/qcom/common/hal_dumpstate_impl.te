@@ -25,7 +25,10 @@ userdebug_or_eng(`
   set_prop(hal_dumpstate_impl, vendor_modem_diag_prop)
 ')
 
+# modem stat
+domain_auto_trans(hal_dumpstate_impl, modem_svc_exec, modem_svc)
 allow hal_dumpstate_impl modem_stat_data_file:file r_file_perms;
+
 dontaudit hal_dumpstate_impl modem_dump_file:dir create_dir_perms;
 dontaudit hal_dumpstate_impl modem_dump_file:file create_file_perms;
 
