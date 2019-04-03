@@ -4,6 +4,7 @@ dataservice_app vendor_default_prop file 79617173
 factory_ota_app vendor_default_prop file 79617173
 hal_bluetooth_default ramdump_vendor_data_file dir 129298416
 hal_camera_default persist_file file 123018469
+hal_health_default persist_file dir 127303305
 hal_health_default persist_file file 127303305
 hal_health_default sysfs_usb_c dir 126568362
 init sysfs_graphics file 126568362
