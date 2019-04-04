@@ -30,7 +30,10 @@ userdebug_or_eng(`
   set_prop(hal_dumpstate_impl, vendor_tcpdump_log_prop)
 ')
 
+# modem stat
+domain_auto_trans(hal_dumpstate_impl, modem_svc_exec, modem_svc)
 allow hal_dumpstate_impl modem_stat_data_file:file r_file_perms;
+
 dontaudit hal_dumpstate_impl modem_dump_file:dir create_dir_perms;
 dontaudit hal_dumpstate_impl modem_dump_file:file create_file_perms;
 
@@ -95,6 +98,7 @@ allow hal_dumpstate_impl mpss_rfs_data_file:file r_file_perms;
 ')
 
 # For collecting bugreports.
+allow hal_dumpstate_impl debugfs_system_ion_heap:file r_file_perms;
 allow hal_dumpstate_impl shell_data_file:file getattr;
 allow hal_dumpstate_impl sysfs_system_sleep_stats:file r_file_perms;
 # For '/vendor/bin/sh -c getprop | grep vendor.sys.modem.diag'
