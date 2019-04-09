@@ -3,3 +3,6 @@ userdebug_or_eng(`
   allow system_server debugfs_system_ion_heap:file r_file_perms;
 ')
 dontaudit system_server debugfs_system_ion_heap:file r_file_perms;
+
+# b/129561352: Access to cpufreq interface for battery saver experiments.
+allow system_server sysfs_devices_system_cpu:file w_file_perms;
