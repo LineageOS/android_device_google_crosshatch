@@ -20,7 +20,6 @@ userdebug_or_eng(`
   allow ramdump userdata_block_device:blk_file rw_file_perms;
 
   dontaudit ramdump metadata_file:dir search;
-  dontaudit ramdump self:capability sys_admin;
 
   # read from /fstab.sdm845
   allow ramdump rootfs:file r_file_perms;
