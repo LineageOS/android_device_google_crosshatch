@@ -138,6 +138,7 @@ sdm.video_mode_panel       u:object_r:vendor_default_prop:s0
 sdm.drop_skewed_vsync      u:object_r:vendor_default_prop:s0
 sys.disable_ext_animation  u:object_r:vendor_default_prop:s0
 sys.hwc_disable_hdr        u:object_r:vendor_default_prop:s0
+zeroth.debuglog.logmask    u:object_r:vendor_default_prop:s0
 
 # public_vendor_default_prop
 fastrpc.debug.trace        u:object_r:public_vendor_default_prop:s0
