@@ -6,6 +6,9 @@ userdebug_or_eng(`
 
   set_prop(ramdump, vendor_ramdump_prop)
 
+  # f2fs set pin file requires sys_admin
+  allow ramdump self:capability sys_admin;
+
   allow ramdump self:capability sys_rawio;
 
   allow ramdump ramdump_vendor_data_file:dir create_dir_perms;
@@ -20,7 +23,6 @@ userdebug_or_eng(`
   allow ramdump userdata_block_device:blk_file rw_file_perms;
 
   dontaudit ramdump metadata_file:dir search;
-  dontaudit ramdump self:capability sys_admin;
 
   # read from /fstab.sdm845
   allow ramdump rootfs:file r_file_perms;
