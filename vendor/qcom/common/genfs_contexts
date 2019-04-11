@@ -67,8 +67,6 @@ genfscon sysfs /module/msm_thermal                                      u:object
 genfscon sysfs /devices/platform/soc/17d41000.qcom,cpucc/17d41000.qcom,cpucc:qcom,limits-dcvs@0  u:object_r:sysfs_thermal:s0
 genfscon sysfs /devices/platform/soc/17d41000.qcom,cpucc/17d41000.qcom,cpucc:qcom,limits-dcvs@1  u:object_r:sysfs_thermal:s0
 genfscon sysfs /devices/platform/soc/18800000.qcom,icnss/net            u:object_r:sysfs_net:s0
-genfscon sysfs /module/tcp_cubic/parameters                             u:object_r:sysfs_net:s0
-genfscon sysfs /devices/virtual/net                                     u:object_r:sysfs_net:s0
 genfscon sysfs /module/diagchar/parameters/timestamp_switch             u:object_r:sysfs_timestamp_switch:s0
 genfscon sysfs /devices/virtual/graphics/fb0                            u:object_r:sysfs_graphics:s0
 genfscon sysfs /devices/virtual/graphics/fb1                            u:object_r:sysfs_graphics:s0
