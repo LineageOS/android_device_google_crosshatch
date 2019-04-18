@@ -9,6 +9,8 @@ allowxperm modem_svc self:socket ioctl msm_sock_ipc_ioctls;
 
 # For property service
 set_prop(modem_svc, vendor_modem_diag_prop)
+set_prop(modem_svc, vendor_modem_prop)
+get_prop(modem_svc, vendor_build_type_prop)
 get_prop(modem_svc, exported2_default_prop)
 get_prop(modem_svc, exported3_radio_prop)
 
