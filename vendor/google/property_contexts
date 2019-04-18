@@ -1,3 +1,9 @@
+# vendor build type
+ro.vendor.build.type                          u:object_r:vendor_build_type_prop:s0
+
+# Modem property
+persist.modem.                                u:object_r:vendor_modem_prop:s0
+
 # ramoops
 vendor.ramoops.                    u:object_r:vendor_ramoops_prop:s0
 

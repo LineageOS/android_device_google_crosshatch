@@ -1,3 +1,6 @@
+# ro.vendor.build.type
+set_prop(vendor_init, vendor_build_type_prop)
+
 # To allow setting audio.camerasound.force based on
 # ro.boot.hardware.radio.subtype at boot
 get_prop(vendor_init, vendor_radio_sku_prop)
