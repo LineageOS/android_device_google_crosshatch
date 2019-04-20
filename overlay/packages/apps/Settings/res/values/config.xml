@@ -20,4 +20,8 @@
          devices will be able to vary their amplitude but do not possess enough dynamic range to
          have distinct intensity levels -->
     <bool name="config_vibration_supports_multiple_intensities">true</bool>
+
+    <!-- Whether to show Connected MAC Randomization in Developer Options
+         as not all devices can support dynamic MAC address change.  -->
+    <bool name="config_wifi_support_connected_mac_randomization">true</bool>
 </resources>
