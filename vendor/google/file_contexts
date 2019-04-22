@@ -25,3 +25,5 @@
 
 /persist/battery(/.*)?                                                      u:object_r:persist_battery_file:s0
 /vendor/bin/hw/android\.hardware\.power\.stats@1\.0-service\.pixel          u:object_r:hal_power_stats_default_exec:s0
+
+/vendor/bin/hw/init_apdp.sh                                                 u:object_r:init_apdp_exec:s0
