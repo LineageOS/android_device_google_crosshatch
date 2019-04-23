@@ -11,6 +11,7 @@ allow hal_bootctl ab_block_device:blk_file getattr;
 allow hal_bootctl boot_block_device:blk_file rw_file_perms;
 allow hal_bootctl modem_block_device:blk_file getattr;
 allow hal_bootctl system_block_device:blk_file getattr;
+allow hal_bootctl apdp_block_device:blk_file getattr;
 allow hal_bootctl_server misc_block_device:blk_file rw_file_perms;
 
 # Access /dev/sgN devices (generic SCSI) to write the
