@@ -2,6 +2,8 @@ vendor.debug.camera.       u:object_r:vendor_camera_prop:s0
 persist.vendor.camera.     u:object_r:vendor_camera_prop:s0
 persist.camera.            u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.          u:object_r:vendor_camera_prop:s0
+ro.camera.req.fmq.size     u:object_r:vendor_ro_camera_prop:s0
+ro.camera.res.fmq.size     u:object_r:vendor_ro_camera_prop:s0
 persist.vendor.sys.cnd     u:object_r:cnd_prop:s0
 ro.boot.sota               u:object_r:factory_ota_prop:s0
 persist.factoryota.reboot  u:object_r:exported_system_prop:s0
