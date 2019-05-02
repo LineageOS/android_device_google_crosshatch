@@ -18,7 +18,6 @@ vendor.google.radioext::IRadioExt                               u:object_r:hal_r
 vendor.display.config::IDisplayConfig                           u:object_r:hal_display_config_hwservice:s0
 vendor.nxp.nxpnfc::INxpNfc                                      u:object_r:nxpnfc_hwservice:s0
 vendor.nxp.nxpese::INxpEse                                      u:object_r:nxpese_hwservice:s0
-android.hardware.media.c2::IConfigurable                        u:object_r:hal_codec2_hwservice:s0
 vendor.google_paintbox::IManagerService                         u:object_r:hal_paintbox_hwservice:s0
 hardware.google.pixelstats::IPixelStats                         u:object_r:hal_pixelstats_hwservice:s0
 vendor.google.wireless_charger::IWirelessCharger                u:object_r:hal_wlc_hwservice:s0
