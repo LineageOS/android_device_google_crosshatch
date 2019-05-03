@@ -37,7 +37,7 @@ user=_app seinfo=easel name=com.google.android.imaging.easel.service domain=ease
 user=_app isPrivApp=true seinfo=platform name=com.google.android.connectivitymonitor domain=con_monitor_app type=app_data_file levelFrom=all
 
 # Domain for modem diagnostic system
-user=_app seinfo=platform name=com.google.mds domain=modem_diagnostic_app type=app_data_file levelFrom=user
+user=_app seinfo=google name=com.google.mds domain=modem_diagnostic_app type=app_data_file levelFrom=user
 
 user=_app seinfo=platform name=com.qualcomm.qti.services.secureui* domain=secure_ui_service_app levelFrom=all
 
