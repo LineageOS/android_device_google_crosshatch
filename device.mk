@@ -104,6 +104,8 @@ ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
       $(LOCAL_PATH)/init.hardware.mpssrfs.rc.userdebug:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(PRODUCT_PLATFORM).mpssrfs.rc
   PRODUCT_COPY_FILES += \
       $(LOCAL_PATH)/init.hardware.chamber.rc.userdebug:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.$(PRODUCT_PLATFORM).chamber.rc
+  PRODUCT_COPY_FILES += \
+      $(LOCAL_PATH)/init.hardware.wlc.rc.userdebug:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.$(PRODUCT_PLATFORM).wlc.rc
 else
   PRODUCT_COPY_FILES += \
       $(LOCAL_PATH)/init.hardware.diag.rc.user:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(PRODUCT_PLATFORM).diag.rc
@@ -494,10 +496,6 @@ PRODUCT_PACKAGES += \
 LIB_NL := libnl_2
 PRODUCT_PACKAGES += $(LIB_NL)
 
-# Factory OTA
-PRODUCT_PACKAGES += \
-    FactoryOta
-
 # Audio effects
 PRODUCT_PACKAGES += \
     libvolumelistener \
@@ -777,4 +775,4 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # Increment the SVN for any official public releases
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.build.svn=7
+    ro.vendor.build.svn=9
