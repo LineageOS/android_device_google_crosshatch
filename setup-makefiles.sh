@@ -59,6 +59,7 @@ write_crosshatch_headers
 
 # The standard blobs
 write_makefiles "$MY_DIR"/device-proprietary-files.txt
+write_makefiles "$MY_DIR"/vendor-proprietary-files.txt true
 
 cat << EOF >> "$ANDROIDMK"
 

@@ -11,4 +11,7 @@ TARGET_KERNEL_CONFIG := lineageos_crosshatch_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/google/crosshatch
 
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_VENDORIMAGE_PARTITION_SIZE := 805306368
+
 -include vendor/google/crosshatch/BoardConfigVendor.mk
