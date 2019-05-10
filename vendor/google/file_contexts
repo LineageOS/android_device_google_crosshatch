@@ -4,6 +4,7 @@
 /dev/access-ramoops                                                         u:object_r:ramoops_device:s0
 /dev/maxfg_history                                                          u:object_r:maxfg_device:s0
 
+/vendor/bin/hw/android\.hardware\.atrace@1\.0-service.pixel                 u:object_r:hal_atrace_default_exec:s0
 /vendor/bin/hw/android\.hardware\.authsecret@1\.0-service\.citadel          u:object_r:hal_authsecret_citadel_exec:s0
 /vendor/bin/hw/android\.hardware\.oemlock@1\.0-service\.citadel             u:object_r:hal_oemlock_citadel_exec:s0
 /vendor/bin/hw/android\.hardware\.weaver@1\.0-service\.citadel              u:object_r:hal_weaver_citadel_exec:s0
