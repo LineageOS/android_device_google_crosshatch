@@ -9,6 +9,10 @@ allow hal_graphics_composer_default sysfs_msm_subsys:file r_file_perms;
 allow hal_graphics_composer_default sysfs_mdss_mdp_caps:file r_file_perms;
 allow hal_graphics_composer_default persist_file:dir search;
 
+userdebug_or_eng(`
+  allow hal_graphics_composer_default diag_device:chr_file rw_file_perms;
+')
+
 # Allow dir search in '/mnt/vendor'
 allow hal_graphics_composer_default mnt_vendor_file:dir search;
 allow hal_graphics_composer_default mnt_vendor_file:file r_file_perms;
