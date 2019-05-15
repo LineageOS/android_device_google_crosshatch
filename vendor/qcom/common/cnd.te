@@ -13,6 +13,10 @@ allow cnd wpa_data_file:dir rw_dir_perms;
 allow cnd wpa_data_file:sock_file create_file_perms;
 allow cnd wpa_socket:sock_file write;
 
+userdebug_or_eng(`
+  allow cnd diag_device:chr_file rw_file_perms;
+')
+
 allow cnd self:udp_socket create_socket_perms;
 allowxperm cnd self:udp_socket ioctl SIOCGIFMTU;
 allow cnd self:{
