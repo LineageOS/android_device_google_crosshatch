@@ -41,4 +41,8 @@ allow hal_rcsservice self:capability net_bind_service;
 
 set_prop(hal_rcsservice, ctl_vendor_imsrcsservice_prop)
 
+userdebug_or_eng(`
+  allow hal_rcsservice diag_device:chr_file rw_file_perms;
+')
+
 dontaudit hal_rcsservice kernel:system module_request;

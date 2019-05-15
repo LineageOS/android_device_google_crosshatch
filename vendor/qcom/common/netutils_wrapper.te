@@ -2,6 +2,10 @@
 allow netutils_wrapper netmgrd:fd use;
 allow netutils_wrapper netmgrd:fifo_file { getattr read write append };
 
+userdebug_or_eng(`
+  allow netutils_wrapper diag_device:chr_file rw_file_perms;
+')
+
 dontaudit netutils_wrapper netmgrd:unix_stream_socket { read write };
 dontaudit netutils_wrapper netmgrd:socket { read write };
 dontaudit netutils_wrapper netmgrd:netlink_socket { getattr read write append };

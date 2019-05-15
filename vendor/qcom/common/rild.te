@@ -9,6 +9,10 @@ allow rild vendor_file:file { execute_no_trans lock ioctl };
 
 allow rild per_mgr_service:service_manager find;
 
+userdebug_or_eng(`
+  allow rild diag_device:chr_file rw_file_perms;
+')
+
 add_hwservice(rild, vnd_ims_radio_hwservice)
 add_hwservice(rild, vnd_qcrilhook_hwservice)
 
