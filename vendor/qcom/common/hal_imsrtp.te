@@ -15,6 +15,10 @@ unix_socket_connect(hal_imsrtp, ims, ims)
 
 allow hal_imsrtp sysfs_timestamp_switch:file r_file_perms;
 
+userdebug_or_eng(`
+  allow hal_imsrtp diag_device:chr_file rw_file_perms;
+')
+
 # ioctlcmd=c302
 allowxperm hal_imsrtp self:socket ioctl msm_sock_ipc_ioctls;
 
