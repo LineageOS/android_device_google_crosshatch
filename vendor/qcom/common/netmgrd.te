@@ -23,6 +23,10 @@ allow netmgrd sysfs_soc:file r_file_perms;
 allow netmgrd sysfs_msm_subsys:dir r_dir_perms;
 allow netmgrd sysfs_msm_subsys:file r_file_perms;
 
+userdebug_or_eng(`
+  allow netmgrd diag_device:chr_file rw_file_perms;
+')
+
 r_dir_file(netmgrd, sysfs_msm_subsys)
 
 wakelock_use(netmgrd)
