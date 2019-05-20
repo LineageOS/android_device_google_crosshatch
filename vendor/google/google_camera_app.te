@@ -47,3 +47,6 @@ allow google_camera_app system_app_data_file:file { read write getattr };
 allow google_camera_app hal_paintbox_hwservice:hwservice_manager find;
 binder_call(google_camera_app, easel)
 allow google_camera_app easel_device:chr_file rw_file_perms;
+
+# Allow notifying Perfetto traced daemon that a notable event has occurred.
+unix_socket_connect(google_camera_app, traced_producer, traced)
