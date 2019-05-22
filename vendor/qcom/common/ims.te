@@ -15,6 +15,10 @@ allow ims sysfs_timestamp_switch:file r_file_perms;
 
 allow ims self:capability net_bind_service;
 
+userdebug_or_eng(`
+  allow ims diag_device:chr_file rw_file_perms;
+')
+
 allow ims ion_device:chr_file r_file_perms;
 
 unix_socket_connect(ims, cnd, cnd)
