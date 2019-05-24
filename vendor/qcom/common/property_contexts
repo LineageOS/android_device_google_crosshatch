@@ -1,6 +1,7 @@
 vendor.debug.camera.       u:object_r:vendor_camera_prop:s0
 persist.vendor.camera.     u:object_r:vendor_camera_prop:s0
 persist.camera.            u:object_r:vendor_camera_prop:s0
+persist.gcam.              u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.          u:object_r:vendor_camera_prop:s0
 ro.camera.                 u:object_r:vendor_camera_prop:s0
 persist.vendor.sys.cnd     u:object_r:cnd_prop:s0
