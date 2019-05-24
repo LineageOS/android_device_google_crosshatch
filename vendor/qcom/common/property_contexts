@@ -1,6 +1,7 @@
 vendor.debug.camera.       u:object_r:vendor_camera_prop:s0
 persist.vendor.camera.     u:object_r:vendor_camera_prop:s0
 persist.camera.            u:object_r:vendor_camera_prop:s0
+persist.gcam.              u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.          u:object_r:vendor_camera_prop:s0
 ro.camera.req.fmq.size     u:object_r:vendor_ro_camera_prop:s0
 ro.camera.res.fmq.size     u:object_r:vendor_ro_camera_prop:s0
