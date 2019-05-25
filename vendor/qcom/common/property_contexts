@@ -1,6 +1,7 @@
 vendor.debug.camera.       u:object_r:vendor_camera_prop:s0
 persist.vendor.camera.     u:object_r:vendor_camera_prop:s0
 persist.camera.            u:object_r:vendor_camera_prop:s0
+persist.gcam.              u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.          u:object_r:vendor_camera_prop:s0
 ro.camera.                 u:object_r:vendor_camera_prop:s0
 persist.vendor.sys.cnd     u:object_r:cnd_prop:s0
@@ -172,6 +173,7 @@ persist.vendor.radio.snapshot_timer  u:object_r:vendor_radio_prop:s0
 persist.vendor.radio.relay_oprt_change  u:object_r:vendor_radio_prop:s0
 persist.vendor.radio.sap_silent_pin  u:object_r:vendor_radio_prop:s0
 persist.vendor.radio.uicc_se_enabled  u:object_r:vendor_radio_prop:s0
+persist.vendor.radio.simlock.list  u:object_r:vendor_radio_prop:s0
 ro.radio.log_loc           u:object_r:vendor_radio_prop:s0
 ro.radio.log_prefix        u:object_r:vendor_radio_prop:s0
 
