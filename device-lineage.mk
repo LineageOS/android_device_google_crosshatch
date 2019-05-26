@@ -15,6 +15,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# vendor.img
+AB_OTA_PARTITIONS += vendor
+
 WITH_GMS_FI := true
 
 PRODUCT_COPY_FILES += \

@@ -59,9 +59,9 @@ TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 
 $(call inherit-product, $(LOCAL_PATH)/utils.mk)
 
-ifeq ($(wildcard vendor/google_devices/crosshatch/proprietary/device-vendor-crosshatch.mk),)
-    BUILD_WITHOUT_VENDOR := true
-endif
+#ifeq ($(wildcard vendor/google_devices/crosshatch/proprietary/device-vendor-crosshatch.mk),)
+#    BUILD_WITHOUT_VENDOR := true
+#endif
 
 PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_SHIPPING_API_LEVEL := 28
