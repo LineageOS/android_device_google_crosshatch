@@ -10,4 +10,11 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := lineageos_crosshatch_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/msm-4.9
 
+# vendor.img
+AB_OTA_PARTITIONS += vendor
+ifneq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
+BOARD_VENDORIMAGE_PARTITION_SIZE := 805306368
+endif
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+
 -include vendor/google/crosshatch/BoardConfigVendor.mk
