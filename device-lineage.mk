@@ -10,3 +10,6 @@ PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     PresencePolling \
     RcsService
+
+# vendor.img
+AB_OTA_PARTITIONS += vendor
