@@ -14,5 +14,3 @@ TARGET_KERNEL_SOURCE := kernel/google/crosshatch
 # vendor.img
 BOARD_VENDORIMAGE_PARTITION_SIZE := 805306368
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
-
--include vendor/google/crosshatch/BoardConfigVendor.mk
