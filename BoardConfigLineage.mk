@@ -18,5 +18,3 @@ ifneq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
 BOARD_VENDORIMAGE_PARTITION_SIZE := 805306368
 endif
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
-
--include vendor/google/crosshatch/BoardConfigVendor.mk

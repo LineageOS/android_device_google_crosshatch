@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 set -e
 
 VENDOR=google
-DEVICE=crosshatch
+DEVICE=blueline
 
 INITIAL_COPYRIGHT_YEAR=2018
 
@@ -25,7 +25,7 @@ INITIAL_COPYRIGHT_YEAR=2018
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-LINEAGE_ROOT="$MY_DIR"/../../..
+LINEAGE_ROOT="$MY_DIR"/../../../..
 
 HELPER="$LINEAGE_ROOT"/vendor/lineage/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
@@ -34,36 +34,15 @@ if [ ! -f "$HELPER" ]; then
 fi
 . "$HELPER"
 
-# Write custom header to allow blueline to inherit
-function write_crosshatch_headers() {
-    write_header "$ANDROIDMK"
-
-    cat << EOF >> "$ANDROIDMK"
-LOCAL_PATH := \$(call my-dir)
-
-EOF
-    cat << EOF >> "$ANDROIDMK"
-ifneq (\$(filter crosshatch blueline,\$(TARGET_DEVICE)),)
-
-EOF
-
-    write_header "$BOARDMK"
-    write_header "$PRODUCTMK"
-}
-
 # Initialize the helper
 setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT"
 
 # Copyright headers and guards
-write_crosshatch_headers
+write_headers
 
 # The standard blobs
 write_makefiles "$MY_DIR"/device-proprietary-files.txt
 write_makefiles "$MY_DIR"/device-proprietary-files-other.txt true
-
-cat << EOF >> "$ANDROIDMK"
-
-EOF
 
 # Finish
 write_footers
