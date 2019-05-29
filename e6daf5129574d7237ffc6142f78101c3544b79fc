@@ -22,6 +22,30 @@
       "revId": "e6daf5129574d7237ffc6142f78101c3544b79fc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0a89e98b_6d6aa41e",
+        "filename": "device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2019-05-29T02:53:38Z",
+      "side": 1,
+      "message": "It can",
+      "parentUuid": "9d9507b0_cfc3a050",
+      "range": {
+        "startLine": 156,
+        "startChar": 4,
+        "endLine": 156,
+        "endChar": 10
+      },
+      "revId": "e6daf5129574d7237ffc6142f78101c3544b79fc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
