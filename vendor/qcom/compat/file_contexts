@@ -1,0 +1,2 @@
+# Keep them for independent system update (b/120578809)
+/firmware                            u:object_r:rootfs:s0
