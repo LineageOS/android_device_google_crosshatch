@@ -14,3 +14,5 @@ PRODUCT_PACKAGES += \
 # Snap Camera
 PRODUCT_PACKAGES += \
     Snap
+
+WITH_GMS_FI := true

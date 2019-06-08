@@ -1,10 +1,10 @@
 # Audio
-etc/ambient/matcher_tah.leveldb
+#etc/ambient/matcher_tah.leveldb
 etc/firmware/dnd.descriptor
 etc/firmware/dnd.sound_model
 etc/firmware/music_detector.descriptor
 etc/firmware/music_detector.sound_model
--priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk;PRESIGNED
+#-priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk;PRESIGNED
 
 # Bluetooth
 lib64/libaptX_encoder.so
