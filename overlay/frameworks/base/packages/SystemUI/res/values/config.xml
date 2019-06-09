@@ -36,4 +36,9 @@
 
     <!-- Doze: whether the double tap sensor reports 2D touch coordinates -->
     <bool name="doze_double_tap_reports_touch_coordinates">true</bool>
+
+    <!-- If true, enable the advance anti-falsing classifier on the lockscreen. On some devices it
+         does not work well, particularly with noisy touchscreens. Note that disabling it may
+         increase the rate of unintentional unlocks. -->
+    <bool name="config_lockscreenAntiFalsingClassifierEnabled">true</bool>
 </resources>
