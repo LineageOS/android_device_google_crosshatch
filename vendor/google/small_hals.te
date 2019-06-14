@@ -1,0 +1,31 @@
+type small_hals, domain;
+hal_server_domain(small_hals, hal_light)
+hal_server_domain(small_hals, hal_memtrack)
+hal_server_domain(small_hals, hal_vibrator)
+
+type small_hals_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(small_hals)
+
+# Light Permissions
+
+# This is the same as a line below for vibrator.  We keep both so that it is
+# easier to see what rules are needed for what HAL.
+allow small_hals sysfs_msm_subsys:dir search;
+
+# Memtrack Permissions
+
+allow small_hals debugfs_kgsl:file { open read getattr };
+
+# Vibrator Permissions
+
+r_dir_file(small_hals, sysfs_leds)
+allow small_hals sysfs_leds:file w_file_perms;
+allow small_hals sysfs_msm_subsys:file rw_file_perms;
+# This is the same as a line above for light.  We keep both so that it is
+# easier to see what rules are needed for what HAL.
+allow small_hals sysfs_msm_subsys:dir search;
+
+# read-only permission to obtain the calibration data
+r_dir_file(small_hals, persist_haptics_file)
+allow small_hals mnt_vendor_file:dir search;
+allow small_hals persist_file:dir search;
