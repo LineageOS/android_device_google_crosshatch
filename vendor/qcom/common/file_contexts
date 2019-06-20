@@ -135,7 +135,6 @@
 /vendor/bin/hw/android\.hardware\.drm@1\.2-service-lazy\.clearkey         u:object_r:hal_drm_clearkey_exec:s0
 /vendor/bin/hw/android\.hardware\.drm@1\.2-service\.widevine         u:object_r:hal_drm_widevine_exec:s0
 /vendor/bin/hw/android\.hardware\.drm@1\.2-service-lazy\.widevine         u:object_r:hal_drm_widevine_exec:s0
-/vendor/bin/hw/android\.hardware\.vibrator@1\.2-service\.crosshatch  u:object_r:hal_vibrator_default_exec:s0
 /vendor/bin/hw/android\.hardware\.keymaster@4\.0-service-qti         u:object_r:hal_keymaster_qti_exec:s0
 /vendor/bin/hw/android\.hardware\.gatekeeper@1\.0-service-qti        u:object_r:hal_gatekeeper_qti_exec:s0
 /vendor/bin/hw/android\.hardware\.gnss@1\.1-service-qti              u:object_r:hal_gnss_qti_exec:s0
@@ -147,7 +146,6 @@
 /vendor/bin/hw/vendor\.qti\.media\.c2@1\.0-service               u:object_r:mediacodec_exec:s0
 /vendor/bin/hw/vendor\.qti\.hardware\.display\.allocator@1\.0-service   u:object_r:hal_graphics_allocator_default_exec:s0
 /vendor/bin/hw/vendor\.google\.wireless_charger@1\.0-service-vendor       u:object_r:hal_wlc_exec:s0
-/vendor/bin/hw/hardware\.google\.light@1\.0-service                    u:object_r:hal_light_default_exec:s0
 
 ###############################################
 # same-process HAL files and their dependencies
