@@ -42,7 +42,7 @@ PRODUCT_PROPERTY_OVERRIDES += af.fast_track_multiplier=1
 PRODUCT_PROPERTY_OVERRIDES += vendor.audio.mic_break=true
 
 # Setting vendor SPL
-VENDOR_SECURITY_PATCH = "2019-05-05"
+VENDOR_SECURITY_PATCH = "2019-06-05"
 
 # MIDI feature
 PRODUCT_COPY_FILES += \
