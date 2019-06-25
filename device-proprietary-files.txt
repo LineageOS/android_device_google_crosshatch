@@ -45,7 +45,6 @@ etc/permissions/lpa.xml
 etc/permissions/qcrilhook.xml
 etc/permissions/RemoteSimlock.xml
 etc/permissions/telephonyservice.xml
-etc/sysconfig/qti_whitelist.xml
 etc/sysconfig/whitelist_com.android.omadm.service.xml
 -framework/com.qualcomm.qti.uceservice-V2.0-java.jar
 -framework/embmslibrary.jar
