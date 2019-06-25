@@ -19,7 +19,7 @@ set -e
 VENDOR=google
 DEVICE=crosshatch
 
-INITIAL_COPYRIGHT_YEAR=2017
+INITIAL_COPYRIGHT_YEAR=2018
 
 # Load extractutils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
