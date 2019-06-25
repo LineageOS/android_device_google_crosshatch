@@ -52,8 +52,8 @@ PRODUCT_PACKAGES += \
     messaging
 
 LOCAL_PATH := device/google/crosshatch
-SRC_MEDIA_HAL_DIR := hardware/qcom/media/sdm845
-SRC_DISPLAY_HAL_DIR := hardware/qcom/display/sdm845
+SRC_MEDIA_HAL_DIR := hardware/qcom/sdm845/media
+SRC_DISPLAY_HAL_DIR := hardware/qcom/sdm845/display
 
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 
