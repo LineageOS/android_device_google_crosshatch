@@ -56,6 +56,7 @@ type proc_swappiness, proc_type, fs_type;
 type proc_sysctl_autogroup, proc_type, fs_type;
 type proc_sysctl_schedboost, proc_type, fs_type;
 
+type qmuxd_socket, file_type;
 type netmgrd_socket, file_type;
 type thermal_socket, file_type;
 
@@ -63,7 +64,6 @@ type ims_socket, file_type;
 type ipacm_socket, file_type;
 type cnd_socket, file_type;
 type chre_socket, file_type;
-type hal_bootctl_socket, file_type;
 type pps_socket, file_type;
 type location_socket, file_type;
 type diag_socket, file_type;
@@ -88,6 +88,7 @@ type netmgr_data_file, file_type, data_file_type;
 type netmgr_recovery_data_file, file_type, data_file_type;
 type ipa_vendor_data_file, file_type, data_file_type;
 
+type vendor_time_data_file, file_type, data_file_type;
 type camera_vendor_data_file, file_type, data_file_type;
 type display_vendor_data_file, file_type, data_file_type;
 type nfc_vendor_data_file, file_type, data_file_type;
@@ -102,19 +103,15 @@ type ssr_log_file, file_type, data_file_type;
 type audio_vendor_data_file, file_type, data_file_type;
 type modem_fdr_file, file_type, data_file_type;
 type mediadrm_vendor_data_file, file_type, data_file_type;
+type tcpdump_vendor_data_file, file_type, data_file_type;
 type data_qsee_file, file_type, data_file_type;
 type vendor_tui_data_file, file_type, data_file_type;
 type wifi_vendor_log_data_file, file_type, data_file_type;
 type hal_neuralnetworks_data_file, file_type, data_file_type;
 type modem_stat_data_file, file_type, data_file_type;
 
-#data sysfs files
-type sysfs_data, fs_type, sysfs_type;
-
 #diag sysfs files
 type sysfs_diag, fs_type, sysfs_type;
-
-type hexagon_halide_file, vendor_file_type, file_type;
 
 #rfs files
 type mpss_rfs_data_file, data_file_type, file_type;

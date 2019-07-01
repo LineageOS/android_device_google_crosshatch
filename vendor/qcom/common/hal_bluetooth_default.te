@@ -17,3 +17,4 @@ userdebug_or_eng(`
 ')
 
 dontaudit hal_bluetooth_default diag_device:chr_file rw_file_perms;
+dontaudit hal_bluetooth_default kernel:system module_request;
