@@ -22,6 +22,30 @@
       "revId": "86eae35ce966c3d15357322233a9a447915f3057",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b57d82d9_86ec96bc",
+        "filename": "device-proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2019-07-09T21:00:10Z",
+      "side": 1,
+      "message": "A git commit accident that was never meant to be merged.",
+      "parentUuid": "b94d9538_583b41cf",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 1
+      },
+      "revId": "86eae35ce966c3d15357322233a9a447915f3057",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
