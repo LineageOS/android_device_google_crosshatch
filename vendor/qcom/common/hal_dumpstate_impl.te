@@ -24,6 +24,10 @@ userdebug_or_eng(`
 
   set_prop(hal_dumpstate_impl, vendor_modem_diag_prop)
   set_prop(hal_dumpstate_impl, vendor_tcpdump_log_prop)
+
+  # Dump sensors log
+  allow hal_dumpstate_impl sensors_vendor_data_file:dir r_dir_perms;
+  allow hal_dumpstate_impl sensors_vendor_data_file:file r_file_perms;
 ')
 
 allow hal_dumpstate_impl radio_vendor_data_file:dir r_dir_perms;
@@ -135,5 +139,7 @@ userdebug_or_eng(`
 # Vibrator
 r_dir_file(hal_dumpstate_impl, sysfs_leds)
 
+dontaudit hal_dumpstate_impl sensors_vendor_data_file:dir r_dir_perms;
+dontaudit hal_dumpstate_impl sensors_vendor_data_file:file r_file_perms;
 dontaudit hal_dumpstate_impl binder_device:chr_file rw_file_perms;
 dontaudit hal_dumpstate_impl vndbinder_device:chr_file rw_file_perms;
