@@ -9,6 +9,7 @@ userdebug_or_eng(`
   get_prop(ssr_detector_app, vendor_ssr_prop)
 ')
 get_prop(ssr_detector_app, vendor_wifi_version)
+get_prop(ssr_detector_app, public_vendor_system_prop)
 
 allow ssr_detector_app app_api_service:service_manager find;
 allow ssr_detector_app radio_service:service_manager find;
