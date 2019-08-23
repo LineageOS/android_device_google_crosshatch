@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4174e3b6_fdbf4d35",
+        "filename": "blueline/device-proprietary-files-vendor.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 1327,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2019-08-23T07:06:04Z",
+      "side": 1,
+      "message": "Don\u0027t think this is needed. It\u0027s overlaying a bool thats not in aosp fw.",
+      "range": {
+        "startLine": 1327,
+        "startChar": 0,
+        "endLine": 1327,
+        "endChar": 69
+      },
+      "revId": "cc05764640208d3c0c149f1a74e1018b14c55b6b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
