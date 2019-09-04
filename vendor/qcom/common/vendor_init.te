@@ -7,9 +7,11 @@ allow vendor_init proc_swappiness:file w_file_perms;
 allow vendor_init camera_vendor_data_file:dir create_dir_perms;
 dontaudit vendor_init kernel:system module_request;
 
-# Allow vendor_init to write to /proc/sysrq-trigger on userdebug and eng builds
 userdebug_or_eng(`
+  # Allow vendor_init to write to /proc/sysrq-trigger on userdebug and eng builds
   allow vendor_init proc_sysrq:file w_file_perms;
+  # Allow vendor_init to write vendor_tcpdump_log_prop on userdebug or eng ROM
+  set_prop(vendor_init, vendor_tcpdump_log_prop)
 ')
 
 set_prop(vendor_init, vendor_camera_prop)

@@ -8,17 +8,22 @@ init_daemon_domain(hal_dumpstate_impl)
 allow hal_dumpstate_impl vendor_shell_exec:file rx_file_perms;
 allow hal_dumpstate_impl vendor_toolbox_exec:file rx_file_perms;
 
+# Allow to read pixel-trace trace file
+allow hal_dumpstate_impl debugfs_tracing_instances:dir search;
+allow hal_dumpstate_impl debugfs_tracing_instances:file r_file_perms;
+
 userdebug_or_eng(`
-  # smlog_dump
-  domain_auto_trans(hal_dumpstate_impl, smlog_dump_exec, smlog_dump)
   allow hal_dumpstate_impl modem_dump_file:dir create_dir_perms;
   allow hal_dumpstate_impl modem_dump_file:file create_file_perms;
   allow hal_dumpstate_impl sysfs_usb_device:dir r_dir_perms;
   allow hal_dumpstate_impl sysfs_usb_device:file r_file_perms;
   allow hal_dumpstate_impl ssr_log_file:dir search;
   allow hal_dumpstate_impl ssr_log_file:file r_file_perms;
+  allow hal_dumpstate_impl tcpdump_vendor_data_file:dir create_dir_perms;
+  allow hal_dumpstate_impl tcpdump_vendor_data_file:file create_file_perms;
 
   set_prop(hal_dumpstate_impl, vendor_modem_diag_prop)
+  set_prop(hal_dumpstate_impl, vendor_tcpdump_log_prop)
 ')
 
 allow hal_dumpstate_impl radio_vendor_data_file:dir r_dir_perms;
@@ -26,6 +31,7 @@ allow hal_dumpstate_impl radio_vendor_data_file:file r_file_perms;
 allow hal_dumpstate_impl netmgr_data_file:dir r_dir_perms;
 allow hal_dumpstate_impl netmgr_data_file:file r_file_perms;
 get_prop(hal_dumpstate_impl, vendor_modem_diag_prop)
+get_prop(hal_dumpstate_impl, vendor_tcpdump_log_prop)
 
 # modem stat
 domain_auto_trans(hal_dumpstate_impl, modem_svc_exec, modem_svc)
@@ -128,3 +134,6 @@ userdebug_or_eng(`
 
 # Vibrator
 r_dir_file(hal_dumpstate_impl, sysfs_leds)
+
+dontaudit hal_dumpstate_impl binder_device:chr_file rw_file_perms;
+dontaudit hal_dumpstate_impl vndbinder_device:chr_file rw_file_perms;

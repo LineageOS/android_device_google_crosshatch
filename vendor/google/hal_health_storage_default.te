@@ -1,0 +1,3 @@
+# Write to /sys/devices/platform/soc/1d84000.ufshc/manual_gc
+allow hal_health_storage_default sysfs:dir r_dir_perms;
+allow hal_health_storage_default sysfs_scsi_devices_0000:file rw_file_perms;

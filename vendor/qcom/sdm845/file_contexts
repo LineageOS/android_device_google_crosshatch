@@ -17,8 +17,11 @@
 /dev/block/platform/soc/1d84000\.ufshc/by-name/trusty_[ab]     u:object_r:ab_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/tz_[ab]         u:object_r:ab_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/vbmeta_[ab]     u:object_r:ab_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/vbmeta_system_[ab] u:object_r:ab_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/xbl_config_[ab] u:object_r:ab_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/super           u:object_r:super_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/boot_[ab]       u:object_r:boot_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/devinfo         u:object_r:devinfo_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/metadata        u:object_r:metadata_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/misc            u:object_r:misc_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/frp             u:object_r:frp_block_device:s0
@@ -41,6 +44,5 @@
 /vendor/lib(64)?/hw/vulkan\.sdm845\.so     u:object_r:same_process_hal_file:s0
 
 #files in vendor
-/vendor/bin/hdcp_srm            u:object_r:hdcp_srm_exec:s0
 /vendor/bin/sscrpcd             u:object_r:sensors_exec:s0
 /vendor/bin/hw/android\.hardware\.neuralnetworks@1\.1-service-qti u:object_r:hal_neuralnetworks_default_exec:s0

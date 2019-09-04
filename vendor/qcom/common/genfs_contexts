@@ -33,6 +33,7 @@ genfscon sysfs /devices/platform/soc/1d84000.ufshc/slowio_read_cnt           u:o
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/slowio_write_cnt          u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/slowio_unmap_cnt          u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/slowio_sync_cnt           u:object_r:sysfs_scsi_devices_0000:s0
+genfscon sysfs /devices/platform/soc/1d84000.ufshc/manual_gc                 u:object_r:sysfs_scsi_devices_0000:s0
 
 genfscon sysfs /class/thermal                                           u:object_r:sysfs_thermal:s0
 genfscon sysfs /class/uio                                               u:object_r:sysfs_uio:s0
@@ -138,3 +139,4 @@ genfscon debugfs /regmap/4-0036                       u:object_r:debugfs_maxfg:s
 genfscon debugfs /regmap/4-000b                       u:object_r:debugfs_maxfg:s0
 genfscon debugfs /dma_buf/bufinfo                     u:object_r:debugfs_dma_bufinfo:s0
 genfscon debugfs /sched_features                      u:object_r:debugfs_sched_features:s0
+

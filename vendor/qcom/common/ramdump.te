@@ -6,6 +6,9 @@ userdebug_or_eng(`
 
   set_prop(ramdump, vendor_ramdump_prop)
 
+  # f2fs set pin file requires sys_admin
+  allow ramdump self:capability sys_admin;
+
   allow ramdump self:capability sys_rawio;
 
   allow ramdump ramdump_vendor_data_file:dir create_dir_perms;

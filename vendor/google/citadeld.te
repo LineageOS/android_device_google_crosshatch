@@ -9,3 +9,6 @@ allow citadeld citadel_device:chr_file rw_file_perms;
 init_daemon_domain(citadeld)
 
 allow citadeld debugfs_ipc:dir search;
+
+allow citadeld hal_power_stats_default:binder { call transfer };
+allow citadeld power_stats_service:service_manager find;
