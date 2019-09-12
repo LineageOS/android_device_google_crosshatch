@@ -1,0 +1,1 @@
+allow healthd self:global_capability2_class_set wake_alarm;

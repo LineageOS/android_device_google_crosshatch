@@ -1,0 +1,33 @@
+binder_call(rild, per_mgr)
+
+vndbinder_use(rild)
+
+allow rild qmuxd_socket:dir w_dir_perms;
+allow rild qmuxd_socket:sock_file create_file_perms;
+
+allow rild netmgrd_socket:dir search;
+unix_socket_connect(rild, netmgrd, netmgrd)
+
+allow rild vendor_file:file { execute_no_trans lock ioctl };
+
+allow rild per_mgr_service:service_manager find;
+
+userdebug_or_eng(`
+  allow rild diag_device:chr_file rw_file_perms;
+')
+
+add_hwservice(rild, vnd_ims_radio_hwservice)
+add_hwservice(rild, vnd_qcrilhook_hwservice)
+
+allow rild self:socket ioctl;
+allowxperm rild self:socket ioctl msm_sock_ipc_ioctls;
+allow rild time_daemon:unix_stream_socket connectto;
+
+allow rild radio_vendor_data_file:dir rw_dir_perms;
+allow rild radio_vendor_data_file:file create_file_perms;
+
+get_prop(rild, vendor_dataqdp_prop)
+get_prop(rild, factory_ota_prop)
+set_prop(rild, vendor_radio_prop)
+
+hal_server_domain(rild, hal_secure_element)
