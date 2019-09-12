@@ -6,12 +6,6 @@ hal_server_domain(small_hals, hal_vibrator)
 type small_hals_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(small_hals)
 
-# Light Permissions
-
-# This is the same as a line below for vibrator.  We keep both so that it is
-# easier to see what rules are needed for what HAL.
-allow small_hals sysfs_msm_subsys:dir search;
-
 # Memtrack Permissions
 
 allow small_hals debugfs_kgsl:file { open read getattr };
