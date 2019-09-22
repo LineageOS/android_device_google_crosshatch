@@ -41,4 +41,7 @@
     <!-- This device requires that emergency calls are placed over the default data SIM when
          possible because GNSS SUPL can only be received from the network on data subscription. -->
     <bool name="config_gnss_supl_requires_default_data_for_emergency">true</bool>
+
+    <!-- The package name for the platform carrier config app, bundled with system image. -->
+    <string name="platform_carrier_config_package" translatable="false">com.google.android.carrier</string>
 </resources>
