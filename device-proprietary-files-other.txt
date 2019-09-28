@@ -1,0 +1,49 @@
+# Audio
+product/etc/ambient/matcher_tah.leveldb
+product/etc/firmware/music_detector.descriptor
+product/etc/firmware/music_detector.sound_model
+-product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk;PRESIGNED
+
+# Bluetooth
+product/lib64/libaptX_encoder.so
+product/lib64/libaptXHD_encoder.so
+
+# Hotword
+-product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk;PRESIGNED
+-product/priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk;PRESIGNED
+
+# Permissions
+product/etc/permissions/privapp-permissions-google-p.xml
+product/etc/permissions/privapp-permissions-google-ps.xml
+product/etc/sysconfig/nexus.xml
+
+# Radio
+product/etc/cne/andsfCne.xml
+product/etc/permissions/com.android.omadm.service.xml
+product/etc/permissions/com.google.omadm.trigger.xml
+product/etc/sysconfig/whitelist_com.android.omadm.service.xml
+product/lib/libdmengine.so
+product/lib/libdmjavaplugin.so
+-product/priv-app/CarrierSetup/CarrierSetup.apk
+-product/priv-app/DMService/DMService.apk
+-product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
+-product/priv-app/EuiccSupportPixel/EuiccSupportPixel.apk;PRESIGNED
+product/priv-app/EuiccSupportPixel/esim-full-v0.img
+product/priv-app/EuiccSupportPixel/esim-v1.img
+-product/priv-app/grilservice/grilservice.apk
+-product/priv-app/OemDmTrigger/OemDmTrigger.apk
+-product/priv-app/RilConfigService/RilConfigService.apk
+
+# Sprint
+product/etc/permissions/com.android.sdm.plugins.sprintdm.xml
+-product/priv-app/SprintDM/SprintDM.apk
+-product/priv-app/SprintHM/SprintHM.apk
+
+# T-Mobile
+product/etc/permissions/tmo_grsu_permissions.xml
+product/etc/sysconfig/tmo_grsu_sysconfig.xml
+-product/priv-app/TmobileGrsuPrebuilt/TmobileGrsuPrebuilt.apk
+
+# VZW
+product/etc/permissions/features-verizon.xml
+-product/priv-app/WfcActivation/WfcActivation.apk;PRESIGNED
