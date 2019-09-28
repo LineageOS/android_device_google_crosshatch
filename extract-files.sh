@@ -52,5 +52,6 @@ fi
 setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT"
 
 extract "$MY_DIR"/device-proprietary-files.txt "$SRC"
+extract "$MY_DIR"/device-proprietary-files-other.txt "$SRC"
 
 "$MY_DIR"/setup-makefiles.sh
