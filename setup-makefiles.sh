@@ -18,6 +18,7 @@ set -e
 
 VENDOR=google
 DEVICE=crosshatch
+DEVICE_COMMON=crosshatch
 
 INITIAL_COPYRIGHT_YEAR=2017
 
@@ -34,28 +35,11 @@ if [ ! -f "$HELPER" ]; then
 fi
 . "$HELPER"
 
-# Write custom header to allow blueline to inherit
-function write_crosshatch_headers() {
-    write_header "$ANDROIDMK"
-
-    cat << EOF >> "$ANDROIDMK"
-LOCAL_PATH := \$(call my-dir)
-
-EOF
-    cat << EOF >> "$ANDROIDMK"
-ifneq (\$(filter crosshatch blueline,\$(TARGET_DEVICE)),)
-
-EOF
-
-    write_header "$BOARDMK"
-    write_header "$PRODUCTMK"
-}
-
 # Initialize the helper
-setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT"
+setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" true
 
 # Copyright headers and guards
-write_crosshatch_headers
+write_headers "crosshatch blueline"
 
 # The standard blobs
 write_makefiles "$MY_DIR"/device-proprietary-files.txt
