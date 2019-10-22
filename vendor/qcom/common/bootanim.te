@@ -10,3 +10,6 @@ dontaudit bootanim system_data_file:dir read;
 dontaudit bootanim kernel:system module_request;
 
 get_prop(bootanim, vendor_display_prop)
+
+dontaudit bootanim sysfs_msm_subsys:dir search;
+dontaudit bootanim sysfs_msm_subsys:file r_file_perms;
