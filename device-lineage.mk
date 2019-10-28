@@ -14,6 +14,10 @@ PRODUCT_COPY_FILES += \
 # Google Assistant
 PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 
+# IPA config
+PRODUCT_PACKAGES += \
+    IPACM_cfg.xml
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/google/crosshatch/overlay-lineage
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += device/google/crosshatch/overlay-lineage/lineage-sdk
