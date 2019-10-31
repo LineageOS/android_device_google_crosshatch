@@ -12,3 +12,6 @@ allow system_server wlan_device:chr_file rw_file_perms;
 dontaudit system_server self:capability sys_module;
 
 dontaudit system_server vendor_display_prop:file r_file_perms;
+
+dontaudit system_server sysfs_msm_subsys:dir search;
+dontaudit system_server sysfs_msm_subsys:file r_file_perms;
