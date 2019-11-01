@@ -7,6 +7,7 @@ PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 
 # Lineage Overlays
 DEVICE_PACKAGE_OVERLAYS += device/google/crosshatch/overlay-lineage
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += device/google/crosshatch/overlay-lineage/lineage-sdk
 
 # RCS
 PRODUCT_PACKAGES += \
