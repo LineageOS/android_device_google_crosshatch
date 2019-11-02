@@ -1,2 +1,4 @@
 dontaudit mediaserver vendor_display_prop:file r_file_perms;
+dontaudit mediaserver sysfs_msm_subsys:dir search;
+dontaudit mediaserver sysfs_msm_subsys:file r_file_perms;
 
