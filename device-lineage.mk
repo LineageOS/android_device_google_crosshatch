@@ -5,6 +5,9 @@ PRODUCT_COPY_FILES += \
 # Google Assistant
 PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 
+# Lineage Overlays
+DEVICE_PACKAGE_OVERLAYS += device/google/crosshatch/overlay-lineage
+
 # RCS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
