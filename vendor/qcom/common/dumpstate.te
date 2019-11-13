@@ -1,3 +1,4 @@
+dump_hal(hal_telephony)
 dump_hal(hal_thermal)
 dump_hal(hal_power)
 dump_hal(hal_power_stats)
