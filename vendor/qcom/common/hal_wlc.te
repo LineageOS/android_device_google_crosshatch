@@ -15,3 +15,5 @@ r_dir_file(hal_wlc, sysfs_wlc)
 allow hal_wlc sysfs_wlc:file rw_file_perms;
 
 allow hal_wlc self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
+
+binder_call(hal_wlc, platform_app)
