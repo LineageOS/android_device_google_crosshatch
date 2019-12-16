@@ -19,8 +19,8 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=blueline \
-    PRIVATE_BUILD_DESC="blueline-user 10 QP1A.191105.003 5899767 release-keys"
+    PRIVATE_BUILD_DESC="blueline-user 10 QP1A.191205.008 5974827 release-keys"
 
-BUILD_FINGERPRINT := google/blueline/blueline:10/QP1A.191105.003/5899767:user/release-keys
+BUILD_FINGERPRINT := google/blueline/blueline:10/QQ1A.191205.008/5974827:user/release-keys
 
 $(call inherit-product-if-exists, vendor/google/blueline/blueline-vendor.mk)
