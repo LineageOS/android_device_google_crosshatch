@@ -7,3 +7,8 @@ get_prop(vendor_init, vendor_radio_sku_prop)
 
 allow vendor_init debugfs_tracing_instances:dir create_dir_perms;
 allow vendor_init debugfs_tracing_instances:file w_file_perms;
+
+# Allow vendor_init to set property of logpersistd_logging_prop
+userdebug_or_eng(`
+  set_prop(vendor_init, logpersistd_logging_prop)
+')
