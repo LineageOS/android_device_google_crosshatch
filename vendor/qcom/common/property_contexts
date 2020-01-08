@@ -185,6 +185,7 @@ persist.vendor.service.bdroid.sibs      u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.service.bdroid.snooplog  u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.service.bdroid.soclog    u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.service.bdroid.ssrlvl    u:object_r:vendor_bluetooth_prop:s0
+persist.vendor.bt.soc.scram_freqs       u:object_r:vendor_bluetooth_prop:s0
 ro.vendor.bluetooth.emb_wp_mode         u:object_r:vendor_bluetooth_prop:s0
 ro.vendor.bluetooth.wipower             u:object_r:vendor_bluetooth_prop:s0
 
