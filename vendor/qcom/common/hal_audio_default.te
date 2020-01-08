@@ -19,3 +19,6 @@ hal_client_domain(hal_audio_default, hal_power)
 
 # Allow hal to take wakelock
 wakelock_use(hal_audio_default)
+
+# read-only permission to obtain the soc data
+get_prop(hal_audio_default, vendor_bluetooth_prop)
