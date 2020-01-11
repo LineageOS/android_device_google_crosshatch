@@ -33,6 +33,10 @@ lib/librcc.so
 -priv-app/CNEService/CNEService.apk
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
+# SecureUI
+lib/libsecureui_svcsock_system.so
+lib64/libsecureui_svcsock_system.so
+
 # VZW
 -app/vzw_msdc_api/vzw_msdc_api.apk
 etc/permissions/com.verizon.embms.xml
