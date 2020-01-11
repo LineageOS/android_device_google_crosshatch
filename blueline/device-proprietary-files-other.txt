@@ -16,6 +16,9 @@ product/lib64/libaptXHD_encoder.so
 product/etc/permissions/privapp-permissions-google-p.xml
 product/etc/permissions/privapp-permissions-google-ps.xml
 product/etc/sysconfig/nexus.xml
+product/etc/sysconfig/pixel_2018_exclusive.xml
+product/etc/sysconfig/pixel_experience_2017.xml
+product/etc/sysconfig/pixel_experience_2018.xml
 
 # Radio
 product/etc/CarrierSettings/airtel_in.pb
@@ -95,6 +98,9 @@ product/etc/permissions/com.google.omadm.trigger.xml
 product/etc/sysconfig/whitelist_com.android.omadm.service.xml
 product/lib/libdmengine.so
 product/lib/libdmjavaplugin.so
+product/lib/vendor.google.wifi_ext@1.0.so
+product/lib64/vendor.google.wifi_ext@1.0.so
+-product/priv-app/CarrierServices/CarrierServices.apk;PRESIGNED
 -product/priv-app/CarrierSettings/CarrierSettings.apk
 -product/priv-app/CarrierSetup/CarrierSetup.apk
 -product/priv-app/DMService/DMService.apk
@@ -105,6 +111,13 @@ product/priv-app/EuiccSupportPixel/esim-v1.img
 -product/priv-app/grilservice/grilservice.apk
 -product/priv-app/OemDmTrigger/OemDmTrigger.apk
 -product/priv-app/RilConfigService/RilConfigService.apk
+
+# SecureUI
+-product/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk
+product/lib/libsecureuisvc_jni.so
+product/lib64/libsecureuisvc_jni.so
+product/lib/vendor.qti.hardware.qdutils_disp@1.0.so
+product/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # Sprint
 product/etc/permissions/com.android.sdm.plugins.sprintdm.xml
@@ -870,9 +883,6 @@ vendor/lib64/unnhal-acc-hvx.so
 vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
-vendor/lib64/vendor.display.config@1.1.so
-vendor/lib64/vendor.display.config@1.2.so
-vendor/lib64/vendor.display.config@1.3.so
 vendor/lib64/vendor.display.postproc@1.0.so
 vendor/lib64/vendor.google_paintbox@1.0.so
 vendor/lib64/vendor.google.radioext@1.0.so
@@ -1146,9 +1156,6 @@ vendor/lib/sensors.ssc.so
 vendor/lib/vendor.display.color@1.0.so
 vendor/lib/vendor.display.color@1.1.so
 vendor/lib/vendor.display.color@1.2.so
-vendor/lib/vendor.display.config@1.1.so
-vendor/lib/vendor.display.config@1.2.so
-vendor/lib/vendor.display.config@1.3.so
 vendor/lib/vendor.display.postproc@1.0.so
 vendor/lib/vendor.google_paintbox@1.0.so
 vendor/lib/vendor.google.radioext@1.0.so
