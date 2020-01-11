@@ -16,6 +16,9 @@ product/lib64/libaptXHD_encoder.so
 product/etc/permissions/privapp-permissions-google-p.xml
 product/etc/permissions/privapp-permissions-google-ps.xml
 product/etc/sysconfig/nexus.xml
+product/etc/sysconfig/pixel_2018_exclusive.xml
+product/etc/sysconfig/pixel_experience_2017.xml
+product/etc/sysconfig/pixel_experience_2018.xml
 
 # Radio
 product/etc/CarrierSettings/airtel_in.pb
@@ -164,7 +167,6 @@ vendor/bin/hw/citadel_updater
 vendor/bin/hw/init_citadel
 vendor/bin/hw/qcrild
 vendor/bin/hw/vendor.google.radioext@1.0-service
-vendor/bin/hw/vendor.google.wifi_ext@1.0-service-vendor
 vendor/bin/hw/vendor.google.wireless_charger@1.0-service-vendor
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
@@ -328,7 +330,6 @@ vendor/etc/init/init-ramoops.rc
 vendor/etc/init/PaintboxDriver.rc
 vendor/etc/init/qcrild.rc
 vendor/etc/init/vendor.google.radioext@1.0-service.rc
-vendor/etc/init/vendor.google.wifi_ext@1.0-service.rc
 vendor/etc/init/vendor.google.wireless_charger@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
@@ -382,7 +383,6 @@ vendor/etc/sensors/registry/sx932x_0.json
 vendor/etc/sensors/registry/tmd2725_0.json
 vendor/etc/sensors/sensor_def_qcomdev.conf
 vendor/etc/sensors/sns_reg_config
-vendor/etc/vintf/manifest/manifest_wifi_ext.xml
 vendor/firmware/a630_gmu.bin
 vendor/firmware/a630_sqe.fw
 vendor/firmware/a630_zap.b00
@@ -877,7 +877,6 @@ vendor/lib64/vendor.display.postproc@1.0.so
 vendor/lib64/vendor.google_paintbox@1.0.so
 vendor/lib64/vendor.google.radioext@1.0.so
 vendor/lib64/vendor.google.radioext@1.1.so
-vendor/lib64/vendor.google.wifi_ext@1.0.so
 vendor/lib64/vendor.google.wireless_charger@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.googleext.imsext@1.0.so
