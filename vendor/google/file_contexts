@@ -1,5 +1,6 @@
 # dev nodes
 /dev/citadel0                                                               u:object_r:citadel_device:s0
+/dev/access-kregistry                                                       u:object_r:rebootescrow_device:s0
 /dev/access-metadata                                                        u:object_r:ramoops_device:s0
 /dev/access-ramoops                                                         u:object_r:ramoops_device:s0
 /dev/maxfg_history                                                          u:object_r:maxfg_device:s0
