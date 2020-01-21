@@ -28,4 +28,10 @@ userdebug_or_eng(`
   allow ramdump rootfs:file r_file_perms;
 
   r_dir_file(ramdump, sysfs_type)
+
+  # To access statsd.
+  hwbinder_use(ramdump)
+  get_prop(ramdump, hwservicemanager_prop)
+  allow ramdump fwk_stats_hwservice:hwservice_manager find;
+  binder_call(ramdump, stats_service_server)
 ')
