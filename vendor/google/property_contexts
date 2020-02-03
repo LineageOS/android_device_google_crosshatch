@@ -9,3 +9,7 @@ persist.vendor.radio.multisim_switch_support  u:object_r:vendor_radio_prop:s0
 # fingerprint
 vendor.fps.init.succeed               u:object_r:vendor_fingerprint_prop:s0
 vendor.fps.init_retry.count           u:object_r:vendor_fingerprint_prop:s0
+
+# modem property
+persist.vendor.modem.                 u:object_r:vendor_modem_prop:s0
+persist.vendor.mdm.                   u:object_r:vendor_modem_prop:s0
