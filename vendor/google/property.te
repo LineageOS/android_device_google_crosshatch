@@ -3,3 +3,6 @@ type vendor_shutdown_prop, property_type;
 
 # fingerprint
 type vendor_fingerprint_prop, property_type;
+
+# modem property
+type vendor_modem_prop, property_type;
