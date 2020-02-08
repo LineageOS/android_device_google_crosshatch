@@ -10,7 +10,7 @@ allow pixelstats_vendor hal_pixelstats_hwservice:hwservice_manager find;
 binder_call(pixelstats_vendor, pixelstats_system)
 
 allow pixelstats_vendor fwk_stats_hwservice:hwservice_manager find;
-binder_call(pixelstats_vendor, statsd)
+binder_call(pixelstats_vendor, stats_service_server)
 
 unix_socket_connect(pixelstats_vendor, chre, chre)
 
