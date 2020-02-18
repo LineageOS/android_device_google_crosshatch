@@ -6,6 +6,7 @@
 
 /vendor/bin/hw/android\.hardware\.atrace@1\.0-service.pixel                 u:object_r:hal_atrace_default_exec:s0
 /vendor/bin/hw/android\.hardware\.authsecret@1\.0-service\.citadel          u:object_r:hal_authsecret_citadel_exec:s0
+/vendor/bin/hw/android\.hardware\.contexthub@1\.1-service\.generic                    u:object_r:hal_contexthub_default_exec:s0
 /vendor/bin/hw/android\.hardware\.oemlock@1\.0-service\.citadel             u:object_r:hal_oemlock_citadel_exec:s0
 /vendor/bin/hw/android\.hardware\.weaver@1\.0-service\.citadel              u:object_r:hal_weaver_citadel_exec:s0
 /vendor/bin/hw/android\.hardware\.keymaster@4\.0-service\.citadel            u:object_r:hal_keymaster_citadel_exec:s0
