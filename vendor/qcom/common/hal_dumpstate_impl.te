@@ -137,3 +137,6 @@ r_dir_file(hal_dumpstate_impl, sysfs_leds)
 
 dontaudit hal_dumpstate_impl binder_device:chr_file rw_file_perms;
 dontaudit hal_dumpstate_impl vndbinder_device:chr_file rw_file_perms;
+
+# Access to vendor logging property
+set_prop(hal_dumpstate_impl, vendor_logging_prop)
