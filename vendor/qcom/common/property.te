@@ -1,5 +1,6 @@
 type vendor_camera_prop, property_type;
 type cnd_prop, property_type;
+type factory_ota_prop, property_type;
 type ims_prop, property_type;
 type vendor_dataqdp_prop, property_type;
 type vendor_ramdump_prop, property_type;

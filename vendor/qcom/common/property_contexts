@@ -5,6 +5,9 @@ persist.gcam.              u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.          u:object_r:vendor_camera_prop:s0
 ro.camera.                 u:object_r:vendor_camera_prop:s0
 persist.vendor.sys.cnd     u:object_r:cnd_prop:s0
+ro.boot.sota               u:object_r:factory_ota_prop:s0
+persist.factoryota.reboot  u:object_r:exported_system_prop:s0
+persist.radio.bootwithlpm  u:object_r:exported_system_prop:s0
 vendor.ims.                u:object_r:ims_prop:s0
 persist.vendor.ims.        u:object_r:ims_prop:s0
 persist.net.doxlat         u:object_r:vendor_net_radio_prop:s0

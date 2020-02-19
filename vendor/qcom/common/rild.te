@@ -27,7 +27,7 @@ allow rild radio_vendor_data_file:dir rw_dir_perms;
 allow rild radio_vendor_data_file:file create_file_perms;
 
 get_prop(rild, vendor_dataqdp_prop)
-get_prop(rild, sota_prop)
+get_prop(rild, factory_ota_prop)
 set_prop(rild, vendor_radio_prop)
 
 hal_server_domain(rild, hal_secure_element)
