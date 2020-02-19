@@ -214,3 +214,11 @@ persist.vendor.tcpdump.log.alwayson  u:object_r:vendor_tcpdump_log_prop:s0
 vendor.tcpdump.log.ondemand          u:object_r:vendor_tcpdump_log_prop:s0
 vendor.tcpdump.log.alwayson          u:object_r:vendor_tcpdump_log_prop:s0
 vendor.tcpdump.output.dir            u:object_r:vendor_tcpdump_log_prop:s0
+
+# wifi_sniffer
+persist.vendor.wifi.sniffer.freq              u:object_r:vendor_wifi_sniffer_prop:s0
+persist.vendor.wifi.sniffer.bandwidth         u:object_r:vendor_wifi_sniffer_prop:s0
+vendor.wifi.sniffer.start                     u:object_r:vendor_wifi_sniffer_prop:s0
+
+# Vendor verbose logging prop
+persist.vendor.verbose_logging_enabled   u:object_r:vendor_logging_prop:s0

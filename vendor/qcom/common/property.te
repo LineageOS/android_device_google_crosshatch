@@ -28,9 +28,13 @@ type vendor_usb_config_prop, property_type;
 type vendor_radio_sku_prop, property_type;
 type vendor_tcpdump_log_prop, property_type;
 type ctl_vendor_rmt_storage_prop, property_type;
+type vendor_wifi_sniffer_prop, property_type;
 
 #imsrcsservice
 type ctl_vendor_imsrcsservice_prop, property_type;
 
 #time service
 type vendor_time_service_prop, property_type;
+
+# vendor verbose logging property
+type vendor_logging_prop, property_type;
