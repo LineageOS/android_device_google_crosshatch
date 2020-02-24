@@ -5,3 +5,6 @@ type vendor_shutdown_prop, property_type;
 
 # fingerprint
 type vendor_fingerprint_prop, property_type;
+
+# hal_health
+type vendor_battery_defender_prop, property_type;

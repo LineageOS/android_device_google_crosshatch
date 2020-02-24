@@ -13,3 +13,7 @@ genfscon debugfs /logbuffer/usbpd               u:object_r:debugfs_usb:s0
 # Battery
 genfscon sysfs /devices/platform/soc/soc:google,battery/power_supply/battery    u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/880000.i2c/i2c-1/1-0061/power_supply/wireless    u:object_r:sysfs_batteryinfo:s0
+
+# Charger
+genfscon sysfs /devices/platform/soc/soc:google,charger/charge_start_level      u:object_r:sysfs_chargelevel:s0
+genfscon sysfs /devices/platform/soc/soc:google,charger/charge_stop_level       u:object_r:sysfs_chargelevel:s0
