@@ -34,3 +34,6 @@ dontaudit init-qcom-devstart-sh sysfs:file { create getattr };
 dontaudit init-qcom-devstart-sh sysfs_type:dir { read write };
 dontaudit init-qcom-devstart-sh sysfs_graphics:file getattr;
 dontaudit init-qcom-devstart-sh sysfs_devices_block:file getattr;
+
+# Support for battery defender
+allow init-qcom-devstart-sh sysfs_chargelevel:file rw_file_perms;
