@@ -35,3 +35,6 @@ type ctl_vendor_imsrcsservice_prop, property_type;
 
 #time service
 type vendor_time_service_prop, property_type;
+
+# vendor verbose logging property
+type vendor_logging_prop, property_type;
