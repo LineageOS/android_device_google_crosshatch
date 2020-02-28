@@ -140,3 +140,6 @@ dontaudit hal_dumpstate_impl sensors_vendor_data_file:dir r_dir_perms;
 dontaudit hal_dumpstate_impl sensors_vendor_data_file:file r_file_perms;
 dontaudit hal_dumpstate_impl binder_device:chr_file rw_file_perms;
 dontaudit hal_dumpstate_impl vndbinder_device:chr_file rw_file_perms;
+
+# Access to vendor logging property
+set_prop(hal_dumpstate_impl, vendor_logging_prop)
