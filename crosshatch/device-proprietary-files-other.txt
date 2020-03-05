@@ -25,6 +25,8 @@ product/etc/CarrierSettings/airtel_in.pb
 product/etc/CarrierSettings/att5g_us.pb
 product/etc/CarrierSettings/att_us.pb
 product/etc/CarrierSettings/bell_ca.pb
+product/etc/CarrierSettings/bluegrass_us.pb
+product/etc/CarrierSettings/boost_us.pb
 product/etc/CarrierSettings/bouygues_fr.pb
 product/etc/CarrierSettings/btb_gb.pb
 product/etc/CarrierSettings/btc_gb.pb
@@ -45,6 +47,7 @@ product/etc/CarrierSettings/firstnet_us.pb
 product/etc/CarrierSettings/fi_us.pb
 product/etc/CarrierSettings/fizz_ca.pb
 product/etc/CarrierSettings/freedommobile_ca.pb
+product/etc/CarrierSettings/h3_at.pb
 product/etc/CarrierSettings/h3_gb.pb
 product/etc/CarrierSettings/idea_in.pb
 product/etc/CarrierSettings/idmobile_gb.pb
@@ -69,12 +72,23 @@ product/etc/CarrierSettings/singtel_sg.pb
 product/etc/CarrierSettings/softbank_jp.pb
 product/etc/CarrierSettings/solomobile_ca.pb
 product/etc/CarrierSettings/spectrum_us.pb
+product/etc/CarrierSettings/sprintprepaid_us.pb
 product/etc/CarrierSettings/sprint_us.pb
 product/etc/CarrierSettings/sprintwholesale_us.pb
 product/etc/CarrierSettings/starhub_sg.pb
+product/etc/CarrierSettings/swisscom_ch.pb
+product/etc/CarrierSettings/swisscom_li.pb
+product/etc/CarrierSettings/tdc_dk.pb
+product/etc/CarrierSettings/tele2_se.pb
 product/etc/CarrierSettings/telekom_de.pb
+product/etc/CarrierSettings/telenor_dk.pb
+product/etc/CarrierSettings/telenor_no.pb
+product/etc/CarrierSettings/telia_no.pb
+product/etc/CarrierSettings/telia_se.pb
 product/etc/CarrierSettings/telstra_au.pb
 product/etc/CarrierSettings/telus_ca.pb
+product/etc/CarrierSettings/tim_it.pb
+product/etc/CarrierSettings/tmobile_nl.pb
 product/etc/CarrierSettings/tmobile_us.pb
 product/etc/CarrierSettings/tracfonetmo_us.pb
 product/etc/CarrierSettings/tracfoneverizon_us.pb
@@ -83,6 +97,7 @@ product/etc/CarrierSettings/uscc_us.pb
 product/etc/CarrierSettings/verizon_us.pb
 product/etc/CarrierSettings/videotron_ca.pb
 product/etc/CarrierSettings/virgin_ca.pb
+product/etc/CarrierSettings/virgin_us.pb
 product/etc/CarrierSettings/visible_us.pb
 product/etc/CarrierSettings/vodafone_au.pb
 product/etc/CarrierSettings/vodafone_de.pb
@@ -91,6 +106,7 @@ product/etc/CarrierSettings/vodafone_gb.pb
 product/etc/CarrierSettings/vodafone_in.pb
 product/etc/CarrierSettings/vodafone_it.pb
 product/etc/CarrierSettings/vodafone_nl.pb
+product/etc/CarrierSettings/vodafone_tr.pb
 product/etc/CarrierSettings/xfinity_us.pb
 product/etc/cne/andsfCne.xml
 product/etc/permissions/com.android.omadm.service.xml
@@ -128,6 +144,10 @@ product/etc/permissions/com.android.sdm.plugins.sprintdm.xml
 product/etc/permissions/tmo_grsu_permissions.xml
 product/etc/sysconfig/tmo_grsu_sysconfig.xml
 -product/priv-app/TmobileGrsuPrebuilt/TmobileGrsuPrebuilt.apk
+
+# US Cellular
+product/etc/permissions/com.android.sdm.plugins.usccdm.xml
+-product/priv-app/USCCDM/USCCDM.apk
 
 # VZW
 product/etc/permissions/features-verizon.xml
@@ -178,7 +198,7 @@ vendor/bin/hw/init_citadel
 vendor/bin/hw/qcrild
 vendor/bin/hw/vendor.google.radioext@1.0-service
 vendor/bin/hw/vendor.google.wifi_ext@1.0-service-vendor
-vendor/bin/hw/vendor.google.wireless_charger@1.0-service-vendor
+vendor/bin/hw/vendor.google.wireless_charger@1.1-service-vendor
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/bin/imsdatadaemon
@@ -342,7 +362,7 @@ vendor/etc/init/PaintboxDriver.rc
 vendor/etc/init/qcrild.rc
 vendor/etc/init/vendor.google.radioext@1.0-service.rc
 vendor/etc/init/vendor.google.wifi_ext@1.0-service.rc
-vendor/etc/init/vendor.google.wireless_charger@1.0-service.rc
+vendor/etc/init/vendor.google.wireless_charger@1.1-service.rc
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
 vendor/etc/izat.conf
@@ -889,6 +909,7 @@ vendor/lib64/vendor.google.radioext@1.0.so
 vendor/lib64/vendor.google.radioext@1.1.so
 vendor/lib64/vendor.google.wifi_ext@1.0.so
 vendor/lib64/vendor.google.wireless_charger@1.0.so
+vendor/lib64/vendor.google.wireless_charger@1.1.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.googleext.imsext@1.0.so
 vendor/lib64/vendor.qti.hardware.automotive.vehicle@1.0.so
@@ -1275,6 +1296,7 @@ vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/Bouygues/Commercial/F
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/DT/Commercial/Croatia/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/DT/Commercial/CZ/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/DT/Commercial/Greece/mcfg_sw.mbn
+vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/DT/Commercial/NL/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/DT/Commercial/PL/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/DT/Non_VoLTE/Commercial/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/EU/DT/VoLTE/Commercial/mcfg_sw.mbn
@@ -1348,6 +1370,7 @@ vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Lucky/Commercia
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/MTS/Commercial/CA/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Solo_PC/Commercial/CA/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Sprint_FI/Commercial/mcfg_sw.mbn
+vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Sprint_FI_Data/Commercial/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/TbayCity/NonVoLTE/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Telus/Lab/CA/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/TMO_FI/Commercial/mcfg_sw.mbn
