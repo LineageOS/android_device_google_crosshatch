@@ -109,9 +109,9 @@ product/etc/CarrierSettings/vodafone_nl.pb
 product/etc/CarrierSettings/vodafone_tr.pb
 product/etc/CarrierSettings/xfinity_us.pb
 product/etc/cne/andsfCne.xml
-product/etc/permissions/com.android.omadm.service.xml
-product/etc/permissions/com.google.omadm.trigger.xml
-product/etc/sysconfig/whitelist_com.android.omadm.service.xml
+product/etc/permissions/com.android.sdm.plugins.connmo.xml
+product/etc/permissions/com.android.sdm.plugins.dcmo.xml
+product/etc/permissions/com.android.sdm.plugins.diagmon.xml
 product/lib/libdmengine.so
 product/lib/libdmjavaplugin.so
 product/lib/vendor.google.wifi_ext@1.0.so
@@ -119,13 +119,15 @@ product/lib64/vendor.google.wifi_ext@1.0.so
 -product/priv-app/CarrierServices/CarrierServices.apk;PRESIGNED
 -product/priv-app/CarrierSettings/CarrierSettings.apk
 -product/priv-app/CarrierSetup/CarrierSetup.apk
+-product/priv-app/ConnMO/ConnMO.apk
+-product/priv-app/DCMO/DCMO.apk
+-product/priv-app/DiagMon/DiagMon.apk
 -product/priv-app/DMService/DMService.apk
 -product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
 -product/priv-app/EuiccSupportPixel/EuiccSupportPixel.apk;PRESIGNED
 product/priv-app/EuiccSupportPixel/esim-full-v0.img
 product/priv-app/EuiccSupportPixel/esim-v1.img
 -product/priv-app/grilservice/grilservice.apk
--product/priv-app/OemDmTrigger/OemDmTrigger.apk
 -product/priv-app/RilConfigService/RilConfigService.apk
 
 # SecureUI
@@ -150,7 +152,24 @@ product/etc/permissions/com.android.sdm.plugins.usccdm.xml
 -product/priv-app/USCCDM/USCCDM.apk
 
 # VZW
+-product/app/VZWAPNLib/VZWAPNLib.apk;PRESIGNED
+product/etc/permissions/com.android.omadm.service.xml
+product/etc/permissions/com.android.vzwomatrigger.xml
+product/etc/permissions/com.google.omadm.trigger.xml
+product/etc/permissions/com.verizon.apn.xml
+product/etc/permissions/com.verizon.services.xml
 product/etc/permissions/features-verizon.xml
+product/etc/permissions/obdm_permissions.xml
+product/etc/permissions/vzw_mvs_permissions.xml
+product/etc/sysconfig/whitelist_com.android.omadm.service.xml
+-product/priv-app/AppDirectedSMSService/AppDirectedSMSService.apk;PRESIGNED
+product/priv-app/MyVerizonServices/lib/arm64/libakuaf.so
+product/priv-app/MyVerizonServices/lib/arm64/libmotricity.so
+-product/priv-app/MyVerizonServices/MyVerizonServices.apk;PRESIGNED
+-product/priv-app/OBDM_Permissions/OBDM_Permissions.apk
+-product/priv-app/obdm_stub/obdm_stub.apk
+-product/priv-app/OemDmTrigger/OemDmTrigger.apk;PRESIGNED
+-product/priv-app/VzwOmaTrigger/VzwOmaTrigger.apk;PRESIGNED
 -product/priv-app/WfcActivation/WfcActivation.apk;PRESIGNED
 
 # Vendor partition
