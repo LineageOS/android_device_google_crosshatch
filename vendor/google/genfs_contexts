@@ -28,4 +28,3 @@ genfscon sysfs /devices/platform/soc/soc:google,charger/bd_trigger_temp         
 genfscon sysfs /devices/platform/soc/soc:google,charger/bd_trigger_time         u:object_r:sysfs_chargelevel:s0
 genfscon sysfs /devices/platform/soc/soc:google,charger/bd_trigger_voltage      u:object_r:sysfs_chargelevel:s0
 genfscon sysfs /devices/platform/soc/soc:google,charger/bd_temp_enable          u:object_r:sysfs_chargelevel:s0
-
