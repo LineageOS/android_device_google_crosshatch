@@ -35,7 +35,9 @@ lib/librcc.so
 
 # SecureUI
 lib/libsecureui_svcsock_system.so
+lib/vendor.qti.hardware.tui_comm@1.0.so
 lib64/libsecureui_svcsock_system.so
+lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # VZW
 -app/vzw_msdc_api/vzw_msdc_api.apk
