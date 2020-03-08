@@ -175,6 +175,7 @@ persist.vendor.radio.relay_oprt_change  u:object_r:vendor_radio_prop:s0
 persist.vendor.radio.sap_silent_pin  u:object_r:vendor_radio_prop:s0
 persist.vendor.radio.uicc_se_enabled  u:object_r:vendor_radio_prop:s0
 persist.vendor.radio.simlock.list  u:object_r:vendor_radio_prop:s0
+persist.vendor.radio.manual_nw_rej_ct u:object_r:vendor_radio_prop:s0
 ro.radio.log_loc           u:object_r:vendor_radio_prop:s0
 ro.radio.log_prefix        u:object_r:vendor_radio_prop:s0
 
