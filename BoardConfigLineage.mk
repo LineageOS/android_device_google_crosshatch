@@ -13,6 +13,8 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := lineageos_crosshatch_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/msm-4.9
 
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
 # Manifests
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += device/google/crosshatch/lineage_compatibility_matrix.xml
 
