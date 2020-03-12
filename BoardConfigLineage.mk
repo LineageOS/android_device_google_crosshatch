@@ -13,6 +13,8 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := lineageos_crosshatch_defconfig
 TARGET_KERNEL_SOURCE := kernel/google/msm-4.9
 
+TARGET_FLATTEN_APEX := true
+
 # vendor.img
 ifneq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
 BOARD_VENDORIMAGE_PARTITION_SIZE := 805306368
