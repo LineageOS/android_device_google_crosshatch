@@ -817,8 +817,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.build.svn=26
 
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.adb.secure=1
+#PRODUCT_PRODUCT_PROPERTIES += \
+#    ro.adb.secure=1
 
 # pixel atrace HAL
 PRODUCT_PACKAGES += \
