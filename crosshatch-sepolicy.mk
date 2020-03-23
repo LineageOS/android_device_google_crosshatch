@@ -6,6 +6,7 @@ BOARD_VENDOR_SEPOLICY_DIRS += device/google/crosshatch-sepolicy/vendor/qcom/comm
 BOARD_VENDOR_SEPOLICY_DIRS += device/google/crosshatch-sepolicy/vendor/qcom/sdm845
 BOARD_VENDOR_SEPOLICY_DIRS += device/google/crosshatch-sepolicy/vendor/google
 BOARD_VENDOR_SEPOLICY_DIRS += device/google/crosshatch-sepolicy/vendor/verizon
+BOARD_VENDOR_SEPOLICY_DIRS += device/google/crosshatch-sepolicy/tracking_denials
 
 # vendors for backward compatibility
 ifeq ($(PRODUCT_USE_QC_SPECIFIC_SYMLINKS), true)
