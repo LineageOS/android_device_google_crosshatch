@@ -1,0 +1,2 @@
+# b/151804403
+dontaudit rild default_prop:file read;
