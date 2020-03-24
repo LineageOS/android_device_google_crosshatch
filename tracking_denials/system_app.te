@@ -1,0 +1,2 @@
+# b/151803074
+dontaudit system_app hal_tui_comm_hwservice:hwservice_manager find;
