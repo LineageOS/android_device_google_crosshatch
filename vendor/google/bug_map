@@ -20,4 +20,3 @@ system_app vendor_default_prop file b/79617173
 system_server vendor_default_prop file b/79617173
 untrusted_app vendor_default_prop file b/79617173
 vold_prepare_subdirs unlabeled file b/131096543
-webview_zygote app_data_file dir b/131636647
