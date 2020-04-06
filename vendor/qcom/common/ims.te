@@ -42,3 +42,5 @@ allow ims hal_cne_hwservice:hwservice_manager find;
 binder_call(ims, cnd)
 
 dontaudit ims kernel:system module_request;
+
+dontaudit ims diag_device:chr_file rw_file_perms;
