@@ -20,3 +20,10 @@ allow pixelstats_vendor sysfs_batteryinfo:file r_file_perms;
 allow pixelstats_vendor sysfs_pixelstats:dir search;
 allow pixelstats_vendor sysfs_pixelstats:file rw_file_perms;
 allow pixelstats_vendor self:netlink_kobject_uevent_socket { create getopt setopt bind read };
+
+# wlc
+allow pixelstats_vendor sysfs_wlc:dir search;
+
+# OrientationCollector
+allow pixelstats_vendor fwk_sensor_hwservice:hwservice_manager find;
+binder_call(pixelstats_vendor, system_server)
