@@ -18,6 +18,10 @@ PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 PRODUCT_PACKAGES += \
     IPACM_cfg.xml
 
+# logical partitions setup
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/setup_logical.sh:recovery/root/system/bin/setup_logical.sh
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/google/crosshatch/overlay-lineage
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += device/google/crosshatch/overlay-lineage/lineage-sdk
