@@ -174,6 +174,7 @@ ro.radio.log_prefix        u:object_r:vendor_radio_prop:s0
 # vendor_bluetooth_prop
 persist.vendor.bluetooth.a4wp           u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.bluetooth.csoc.cnt       u:object_r:vendor_bluetooth_prop:s0
+persist.vendor.bluetooth.diag_enabled   u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.service.bdroid.fwsnoop   u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.service.bdroid.sibs      u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.service.bdroid.snooplog  u:object_r:vendor_bluetooth_prop:s0
