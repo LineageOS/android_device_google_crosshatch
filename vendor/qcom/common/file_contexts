@@ -9,7 +9,6 @@
 /dev/ipa                                        u:object_r:ipa_dev:s0
 /dev/wwan_ioctl                                 u:object_r:ipa_dev:s0
 /dev/ipaNatTable                                u:object_r:ipa_dev:s0
-/dev/cpu_dma_latency                            u:object_r:latency_device:s0
 /dev/rmnet_ctrl.*                               u:object_r:rmnet_device:s0
 /dev/at_.*                                      u:object_r:at_device:s0
 /dev/video([0-9])+                              u:object_r:video_device:s0
@@ -61,7 +60,6 @@
 /dev/socket/thermal-recv-passive-client         u:object_r:thermal_socket:s0
 /dev/socket/netmgr(/.*)?                        u:object_r:netmgrd_socket:s0
 /data/vendor/netmgr/recovery(/.*)?              u:object_r:netmgr_recovery_data_file:s0
-/dev/socket/pps                                 u:object_r:pps_socket:s0
 /dev/socket/location(/.*)?                      u:object_r:location_socket:s0
 /dev/nq-nci                                     u:object_r:nfc_device:s0
 /dev/ttyHS0                                     u:object_r:hci_attach_dev:s0
