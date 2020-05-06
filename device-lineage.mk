@@ -1,3 +1,7 @@
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig
