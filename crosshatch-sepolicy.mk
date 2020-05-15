@@ -1,5 +1,5 @@
-PRODUCT_PUBLIC_SEPOLICY_DIRS := device/google/crosshatch-sepolicy/public
-PRODUCT_PRIVATE_SEPOLICY_DIRS := device/google/crosshatch-sepolicy/private
+PRODUCT_PUBLIC_SEPOLICY_DIRS += device/google/crosshatch-sepolicy/public
+PRODUCT_PRIVATE_SEPOLICY_DIRS += device/google/crosshatch-sepolicy/private
 
 # vendors
 BOARD_VENDOR_SEPOLICY_DIRS += device/google/crosshatch-sepolicy/vendor/qcom/common
