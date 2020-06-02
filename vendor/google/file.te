@@ -5,3 +5,6 @@ type sysfs_display, sysfs_type, fs_type;
 type sysfs_pixelstats, sysfs_type, fs_type;
 type persist_battery_file, file_type;
 type sysfs_chargelevel, sysfs_type, fs_type;
+
+# RamdumpFS
+allow ramdump_vendor_mnt_file self:filesystem associate;
