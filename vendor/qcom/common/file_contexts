@@ -72,6 +72,12 @@
 # Block devices for the drive that holds the xbl_a and xbl_b partitions.
 /dev/block/sd[bc]1?                             u:object_r:xbl_block_device:s0
 
+###################################
+# ramdumpfs files
+#
+/mnt/vendor/ramdump(/.*)?                       u:object_r:ramdump_vendor_mnt_file:s0
+/ramdump(/.*)?                                  u:object_r:ramdump_vendor_mnt_file:s0
+
 # Block device for hal_bootctl
 /dev/block/sde                                  u:object_r:boot_block_device:s0
 
