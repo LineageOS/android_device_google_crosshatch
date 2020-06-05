@@ -41,7 +41,7 @@
 # same-process HAL files and their dependencies
 ###############################################
 /vendor/lib(64)?/hw/gralloc\.sdm845\.so    u:object_r:same_process_hal_file:s0
-/vendor/lib(64)?/hw/vulkan\.sdm845\.so     u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/hw/vulkan\.adreno\.so     u:object_r:same_process_hal_file:s0
 
 #files in vendor
 /vendor/bin/sscrpcd             u:object_r:sensors_exec:s0
