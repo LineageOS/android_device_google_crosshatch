@@ -1,6 +1,5 @@
 # dev nodes
 /dev/citadel0                                                               u:object_r:citadel_device:s0
-/dev/access-kregistry                                                       u:object_r:rebootescrow_device:s0
 /dev/access-metadata                                                        u:object_r:ramoops_device:s0
 /dev/access-ramoops                                                         u:object_r:ramoops_device:s0
 /dev/maxfg_history                                                          u:object_r:maxfg_device:s0
@@ -9,6 +8,7 @@
 /vendor/bin/hw/android\.hardware\.contexthub@1\.1-service\.generic                    u:object_r:hal_contexthub_default_exec:s0
 /vendor/bin/hw/android\.hardware\.weaver@1\.0-service\.citadel              u:object_r:hal_weaver_citadel_exec:s0
 /vendor/bin/hw/android\.hardware\.keymaster@4\.1-service\.citadel            u:object_r:hal_keymaster_citadel_exec:s0
+/vendor/bin/hw/android\.hardware\.rebootescrow-service\.citadel             u:object_r:hal_rebootescrow_citadel_exec:s0
 /vendor/bin/hw/citadeld                                                     u:object_r:citadeld_exec:s0
 /vendor/bin/hw/init_citadel                                                 u:object_r:init_citadel_exec:s0
 /vendor/bin/hw/wait_for_strongbox                                           u:object_r:wait_for_strongbox_exec:s0
@@ -23,6 +23,7 @@
 /vendor/bin/hw/vendor\.google\.wifi_ext@1\.0-service-vendor                 u:object_r:hal_wifi_ext_exec:s0
 /vendor/bin/hw/vendor\.google\.wifi_ext@1\.0-service-vendor-lazy            u:object_r:hal_wifi_ext_exec:s0
 
+/data/vendor/rebootescrow(/.*)?                                             u:object_r:hal_rebootescrow_citadel_data_file:s0
 /data/vendor_ce/[0-9]+/ramoops(/.*)?                                        u:object_r:ramoops_vendor_data_file:s0
 
 /mnt/vendor/persist/battery(/.*)?                                           u:object_r:persist_battery_file:s0
