@@ -6,6 +6,8 @@ allow init_citadel vendor_shell_exec:file r_file_perms;
 allow init_citadel vendor_toolbox_exec:file rx_file_perms;
 allow init_citadel vendor_file:file rx_file_perms;
 
+allow init_citadel citadel_device:chr_file rw_file_perms;
+
 # Citadel communication must be via citadeld
 vndbinder_use(init_citadel)
 binder_call(init_citadel, citadeld)
