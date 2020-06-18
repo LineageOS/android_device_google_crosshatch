@@ -1,0 +1,9 @@
+type hal_identity_citadel, domain;
+type hal_identity_citadel_exec, exec_type, vendor_file_type, file_type;
+
+vndbinder_use(hal_identity_citadel)
+binder_call(hal_identity_citadel, citadeld)
+allow hal_identity_citadel citadeld_service:service_manager find;
+
+hal_server_domain(hal_identity_citadel, hal_identity)
+init_daemon_domain(hal_identity_citadel)
