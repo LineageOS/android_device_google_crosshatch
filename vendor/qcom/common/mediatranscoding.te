@@ -1,1 +1,2 @@
-dontaudit mediatranscoding vendor_display_prop:file r_file_perms;
+get_prop(domain, vendor_display_prop)
+
