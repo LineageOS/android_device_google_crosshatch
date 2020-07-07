@@ -13,7 +13,6 @@ userdebug_or_eng(`
 
   allow modem_diagnostic_app sysfs_esim:file r_file_perms;
 
-  typeattribute modem_diagnostic_app mlstrustedsubject;
   unix_socket_connect(modem_diagnostic_app, diag, qlogd);
 
   set_prop(modem_diagnostic_app, vendor_modem_diag_prop)
