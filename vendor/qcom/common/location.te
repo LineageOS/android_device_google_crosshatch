@@ -27,7 +27,6 @@ allow location self:netlink_socket create_socket_perms_no_ioctl;
 allowxperm location self:udp_socket ioctl { SIOCGIFINDEX SIOCGIFHWADDR SIOCIWFIRSTPRIV_05 };
 
 allow location self:socket create_socket_perms;
-# whitelist socket ioctl commands
 allowxperm location self:socket ioctl msm_sock_ipc_ioctls;
 
 # files in /sys
