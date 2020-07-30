@@ -1,2 +1,2 @@
 allow citadeld debugfs_ipc:dir search;
-allow citadeld power_stats_service:service_manager find;
+allow citadeld hal_power_stats_service:service_manager find;
