@@ -16,5 +16,5 @@ userdebug_or_eng(`
   unix_socket_connect(modem_diagnostic_app, diag, qlogd);
 
   set_prop(modem_diagnostic_app, vendor_modem_diag_prop)
-  set_prop(modem_diagnostic_app, exported3_radio_prop)
+  set_prop(modem_diagnostic_app, radio_control_prop)
 ')
