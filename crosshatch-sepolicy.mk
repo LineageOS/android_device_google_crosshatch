@@ -11,6 +11,7 @@ BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/ramdump/common
 
 # Pixel-wide policies
 BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/citadel
+BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/powerstats
 
 # vendors for backward compatibility
 ifeq ($(PRODUCT_USE_QC_SPECIFIC_SYMLINKS), true)
