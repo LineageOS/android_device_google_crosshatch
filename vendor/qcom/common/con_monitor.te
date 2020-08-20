@@ -1,5 +1,5 @@
 # ConnectivityMonitor app
-type con_monitor_app, domain;
+type con_monitor_app, domain, coredomain;
 
 app_domain(con_monitor_app)
 
