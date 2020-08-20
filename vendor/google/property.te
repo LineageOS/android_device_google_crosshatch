@@ -1,10 +1,10 @@
-type vendor_build_type_prop, property_type;
-type vendor_modem_prop, property_type;
-type vendor_ramoops_prop, property_type;
-type vendor_shutdown_prop, property_type;
+vendor_internal_prop(vendor_build_type_prop)
+vendor_internal_prop(vendor_modem_prop)
+vendor_internal_prop(vendor_ramoops_prop)
+vendor_internal_prop(vendor_shutdown_prop)
 
 # fingerprint
-type vendor_fingerprint_prop, property_type;
+vendor_internal_prop(vendor_fingerprint_prop)
 
 # hal_health
-type vendor_battery_defender_prop, property_type;
+vendor_internal_prop(vendor_battery_defender_prop)
