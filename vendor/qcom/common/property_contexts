@@ -5,9 +5,6 @@ persist.gcam.              u:object_r:vendor_camera_prop:s0
 ro.vendor.camera.          u:object_r:vendor_camera_prop:s0
 ro.camera.                 u:object_r:vendor_camera_prop:s0
 persist.vendor.sys.cnd     u:object_r:cnd_prop:s0
-ro.boot.sota               u:object_r:factory_ota_prop:s0
-persist.factoryota.reboot  u:object_r:exported_system_prop:s0
-persist.radio.bootwithlpm  u:object_r:exported_system_prop:s0
 vendor.ims.                u:object_r:ims_prop:s0
 persist.vendor.ims.        u:object_r:ims_prop:s0
 persist.net.doxlat         u:object_r:vendor_net_radio_prop:s0
@@ -17,10 +14,6 @@ ro.boot.ramdump            u:object_r:vendor_ramdump_prop:s0
 vendor.debug.ssrdump       u:object_r:vendor_ssr_prop:s0
 persist.vendor.sys.cnss.   u:object_r:vendor_cnss_diag_prop:s0
 vendor.sys.listeners.registered   u:object_r:vendor_tee_listener_prop:s0
-vendor.thermal.vr_mode     u:object_r:vendor_thermal_prop:s0
-vendor.thermal.hw_mode     u:object_r:vendor_thermal_prop:s0
-ctl.vendor.thermal-engine  u:object_r:vendor_thermal_prop:s0
-vendor.thermal.config      u:object_r:vendor_thermal_prop:s0
 persist.vendor.sys.modem.diag.  u:object_r:vendor_modem_diag_prop:s0
 vendor.sys.modem.diag.     u:object_r:vendor_modem_diag_prop:s0
 persist.vendor.sys.ssr.    u:object_r:vendor_ssr_prop:s0
@@ -29,10 +22,6 @@ ro.vendor.ril.             u:object_r:radio_prop:s0
 vendor.qcom.time.set       u:object_r:vendor_time_prop:s0
 vendor.usb.                u:object_r:vendor_usb_prop:s0
 persist.vendor.usb.        u:object_r:vendor_usb_prop:s0
-vendor.powerhal.state      u:object_r:power_prop:s0
-vendor.powerhal.audio      u:object_r:power_prop:s0
-vendor.powerhal.lpm        u:object_r:power_prop:s0
-vendor.powerhal.init       u:object_r:power_prop:s0
 vendor.wlan.driver.version    u:object_r:vendor_wifi_version:s0
 vendor.wlan.firmware.version  u:object_r:vendor_wifi_version:s0
 vendor.peripheral.         u:object_r:per_mgr_state_prop:s0
@@ -181,6 +170,7 @@ ro.radio.log_prefix        u:object_r:vendor_radio_prop:s0
 # vendor_bluetooth_prop
 persist.vendor.bluetooth.a4wp           u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.bluetooth.csoc.cnt       u:object_r:vendor_bluetooth_prop:s0
+persist.vendor.bluetooth.diag_enabled   u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.service.bdroid.fwsnoop   u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.service.bdroid.sibs      u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.service.bdroid.snooplog  u:object_r:vendor_bluetooth_prop:s0

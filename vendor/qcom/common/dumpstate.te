@@ -1,3 +1,4 @@
+dump_hal(hal_telephony)
 dump_hal(hal_thermal)
 dump_hal(hal_power)
 dump_hal(hal_power_stats)
@@ -21,4 +22,3 @@ allow dumpstate sysfs_scsi_devices_other:file r_file_perms;
 
 dontaudit dumpstate debugfs_dma_bufinfo:file r_file_perms;
 dontaudit dumpstate kernel:system module_request;
-dontaudit dumpstate misc_logd_file:dir r_dir_perms;
