@@ -10,7 +10,7 @@ allow pixelstats_vendor hal_pixelstats_hwservice:hwservice_manager find;
 binder_call(pixelstats_vendor, pixelstats_system)
 
 allow pixelstats_vendor fwk_stats_hwservice:hwservice_manager find;
-binder_call(pixelstats_vendor, statsd)
+binder_call(pixelstats_vendor, stats_service_server)
 
 unix_socket_connect(pixelstats_vendor, chre, chre)
 
@@ -20,3 +20,10 @@ allow pixelstats_vendor sysfs_batteryinfo:file r_file_perms;
 allow pixelstats_vendor sysfs_pixelstats:dir search;
 allow pixelstats_vendor sysfs_pixelstats:file rw_file_perms;
 allow pixelstats_vendor self:netlink_kobject_uevent_socket { create getopt setopt bind read };
+
+# wlc
+allow pixelstats_vendor sysfs_wlc:dir search;
+
+# OrientationCollector
+allow pixelstats_vendor fwk_sensor_hwservice:hwservice_manager find;
+binder_call(pixelstats_vendor, system_server)

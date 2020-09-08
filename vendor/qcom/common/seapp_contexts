@@ -15,9 +15,6 @@ user=_app seinfo=tango name=com.google.tango.* domain=tango_core type=app_data_f
 # A fallback in case tango_core is missing something critical that untrusted_app provides
 user=_app seinfo=tango name=com.google.tango:app domain=untrusted_app type=app_data_file levelFrom=user
 
-# Factory OTA
-user=_app seinfo=platform name=com.google.android.factoryota domain=factory_ota_app levelFrom=all
-
 # Hardware Info Collection
 user=_app seinfo=platform name=com.google.android.hardwareinfo domain=hardware_info_app type=app_data_file levelFrom=user
 
@@ -36,8 +33,8 @@ user=_app seinfo=easel name=com.google.android.imaging.easel.service domain=ease
 #Domain for connectivity monitor
 user=_app isPrivApp=true seinfo=platform name=com.google.android.connectivitymonitor domain=con_monitor_app type=app_data_file levelFrom=all
 
-# Domain for modem diagnostic system
-user=_app seinfo=google name=com.google.mds domain=modem_diagnostic_app type=app_data_file levelFrom=user
+#Domain for omadm
+user=_app isPrivApp=true seinfo=platform name=com.android.omadm.service domain=omadm_app type=app_data_file levelFrom=all
 
 user=_app seinfo=platform name=com.qualcomm.qti.services.secureui* domain=secure_ui_service_app levelFrom=all
 

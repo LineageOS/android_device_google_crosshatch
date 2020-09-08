@@ -21,6 +21,10 @@ userdebug_or_eng(`
   allow hal_dumpstate_impl tcpdump_vendor_data_file:file create_file_perms;
 
   set_prop(hal_dumpstate_impl, vendor_tcpdump_log_prop)
+
+  # Dump sensors log
+  allow hal_dumpstate_impl sensors_vendor_data_file:dir r_dir_perms;
+  allow hal_dumpstate_impl sensors_vendor_data_file:file r_file_perms;
 ')
 allow hal_dumpstate_impl modem_dump_file:dir create_dir_perms;
 allow hal_dumpstate_impl modem_dump_file:file create_file_perms;
@@ -66,6 +70,7 @@ allow hal_dumpstate_impl debugfs_ufs:file r_file_perms;
 allow hal_dumpstate_impl proc_stat:file r_file_perms;
 allow hal_dumpstate_impl proc_f2fs:dir r_dir_perms;
 allow hal_dumpstate_impl proc_f2fs:file r_file_perms;
+allow hal_dumpstate_impl block_device:dir r_dir_perms;
 
 # Access to files for dumping
 allow hal_dumpstate_impl  sysfs:dir r_dir_perms;
@@ -122,18 +127,16 @@ allow hal_dumpstate_impl maxfg_device:chr_file r_file_perms;
 allow hal_dumpstate_impl debugfs_pmic_votable:dir r_dir_perms;
 allow hal_dumpstate_impl debugfs_pmic_votable:file r_file_perms;
 
-userdebug_or_eng(`
-  # Citadel communication must be via citadeld
-  vndbinder_use(hal_dumpstate_impl)
-  binder_call(hal_dumpstate_impl, citadeld)
-  allow hal_dumpstate_impl citadeld_service:service_manager find;
-')
+# Citadel communication must be via citadeld
+vndbinder_use(hal_dumpstate_impl)
+binder_call(hal_dumpstate_impl, citadeld)
+allow hal_dumpstate_impl citadeld_service:service_manager find;
 
 # Vibrator
 r_dir_file(hal_dumpstate_impl, sysfs_leds)
 
-dontaudit hal_dumpstate_impl binder_device:chr_file rw_file_perms;
-dontaudit hal_dumpstate_impl vndbinder_device:chr_file rw_file_perms;
+dontaudit hal_dumpstate_impl sensors_vendor_data_file:dir r_dir_perms;
+dontaudit hal_dumpstate_impl sensors_vendor_data_file:file r_file_perms;
 
 # Access to vendor logging property
 set_prop(hal_dumpstate_impl, vendor_logging_prop)

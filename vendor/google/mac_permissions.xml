@@ -36,4 +36,7 @@
     <signer signature="@EASEL" >
       <seinfo value="easel" />
     </signer>
+    <signer signature="@MDS" >
+        <seinfo value="mds" />
+    </signer>
 </policy>
