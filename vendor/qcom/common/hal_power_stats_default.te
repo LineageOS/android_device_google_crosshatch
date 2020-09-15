@@ -5,8 +5,4 @@ r_dir_file(hal_power_stats, debugfs_wlan)
 r_dir_file(hal_power_stats, debugfs_easel)
 get_prop(hal_power_stats_default, wifi_hal_prop) # Needed to detect wifi on/off
 
-# Allow power.stats hal to add the power_stats_service
-vndbinder_use(hal_power_stats)
-add_service(hal_power_stats_server, power_stats_service)
-
 binder_call(hal_power_stats, citadeld)
