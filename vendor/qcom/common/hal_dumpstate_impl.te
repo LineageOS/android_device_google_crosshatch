@@ -109,6 +109,9 @@ allow hal_dumpstate_impl vendor_file:file execute_no_trans;
 userdebug_or_eng(`allow hal_dumpstate_impl debugfs_dma_bufinfo:file r_file_perms;')
 dontaudit hal_dumpstate_impl debugfs_dma_bufinfo:file r_file_perms;
 
+#Dumpstats fastrpc buffer
+allow hal_dumpstate_impl sysfs_fastrpc:file r_file_perms;
+
 # Query and dump power supply nodes
 allow hal_dumpstate_impl sysfs_batteryinfo:dir search;
 allow hal_dumpstate_impl sysfs_batteryinfo:file r_file_perms;
