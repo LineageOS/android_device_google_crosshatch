@@ -6,6 +6,7 @@ recovery_only(`
 
   allow fastbootd devinfo_block_device:blk_file r_file_perms;
   allow fastbootd sysfs_leds:file w_file_perms;
+  allow fastbootd citadel_device:chr_file rw_file_perms;
   userdebug_or_eng(`
     allow fastbootd firmware_file:dir { remove_name rmdir search write };
     allow fastbootd firmware_file:{ file lnk_file } unlink;
