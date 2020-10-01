@@ -49,7 +49,7 @@ PRODUCT_COPY_FILES += $(LOCAL_PATH)/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/
 # STOPSHIP deal with Qualcomm stuff later
 # PRODUCT_RESTRICT_VENDOR_FILES := all
 
-PRODUCT_PACKAGES += com.android.vndk.current.on_vendor
+#PRODUCT_PACKAGES += com.android.vndk.current.on_vendor
 
 
 PRODUCT_MANUFACTURER := Google
