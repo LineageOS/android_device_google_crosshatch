@@ -1,3 +1,7 @@
+# Context Hub Runtime Environment
+PRODUCT_PACKAGES += \
+    chre
+
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig
@@ -14,6 +18,11 @@ PRODUCT_COPY_FILES += \
 # Google Assistant
 PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport.vendor \
+    libhwbinder.vendor
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/google/crosshatch/overlay-lineage
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += device/google/crosshatch/overlay-lineage/lineage-sdk
@@ -29,4 +38,5 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
+    libwifi-hal:64 \
     libwifi-hal-qcom
