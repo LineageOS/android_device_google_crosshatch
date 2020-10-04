@@ -1,0 +1,15 @@
+genfscon sysfs /devices/platform/soc/171c0000.slim/tavil-slim-pgd/tavil_codec     u:object_r:sysfs_pixelstats:s0
+genfscon sysfs /devices/virtual/misc/msm_cirrus_playback/resistance_left_right    u:object_r:sysfs_pixelstats:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,wcd-dsp-mgr                         u:object_r:sysfs_pixelstats:s0
+genfscon sysfs /devices/platform/soc/soc:google,overheat_mitigation               u:object_r:sysfs_pixelstats:s0
+genfscon sysfs /devices/virtual/ramoops/pstore/aes_key                  u:object_r:sysfs_pstore:s0
+genfscon sysfs /devices/virtual/ramoops/pstore/aes_key_iv               u:object_r:sysfs_pstore:s0
+genfscon sysfs /devices/virtual/ramoops/pstore/aes_key_tag              u:object_r:sysfs_pstore:s0
+genfscon sysfs /devices/virtual/ramoops/pstore/use_alt                  u:object_r:sysfs_pstore:s0
+genfscon proc  /fts/driver_test                                         u:object_r:proc_touch:s0
+genfscon debugfs /logbuffer/smblib              u:object_r:debugfs_usb:s0
+genfscon debugfs /logbuffer/usbpd               u:object_r:debugfs_usb:s0
+
+# Battery
+genfscon sysfs /devices/platform/soc/soc:google,battery/power_supply/battery    u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/880000.i2c/i2c-1/1-0061/power_supply/wireless    u:object_r:sysfs_batteryinfo:s0

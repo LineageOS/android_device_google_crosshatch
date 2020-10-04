@@ -1,0 +1,14 @@
+recovery_only(`
+  allow fastbootd ab_block_device:blk_file { w_file_perms ioctl };
+  allow fastbootd system_block_device:blk_file r_file_perms;
+
+  allow fastbootd boot_block_device:blk_file ioctl;
+
+  allow fastbootd devinfo_block_device:blk_file r_file_perms;
+  allow fastbootd sysfs_leds:file w_file_perms;
+  userdebug_or_eng(`
+    allow fastbootd firmware_file:dir { remove_name rmdir search write };
+    allow fastbootd firmware_file:{ file lnk_file } unlink;
+  ')
+')
+
