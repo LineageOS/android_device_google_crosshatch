@@ -1,4 +1,4 @@
-user=system seinfo=platform name=com.google.SSRestartDetector domain=ssr_detector_app type=system_app_data_file
+user=system seinfo=platform name=com.google.SSRestartDetector domain=ssr_detector_app type=system_app_data_file levelFrom=user
 user=_app seinfo=platform name=com.android.pixellogger domain=logger_app type=app_data_file levelFrom=all
 user=_app seinfo=platform name=com.android.ramdump domain=ramdump_app type=app_data_file levelFrom=all
 
@@ -6,7 +6,7 @@ user=_app seinfo=platform name=com.qualcomm.telephony domain=qtelephony type=app
 
 #Add new domain for DataServices
 # Domain for CNEService , uceShimService and other connectivity services
-user=radio seinfo=platform name=.dataservices domain=dataservice_app type=radio_data_file
+user=radio seinfo=platform name=.dataservices domain=dataservice_app type=radio_data_file levelFrom=user
 
 # The default domain for tango_core process
 user=_app seinfo=tango name=com.google.tango domain=tango_core type=app_data_file levelFrom=user
@@ -25,7 +25,7 @@ user=_app seinfo=google name=com.google.android.GoogleCamera domain=google_camer
 user=_app seinfo=googlepulse name=com.google.android.apps.googlecamera.fishfood domain=google_camera_app type=app_data_file levelFrom=all
 
 #Needed for time service apk
-user=_app seinfo=platform name=com.qualcomm.timeservice domain=timeservice_app type=app_data_file
+user=_app seinfo=platform name=com.qualcomm.timeservice domain=timeservice_app type=app_data_file levelFrom=all
 
 # Domain for easelservice app
 user=_app seinfo=easel name=com.google.android.imaging.easel.service domain=easelservice_app type=app_data_file levelFrom=user
@@ -38,4 +38,4 @@ user=_app isPrivApp=true seinfo=platform name=com.android.omadm.service domain=o
 
 user=_app seinfo=platform name=com.qualcomm.qti.services.secureui* domain=secure_ui_service_app levelFrom=all
 
-user=radio isPrivApp=true seinfo=platform name=com.google.RilConfigService domain=ril_config_service_app type=app_data_file
+user=radio isPrivApp=true seinfo=platform name=com.google.RilConfigService domain=ril_config_service_app type=app_data_file levelFrom=all
