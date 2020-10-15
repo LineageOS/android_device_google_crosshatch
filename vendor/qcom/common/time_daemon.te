@@ -1,4 +1,4 @@
-type time_daemon, domain;
+type time_daemon, domain, mlstrustedsubject;
 type time_daemon_exec, exec_type, vendor_file_type, file_type;
 
 init_daemon_domain(time_daemon)
