@@ -13,6 +13,9 @@ userdebug_or_eng(`
 
   allow modem_diagnostic_app sysfs_esim:file r_file_perms;
 
+  allow modem_diagnostic_app ssr_log_file:dir r_dir_perms;
+  allow modem_diagnostic_app ssr_log_file:file r_file_perms;
+
   unix_socket_connect(modem_diagnostic_app, diag, qlogd);
 
   set_prop(modem_diagnostic_app, vendor_modem_diag_prop)
