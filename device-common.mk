@@ -137,3 +137,7 @@ AB_OTA_POSTINSTALL_CONFIG += \
 # Set thermal warm reset
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.thermal_warmreset = true \
+
+# Enable zygote critical window.
+PRODUCT_PROPERTY_OVERRIDES += \
+    zygote.critical_window.minute=10
