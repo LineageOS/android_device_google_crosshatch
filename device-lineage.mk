@@ -1,3 +1,7 @@
+# Active Edge
+PRODUCT_PACKAGES += \
+    ElmyraService
+
 # AV media
 PRODUCT_PACKAGES += \
     libavservices_minijail_vendor:32 \
