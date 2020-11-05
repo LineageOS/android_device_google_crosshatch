@@ -2,5 +2,9 @@
   {
     "repository": "android_kernel_google_msm-4.9",
     "target_path": "kernel/google/msm-4.9"
+  },
+  {
+    "repository": "android_packages_apps_ElmyraService",
+    "target_path": "packages/apps/ElmyraService"
   }
 ]
