@@ -1,0 +1,2 @@
+# b/174527172
+dontaudit pixelstats_vendor sysfs_usb_c:dir search;
