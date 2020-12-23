@@ -26,3 +26,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="blueline-user 12 SP1A.210812.015 7679548 release-keys"
 
 BUILD_FINGERPRINT := google/blueline/blueline:12/SP1A.210812.015/7679548:user/release-keys
+
+$(call inherit-product, vendor/google/blueline/blueline-vendor.mk)
