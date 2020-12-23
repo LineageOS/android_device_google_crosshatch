@@ -1,0 +1,7 @@
+# DRM
+drm.service.enabled=true
+media.mediadrmservice.enable=true
+
+# Graphics
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
