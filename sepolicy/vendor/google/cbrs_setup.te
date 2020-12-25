@@ -1,0 +1,14 @@
+# GoogleCBRS app
+type cbrs_setup_app, domain;
+
+userdebug_or_eng(`
+  app_domain(cbrs_setup_app)
+  net_domain(cbrs_setup_app)
+
+  allow cbrs_setup_app app_api_service:service_manager find;
+  allow cbrs_setup_app cameraserver_service:service_manager find;
+  allow cbrs_setup_app radio_service:service_manager find;
+  allow cbrs_setup_app surfaceflinger_service:service_manager find;
+  set_prop(cbrs_setup_app, radio_prop)
+  set_prop(cbrs_setup_app, vendor_radio_prop)
+')

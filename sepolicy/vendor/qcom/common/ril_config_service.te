@@ -1,0 +1,7 @@
+type ril_config_service_app, domain;
+app_domain(ril_config_service_app)
+
+set_prop(ril_config_service_app, vendor_radio_prop)
+allow ril_config_service_app app_api_service:service_manager find;
+allow ril_config_service_app radio_vendor_data_file:dir rw_dir_perms;
+allow ril_config_service_app radio_vendor_data_file:file create_file_perms;

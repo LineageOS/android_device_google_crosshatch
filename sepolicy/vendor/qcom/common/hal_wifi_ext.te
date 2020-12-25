@@ -1,0 +1,28 @@
+# Allow wifi hal access to LOWI
+allow hal_wifi_ext location:unix_stream_socket connectto;
+
+# write to files owned by location daemon
+allow hal_wifi_ext location_socket:dir search;
+allow hal_wifi_ext location_socket:sock_file write;
+allow hal_wifi_ext location_data_file:{ file fifo_file } create_file_perms;
+
+allow hal_wifi_ext wlan_device:chr_file rw_file_perms;
+
+# Allow wifi hal to read debug info from the driver.
+r_dir_file(hal_wifi_ext, proc_wifi_dbg)
+
+# Write wlan driver/fw version into property
+set_prop(hal_wifi_ext, vendor_wifi_version)
+
+# Allow wifi_ext to report callbacks to gril-service app
+allow hal_wifi_ext grilservice_app:binder call;
+
+dontaudit hal_wifi_ext kernel:system module_request;
+dontaudit hal_wifi_ext self:capability sys_module;
+
+userdebug_or_eng(`
+# debugfs entries are only needed in user-debug or eng builds
+
+# Allow wifi hal to access wlan debugfs files and directories
+allow hal_wifi_ext debugfs_wlan:dir r_dir_perms;
+')

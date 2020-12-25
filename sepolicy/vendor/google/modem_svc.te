@@ -1,0 +1,23 @@
+type modem_svc, domain;
+type modem_svc_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(modem_svc)
+
+allow modem_svc self:capability net_bind_service;
+allow modem_svc self:socket create_socket_perms;
+allowxperm modem_svc self:socket ioctl msm_sock_ipc_ioctls;
+
+# For property service
+set_prop(modem_svc, vendor_modem_diag_prop)
+set_prop(modem_svc, vendor_modem_prop)
+get_prop(modem_svc, vendor_build_type_prop)
+get_prop(modem_svc, exported2_default_prop)
+get_prop(modem_svc, exported3_radio_prop)
+
+# For bugreport collection
+allow modem_svc hal_dumpstate_impl:fd use;
+allow modem_svc dumpstate:fd use;
+allow modem_svc shell_data_file:file write;
+
+dontaudit modem_svc kernel:system module_request;
+dontaudit modem_svc sysfs_msm_subsys:dir search;
