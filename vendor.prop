@@ -2,6 +2,12 @@
 drm.service.enabled=true
 media.mediadrmservice.enable=true
 
+# DSDS
+# Allows using eSIM even without EuiccGoogle (which requires GMS)
+# albeit the management UI is unavailable
+persist.radio.multisim.config=dsds
+persist.vendor.mdm.multisim.cfg=dsds
+
 # Graphics
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
