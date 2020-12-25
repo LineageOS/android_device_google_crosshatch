@@ -27,6 +27,10 @@ PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
 
+# Parts
+PRODUCT_PACKAGES += \
+    GoogleParts
+
 # RCS
 PRODUCT_PACKAGES += \
     PresencePolling \
