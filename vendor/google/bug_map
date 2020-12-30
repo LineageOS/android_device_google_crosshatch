@@ -15,6 +15,9 @@ priv_app adsprpcd_file dir b/127645532
 priv_app vendor_default_prop file b/79617173
 ramdump ramdump capability b/129500067
 sensors unlabeled file b/142784012
+shell debugfs file b/175106535
+shell device_config_runtime_native_boot_prop file b/175106535
+shell sysfs file b/175106535
 shell sysfs_usb_c dir b/126568362
 system_app vendor_default_prop file b/79617173
 system_server vendor_default_prop file b/79617173
