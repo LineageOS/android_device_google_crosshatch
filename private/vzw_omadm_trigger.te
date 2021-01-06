@@ -1,0 +1,9 @@
+type vzw_omadm_trigger, domain, coredomain;
+
+app_domain(vzw_omadm_trigger)
+net_domain(vzw_omadm_trigger)
+
+# Services
+allow vzw_omadm_trigger app_api_service:service_manager find;
+allow vzw_omadm_trigger qchook_service:service_manager find;
+allow vzw_omadm_trigger radio_service:service_manager find;
