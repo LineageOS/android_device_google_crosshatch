@@ -1,0 +1,9 @@
+type vzw_omadm_connmo, domain, coredomain;
+
+app_domain(vzw_omadm_connmo)
+net_domain(vzw_omadm_connmo)
+
+# Services
+allow vzw_omadm_connmo app_api_service:service_manager find;
+allow vzw_omadm_connmo qchook_service:service_manager find;
+allow vzw_omadm_connmo radio_service:service_manager find;
