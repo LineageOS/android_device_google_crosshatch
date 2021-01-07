@@ -1,0 +1,9 @@
+type uscc_omadm, domain, coredomain;
+
+app_domain(uscc_omadm)
+net_domain(uscc_omadm)
+
+# Services
+allow uscc_omadm app_api_service:service_manager find;
+allow uscc_omadm qchook_service:service_manager find;
+allow uscc_omadm radio_service:service_manager find;
