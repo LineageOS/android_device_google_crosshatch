@@ -22,6 +22,30 @@
       "revId": "6866266bf82005c847e16e200888746cb1bbc5b4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "120635e2_da5d0016",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2021-01-08T04:23:23Z",
+      "side": 1,
+      "message": "belay my last - it\u0027s in changed to reflect `TARGET_NEEDS_DTBOIMAGE :\u003d true` AOSP BoardConfig - forgot how I did it ;p",
+      "parentUuid": "7e57d245_9e548116",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 55
+      },
+      "revId": "6866266bf82005c847e16e200888746cb1bbc5b4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
