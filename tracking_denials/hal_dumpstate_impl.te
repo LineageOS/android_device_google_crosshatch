@@ -1,0 +1,3 @@
+# b/178757526
+dontaudit hal_dumpstate_impl citadel_updater_exec:file execute_no_trans ;
+dontaudit hal_dumpstate_impl citadel_updater_exec:file execute_no_trans ;

@@ -1,0 +1,3 @@
+# b/178757650
+dontaudit surfaceflinger hal_graphics_composer_default:dir search ;
+dontaudit surfaceflinger hal_graphics_composer_default:dir search ;
