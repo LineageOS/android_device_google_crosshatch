@@ -1,0 +1,3 @@
+# b/178757856
+dontaudit hal_drm_widevine firmware_file:dir search ;
+dontaudit hal_drm_widevine firmware_file:dir search ;
