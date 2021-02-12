@@ -12,6 +12,9 @@ binder_call(pixelstats_vendor, pixelstats_system)
 allow pixelstats_vendor fwk_stats_hwservice:hwservice_manager find;
 binder_call(pixelstats_vendor, stats_service_server)
 
+binder_use(pixelstats_vendor)
+allow pixelstats_vendor fwk_stats_service:service_manager find;
+
 unix_socket_connect(pixelstats_vendor, chre, chre)
 
 allow pixelstats_vendor sysfs_scsi_devices_0000:file rw_file_perms;
