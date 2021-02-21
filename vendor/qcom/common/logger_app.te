@@ -17,6 +17,5 @@ userdebug_or_eng(`
   set_prop(logger_app, vendor_bluetooth_log_prop)
   set_prop(logger_app, vendor_tcpdump_log_prop)
   set_prop(logger_app, vendor_wifi_sniffer_prop)
-
-  get_prop(logger_app, vendor_usb_config_prop)
+  set_prop(logger_app, vendor_usb_config_prop)
 ')
