@@ -1,4 +1,4 @@
-type qlogd, domain;
+type qlogd, domain, mlstrustedsubject;
 type qlogd_exec, exec_type, vendor_file_type, file_type;
 
 # make transition from init to its domain
