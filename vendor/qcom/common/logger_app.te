@@ -11,6 +11,10 @@ userdebug_or_eng(`
   allow logger_app tcpdump_vendor_data_file:dir create_dir_perms;
   allow logger_app tcpdump_vendor_data_file:file create_file_perms;
 
+  get_prop(logger_app, radio_prop)
+  set_prop(logger_app, vendor_ramdump_prop)
+  set_prop(logger_app, logpersistd_logging_prop)
+  set_prop(logger_app, logd_prop)
   set_prop(logger_app, vendor_ssr_prop)
   set_prop(logger_app, vendor_cnss_diag_prop)
   set_prop(logger_app, vendor_modem_diag_prop)
