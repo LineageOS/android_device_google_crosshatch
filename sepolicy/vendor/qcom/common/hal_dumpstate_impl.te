@@ -115,6 +115,8 @@ allow hal_dumpstate_impl sysfs_fastrpc:file r_file_perms;
 # Query and dump power supply nodes
 allow hal_dumpstate_impl sysfs_batteryinfo:dir search;
 allow hal_dumpstate_impl sysfs_batteryinfo:file r_file_perms;
+allow hal_dumpstate_impl sysfs_chargelevel:dir search;
+allow hal_dumpstate_impl sysfs_chargelevel:file r_file_perms;
 
 # Dump QCOM FG content
 allow hal_dumpstate_impl debugfs_fg_sram:dir search;
