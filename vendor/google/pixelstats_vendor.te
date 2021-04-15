@@ -9,9 +9,6 @@ hwbinder_use(pixelstats_vendor)
 allow pixelstats_vendor hal_pixelstats_hwservice:hwservice_manager find;
 binder_call(pixelstats_vendor, pixelstats_system)
 
-allow pixelstats_vendor fwk_stats_hwservice:hwservice_manager find;
-binder_call(pixelstats_vendor, stats_service_server)
-
 binder_use(pixelstats_vendor)
 allow pixelstats_vendor fwk_stats_service:service_manager find;
 
