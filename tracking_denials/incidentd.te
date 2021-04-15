@@ -1,4 +1,0 @@
-# b/178757649
-dontaudit incidentd sysfs_msm_subsys:dir search ;
-dontaudit incidentd sysfs_msm_subsys:dir search ;
-dontaudit incidentd nfc_service:service_manager find ;
