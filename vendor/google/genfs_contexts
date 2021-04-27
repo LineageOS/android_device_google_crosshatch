@@ -11,6 +11,9 @@ genfscon debugfs /logbuffer/smblib              u:object_r:debugfs_usb:s0
 genfscon debugfs /logbuffer/usbpd               u:object_r:debugfs_usb:s0
 genfscon debugfs /logbuffer/wireless            u:object_r:debugfs_usb:s0
 
+# Input
+genfscon sysfs /devices/platform/soc/a600000.ssusb/a600000.dwc3/xhci-hcd.2.auto/usb1  u:object_r:sysfs_uhid:s0
+
 # Battery
 genfscon sysfs /devices/platform/soc/soc:google,battery/power_supply/battery    u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/880000.i2c/i2c-1/1-0061/power_supply/wireless    u:object_r:sysfs_batteryinfo:s0
