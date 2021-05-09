@@ -9,6 +9,7 @@ hal_camera_default persist_file file b/123018469
 hal_health_default persist_file dir b/127303305
 hal_health_default persist_file file b/127303305
 hal_health_default sysfs_usb_c dir b/126568362
+hal_health_default unlabeled file b/156200409
 init sysfs_graphics file b/126568362
 netmgrd system_file file b/117232795
 platform_app vendor_default_prop file b/79617173
