@@ -28,13 +28,29 @@
         <!-- Now Playing (Pixel 2017) -->
         <item>device_personalization_services/NowPlaying__ambient_music_index_manifest_17_09_02=194:https://storage.googleapis.com/music-iq-db/updatable_ytm_db/20211212-030112/manifest.json</item>
 
+        <!-- Recents text selection (for Pixel Launcher users) -->
+        <item>device_personalization_services/Overview__enable_image_selection=true</item>
+        <item>device_personalization_services/Overview__enable_japanese_ocr=true</item>
+        <item>device_personalization_services/Overview__enable_lens_r_overview_long_press=true</item>
+        <item>device_personalization_services/Overview__enable_lens_r_overview_select_mode=true</item>
+        <item>device_personalization_services/Overview__enable_lens_r_overview_translate_action=false</item>
+        <item>device_personalization_services/Overview__enable_overview=true</item>
+        <item>device_personalization_services/Overview__enable_pir_clearcut_logging=true</item>
+        <item>device_personalization_services/Overview__enable_pir_westworld_logging=true</item>
+        <item>device_personalization_services/Overview__enable_proactive_hints=false</item>
+        <item>device_personalization_services/Overview__enable_superpacks_pir_protocol=true</item>
+        <item>device_personalization_services/Overview__min_lens_agsa_app_version=301084649</item>
+        <!-- Disable federated learning -->
+        <item>device_personalization_services/OverviewFederatedAnalytics__enable_fa=false</item>
+        <item>device_personalization_services/OverviewFederatedAnalytics__enable_min_training_interval=false</item>
+        <item>device_personalization_services/OverviewFederatedAnalytics__enable_non_synthetic_logs=false</item>
+
         <!-- Disable unused AiAi features -->
         <item>device_personalization_services/Autofill__enable=false</item>
         <item>device_personalization_services/Autofill__enable_fa=false</item>
         <item>device_personalization_services/Fedex__enable_fedex=false</item>
         <item>device_personalization_services/Logging__enable_aiai_clearcut_logging=false</item>
         <item>device_personalization_services/NotificationAssistant__enable_service=false</item>
-        <item>device_personalization_services/Overview__enable_overview=false</item>
         <item>device_personalization_services/VisualCortex__enable=false</item>
     </string-array>
 </resources>
