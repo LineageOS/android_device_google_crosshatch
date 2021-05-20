@@ -15,6 +15,8 @@ allow google_camera_app nfc_service:service_manager find;
 allow google_camera_app surfaceflinger_service:service_manager find;
 allow google_camera_app gpu_service:service_manager find;
 
+allow google_camera_app radio_service:service_manager find;
+
 allow google_camera_app hidl_token_hwservice:hwservice_manager find;
 
 # Allow google_camera_app to interact with gpuservice
