@@ -24,6 +24,7 @@ product/etc/felica/mfs.cfg
 
 # Permissions
 product/etc/permissions/privapp-permissions-google-p.xml
+product/etc/sysconfig/google-hiddenapi-package-whitelist.xml
 product/etc/sysconfig/nexus.xml
 product/etc/sysconfig/pixel_2018_exclusive.xml
 product/etc/sysconfig/pixel_experience_2017.xml
