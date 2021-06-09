@@ -23,7 +23,7 @@ product/etc/felica/mfs.cfg
 -product/priv-app/DevicePersonalizationPrebuiltPixel3/DevicePersonalizationPrebuiltPixel3.apk;PRESIGNED
 
 # Permissions
-product/etc/permissions/privapp-permissions-google-p.xml
+product/etc/permissions/privapp-permissions-google-p.xml:product/etc/permissions/privapp-permissions-google-p-lineage.xml
 product/etc/sysconfig/google-hiddenapi-package-whitelist.xml
 product/etc/sysconfig/nexus.xml
 product/etc/sysconfig/pixel_2018_exclusive.xml
@@ -217,7 +217,7 @@ system_ext/lib64/com.qualcomm.qti.uceservice@2.1.so
 -system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar
 system_ext/lib/vendor.qti.ims.callinfo@1.0.so
 system_ext/lib64/vendor.qti.ims.callinfo@1.0.so
-system_ext/etc/permissions/privapp-permissions-google-se.xml
+system_ext/etc/permissions/privapp-permissions-google-se.xml:system_ext/etc/permissions/privapp-permissions-google-se-lineage.xml
 -system_ext/priv-app/grilservice/grilservice.apk
 system_ext/lib/vendor.google.wifi_ext@1.0.so
 system_ext/lib64/vendor.google.wifi_ext@1.0.so
