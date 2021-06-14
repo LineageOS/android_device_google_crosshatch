@@ -18,8 +18,8 @@ TARGET_MANUFACTURER := Google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=blueline \
-    PRIVATE_BUILD_DESC="blueline-user 11 RQ2A.210505.002 7246365 release-keys"
+    PRIVATE_BUILD_DESC="blueline-user 11 RQ3A.210605.005 7349499 release-keys"
 
-BUILD_FINGERPRINT := google/blueline/blueline:11/RQ2A.210505.002/7246365:user/release-keys
+BUILD_FINGERPRINT := google/blueline/blueline:11/RQ3A.210605.005/7349499:user/release-keys
 
 $(call inherit-product, vendor/google/blueline/blueline-vendor.mk)
