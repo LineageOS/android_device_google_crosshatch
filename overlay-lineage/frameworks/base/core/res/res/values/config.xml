@@ -36,4 +36,7 @@
          etc. dialogs. -->
     <string translatable="false" name="config_appsNotReportingCrashes">com.google.android.euicc</string>
 
+    <!-- Specify if the fingerprint hardware support gestures-->
+    <bool name="config_fingerprintSupportsGestures">true</bool>
+
 </resources>
