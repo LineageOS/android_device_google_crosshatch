@@ -705,4 +705,7 @@
 
     <!-- Height of the status bar header bar when on Keyguard (match status_bar_portrait) -->
     <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height_portrait</dimen>
+
+    <!-- the number of the max cached processes in the system. -->
+    <integer name="config_customizedMaxCachedProcesses">64</integer>
 </resources>
