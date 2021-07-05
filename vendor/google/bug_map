@@ -2,12 +2,14 @@ bootanim vendor_default_prop file b/79617173
 cdsprpcd system_file dir b/109882276
 dataservice_app vendor_default_prop file b/79617173
 factory_ota_app vendor_default_prop file b/79617173
+google_camera_app selinuxfs file b/175910397
 hal_bluetooth_default hal_bluetooth_default socket b/126576829
 hal_bluetooth_default ramdump_vendor_data_file dir b/129298416
 hal_camera_default persist_file file b/123018469
 hal_health_default persist_file dir b/127303305
 hal_health_default persist_file file b/127303305
 hal_health_default sysfs_usb_c dir b/126568362
+hal_health_default unlabeled file b/156200409
 init sysfs_graphics file b/126568362
 netmgrd system_file file b/117232795
 platform_app vendor_default_prop file b/79617173
