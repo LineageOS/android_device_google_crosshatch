@@ -901,6 +901,7 @@ include hardware/google/pixel/PixelLogger/PixelLogger.mk
 include hardware/google/pixel/pixelstats/device.mk
 include hardware/google/pixel/mm/device_legacy.mk
 include hardware/google/pixel/thermal/device.mk
+include hardware/google/pixel/citadel/citadel.mk
 
 # power HAL
 -include hardware/google/pixel/power-libperfmgr/aidl/device.mk
