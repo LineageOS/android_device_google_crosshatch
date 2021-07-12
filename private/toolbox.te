@@ -1,2 +1,6 @@
 # b/192320719
 dontaudit toolbox virtualizationservice_data_file:dir getattr;
+# b/193366323
+dontaudit toolbox toolbox:capability dac_override;
+dontaudit toolbox toolbox:capability dac_read_search;
+dontaudit toolbox toolbox:capability fowner;
