@@ -4,7 +4,7 @@
 /dev/maxfg_history                                                          u:object_r:maxfg_device:s0
 
 /vendor/bin/hw/android\.hardware\.atrace@1\.0-service.pixel                 u:object_r:hal_atrace_default_exec:s0
-/vendor/bin/hw/android\.hardware\.contexthub@1\.2-service\.generic          u:object_r:hal_contexthub_default_exec:s0
+/vendor/bin/hw/android\.hardware\.contexthub@1\.1-service\.generic          u:object_r:hal_contexthub_default_exec:s0
 /vendor/bin/hw/android\.hardware\.secure_element@1\.1-service-disabled      u:object_r:hal_secure_element_default_exec:s0
 /vendor/bin/init\.firstboot\.sh                                             u:object_r:init-firstboot_exec:s0
 /vendor/bin/init\.fingerprint\.sh                                           u:object_r:init-fingerprint_exec:s0
