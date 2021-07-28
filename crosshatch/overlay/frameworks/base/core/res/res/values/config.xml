@@ -751,4 +751,7 @@
     <string-array name="config_disableApkUnlessMatchedSku_skus_list" translatable="false">
         <item>G013D</item>
     </string-array>
+
+    <!-- the number of the max cached processes in the system. -->
+    <integer name="config_customizedMaxCachedProcesses">64</integer>
 </resources>
