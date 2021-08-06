@@ -10,6 +10,7 @@ userdebug_or_eng(`
   allow dumpstate persist_file:dir r_dir_perms;
   allow dumpstate sysfs_leds:dir search;
   allow dumpstate system_block_device:blk_file r_file_perms;
+  allow dumpstate media_rw_data_file:file append;
 
   dontaudit dumpstate self:netlink_xfrm_socket create_socket_perms_no_ioctl;
 
