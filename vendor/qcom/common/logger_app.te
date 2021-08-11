@@ -23,4 +23,5 @@ userdebug_or_eng(`
   set_prop(logger_app, vendor_wifi_sniffer_prop)
   set_prop(logger_app, vendor_usb_config_prop)
   set_prop(logger_app, vendor_logging_prop)
+  set_prop(logger_app, vendor_logger_prop)
 ')
