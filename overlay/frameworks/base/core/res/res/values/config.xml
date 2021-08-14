@@ -206,13 +206,6 @@
         <item>"9,1"</item>
     </string-array>
 
-    <!-- If the hardware supports specially marking packets that caused a wakeup of the
-         main CPU, set this value to the mark used. -->
-    <integer name="config_networkWakeupPacketMark">0x80000000</integer>
-
-    <!-- Mask to use when checking skb mark defined in config_networkWakeupPacketMark above. -->
-    <integer name="config_networkWakeupPacketMask">0x80000000</integer>
-
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <!-- TODO(b/78128429): increase duration to account for the long latency -->
     <integer-array name="config_longPressVibePattern">
@@ -324,7 +317,7 @@
         <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
         <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
         <item>"/system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk"</item>
-        <item>"/system/lib64/libsurfaceflinger.so"</item>
+        <item>"/system/bin/surfaceflinger"</item>
     </string-array>
 
     <!-- Should the pinner service pin the Camera application? -->

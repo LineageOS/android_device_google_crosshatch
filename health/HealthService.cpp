@@ -77,6 +77,9 @@ const std::string kUfsVersion{UFS_DIR "/version"};
 const std::string kDiskStatsFile{"/sys/block/sda/stat"};
 const std::string kUFSName{"UFS0"};
 
+static bool needs_wlc_updates = false;
+constexpr char kWlcCapacity[]{WLC_DIR "/capacity"};
+
 std::ifstream assert_open(const std::string &path) {
     std::ifstream stream(path);
     if (!stream.is_open()) {
@@ -108,6 +111,12 @@ void fill_ufs_storage_attribute(StorageAttribute *attr) {
 
 }  // anonymous namespace
 
+static bool FileExists(const std::string &filename) {
+    struct stat buffer;
+
+    return stat(filename.c_str(), &buffer) == 0;
+}
+
 void healthd_board_init(struct healthd_config *config) {
     using ::device::google::crosshatch::health::kChargerStatus;
 
@@ -115,6 +124,8 @@ void healthd_board_init(struct healthd_config *config) {
     ccBackupRestoreMAX.Restore();
 
     config->batteryStatusPath = kChargerStatus.c_str();
+
+    needs_wlc_updates = FileExists(kWlcCapacity);
 }
 
 int healthd_board_battery_update(struct android::BatteryProperties *props) {
@@ -126,9 +137,11 @@ int healthd_board_battery_update(struct android::BatteryProperties *props) {
     ccBackupRestoreBMS.Backup(props->batteryLevel);
     ccBackupRestoreMAX.Backup(props->batteryLevel);
     battDefender.update(props);
-    if (!android::base::WriteStringToFile(std::to_string(props->batteryLevel),
-                                          "/sys/class/power_supply/wireless/capacity"))
+
+    if (needs_wlc_updates &&
+        !android::base::WriteStringToFile(std::to_string(props->batteryLevel), kWlcCapacity))
         LOG(INFO) << "Unable to write battery level to wireless capacity";
+
     return 0;
 }
 
