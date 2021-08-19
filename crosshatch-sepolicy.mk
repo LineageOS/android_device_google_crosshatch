@@ -12,6 +12,9 @@ BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/ramdump/common
 # Pixel-wide policies
 BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/powerstats
 
+# system_ext
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/google/crosshatch-sepolicy/system_ext/private
+
 # vendors for backward compatibility
 ifeq ($(PRODUCT_USE_QC_SPECIFIC_SYMLINKS), true)
 BOARD_SEPOLICY_DIRS += device/google/crosshatch-sepolicy/vendor/qcom/compat
