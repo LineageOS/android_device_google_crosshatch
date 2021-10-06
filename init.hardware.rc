@@ -87,19 +87,11 @@ on init && property:vendor.skip.init=0
     write /sys/block/sda/queue/iostats 0
     write /sys/block/sda/queue/scheduler cfq
     write /sys/block/sda/queue/iosched/slice_idle 0
-    write /sys/block/sda/queue/read_ahead_kb 2048
     write /sys/block/sda/queue/nr_requests 256
     write /sys/block/sdf/queue/iostats 0
     write /sys/block/sdf/queue/scheduler cfq
     write /sys/block/sdf/queue/iosched/slice_idle 0
-    write /sys/block/sdf/queue/read_ahead_kb 2048
     write /sys/block/sdf/queue/nr_requests 256
-    write /sys/block/dm-0/queue/read_ahead_kb 2048
-    write /sys/block/dm-1/queue/read_ahead_kb 2048
-    write /sys/block/dm-2/queue/read_ahead_kb 2048
-    write /sys/block/dm-3/queue/read_ahead_kb 2048
-    write /sys/block/dm-4/queue/read_ahead_kb 2048
-    write /sys/block/dm-5/queue/read_ahead_kb 2048
 
     # Disable UFS powersaving
     write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 0
@@ -137,12 +129,9 @@ on init && property:vendor.skip.init=0
     write /dev/stune/top-app/schedtune.boost 10
     write /dev/stune/top-app/schedtune.prefer_idle 1
 
-    mkdir /dev/cpuset/camera-daemon
-    write /dev/cpuset/camera-daemon/cpus 0-7
-    write /dev/cpuset/camera-daemon/mems 0
-    chown system system /dev/cpuset/camera-daemon
-    chown system system /dev/cpuset/camera-daemon/tasks
-    chmod 0664 /dev/cpuset/camera-daemon/tasks
+    # set default schedTune value for camera-daemon
+    write /dev/stune/camera-daemon/schedtune.prefer_idle 1
+    write /dev/stune/camera-daemon/schedtune.boost 0
 
     # b/37682684 Enable suspend clock reporting
     write /sys/kernel/debug/clk/debug_suspend 1
@@ -178,8 +167,13 @@ on init && property:vendor.skip.init=0
     chown system system /sys/devices/platform/soc/soc:google,charger/bd_trigger_time
     chown system system /sys/devices/platform/soc/soc:google,charger/bd_trigger_voltage
     chown system system /sys/devices/platform/soc/soc:google,charger/bd_temp_enable
+    chown system system /sys/devices/platform/soc/soc:google,charger/bd_clear
+    chown system system /sys/class/power_supply/wireless/device/mitigate_threshold
 
 on late-init
+    write /sys/devices/virtual/thermal/tz-by-name/quiet-therm-adc/mode enabled
+    chown system system /sys/devices/virtual/thermal/tz-by-name/quiet-therm-monitor/trip_point_0_temp
+    chown system system /sys/devices/virtual/thermal/tz-by-name/quiet-therm-monitor/trip_point_0_hyst
     write /sys/devices/virtual/thermal/tz-by-name/fps-therm-adc/mode enabled
     chown system system /sys/devices/virtual/thermal/tz-by-name/fps-therm-monitor/trip_point_0_temp
     chown system system /sys/devices/virtual/thermal/tz-by-name/fps-therm-monitor/trip_point_0_hyst
@@ -234,16 +228,15 @@ on late-fs
 
     # Mount RW partitions which need run fsck
     mount_all /vendor/etc/fstab.${ro.boot.hardware.platform} --late
-    # Boot time fs tune
-    write /sys/block/dm-3/queue/read_ahead_kb 2048
-    write /sys/block/dm-4/queue/read_ahead_kb 2048
-    write /sys/block/dm-6/queue/read_ahead_kb 2048
 
     # Required for time_daemon
     mkdir /persist/time 0770 system system
 
     # Start time daemon early so that the system time can be set early
     start time_daemon
+
+    # Write build info to kdebuginfo.
+    write /sys/module/kdebuginfo/parameters/build_info "${ro.product.name}-${ro.build.type} ${ro.build.version.incremental}"
 
 on post-fs
     # Disable sched autogroup
@@ -348,6 +341,10 @@ on zygote-start
     chown system system /data/vendor/sensors
     mkdir /data/vendor/sensors/log 0770
     chown system system /data/vendor/sensors/log
+
+    # Restore SeLinux Context for preventing temp.json with
+    # incorrect security context
+    restorecon /mnt/vendor/persist/sensors/registry/temp.json
 
     chmod 770 /persist/audio
     chmod 660 /persist/audio/audio.cal
@@ -572,21 +569,12 @@ on property:sys.boot_completed=1
     write /dev/cpuset/restricted/cpus 0-3
 
     # Runtime fs tuning: as we have init boottime setting and kernel patch setting
-    # default readahead to 2048KB. We should adjust the setting upon boot_complete
+    # We should adjust the setting upon boot_complete
     # for runtime performance
-    write /sys/block/sda/queue/read_ahead_kb 128
     write /sys/block/sda/queue/nr_requests 128
     write /sys/block/sda/queue/iostats 1
-    write /sys/block/sdf/queue/read_ahead_kb 128
     write /sys/block/sdf/queue/nr_requests 128
     write /sys/block/sdf/queue/iostats 1
-    write /sys/block/dm-0/queue/read_ahead_kb 128
-    write /sys/block/dm-1/queue/read_ahead_kb 128
-    write /sys/block/dm-2/queue/read_ahead_kb 128
-    write /sys/block/dm-3/queue/read_ahead_kb 128
-    write /sys/block/dm-4/queue/read_ahead_kb 128
-    write /sys/block/dm-5/queue/read_ahead_kb 128
-    write /sys/block/dm-6/queue/read_ahead_kb 128
 
     # Block layer tuning: discard chunk size up to 128MB
     # Otherwise, contiguous discards can be merged
@@ -635,7 +623,7 @@ on property:persist.vendor.sys.ssr.enable_ramdumps=1
     mkdir /data/vendor/wifidump 771 root system
     mkdir /data/vendor/ramdump 771 root system
     mkdir /data/vendor/ssrdump 771 root system
-    mkdir /data/vendor/ssrlog  771 root system
+    mkdir /data/vendor/ssrlog  775 root system
     start ss_ramdump
 
 on property:persist.vendor.sys.ssr.enable_ramdumps=0
@@ -850,22 +838,9 @@ service vendor.theme_set /vendor/bin/misc_writer --set-dark-theme
     disabled
     oneshot
 
-# Clear the dark theme magic in /misc partition.
-service vendor.theme_clear /vendor/bin/misc_writer --clear-dark-theme
-    disabled
-    oneshot
-
-# Set dark boot flag on dark mode (UiModeManager.MODE_NIGHT_YES == 2).
-on property:persist.sys.theme=2
+# Set dark boot flag when the device is provisioned.
+on property:persist.sys.device_provisioned=1
     start vendor.theme_set
-
-# Clear the dark boot flag on light mode (UiModeManager.MODE_NIGHT_NO == 1) or auto mode
-# (UiModeManager.MODE_NIGHT_AUTO == 0).
-on property:persist.sys.theme=1
-    start vendor.theme_clear
-
-on property:persist.sys.theme=0
-    start vendor.theme_clear
 
 on init && property:ro.boot.slot_successful=no
     write /sys/module/msm_poweroff/parameters/warm_reset 1

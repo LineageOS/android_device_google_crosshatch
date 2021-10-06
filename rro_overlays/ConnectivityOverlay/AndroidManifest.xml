@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2019 The Android Open Source Project
+<!-- Copyright (C) 2021 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,15 +13,15 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-  <bool name="enable_antenna_blocked_alert">false</bool>
-  <integer name="max_antenna_blocked_failure_count">10</integer>
-  <integer name="unknown_tag_polling_delay">2000</integer>
-  <string name="antenna_blocked_alert_link" translatable="false">https://support.google.com/pixelphone?p=nfc_tag_notification</string>
-  <string-array name="config_skuSupportsSecureNfc" translatable="false">
-    <item>G013A</item>
-    <item>G013B</item>
-    <item>G013C</item>
-    <item>G013D</item>
-  </string-array>
-</resources>
+<!-- Pixel specific connectivity overlays -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.connectivity.resources.overlay"
+    android:versionCode="1"
+    android:versionName="1.0">
+    <application android:hasCode="false" />
+    <overlay
+      android:targetPackage="com.android.connectivity.resources"
+      android:targetName="ServiceConnectivityResourcesConfig"
+      android:isStatic="true"
+      android:priority="0"/>
+</manifest>
