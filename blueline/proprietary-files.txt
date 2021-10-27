@@ -5,7 +5,6 @@
 # Qualcomm misc
 app/QtiTelephonyService/QtiTelephonyService.apk
 app/atfwd/atfwd.apk
-app/datastatusnotification/datastatusnotification.apk
 app/ims/ims.apk
 app/uceShimService/uceShimService.apk
 app/uimremoteclient/uimremoteclient.apk
