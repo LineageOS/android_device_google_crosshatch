@@ -20,4 +20,7 @@ userdebug_or_eng(`
 
   set_prop(modem_diagnostic_app, vendor_modem_diag_prop)
   set_prop(modem_diagnostic_app, radio_control_prop)
+
+  allow modem_diagnostic_app sysfs_batteryinfo:file r_file_perms;
+  allow modem_diagnostic_app sysfs_batteryinfo:dir search;
 ')
