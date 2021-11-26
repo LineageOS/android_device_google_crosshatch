@@ -1,0 +1,2 @@
+# b/190686637
+dontaudit hal_wlc sysfs_msm_subsys:dir search;

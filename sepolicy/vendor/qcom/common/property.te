@@ -1,0 +1,36 @@
+vendor_restricted_prop(vendor_camera_prop)
+vendor_restricted_prop(cnd_prop)
+vendor_restricted_prop(ims_prop)
+vendor_internal_prop(vendor_dataqdp_prop)
+vendor_restricted_prop(public_vendor_default_prop)
+vendor_internal_prop(public_vendor_system_prop)
+vendor_restricted_prop(vendor_ssr_prop)
+vendor_internal_prop(vendor_cnss_diag_prop)
+vendor_restricted_prop(vendor_tee_listener_prop)
+vendor_internal_prop(vendor_modem_diag_prop)
+vendor_internal_prop(vendor_usb_prop)
+vendor_internal_prop(vendor_time_prop)
+vendor_internal_prop(vendor_wifi_version)
+vendor_internal_prop(per_mgr_state_prop)
+vendor_public_prop(vendor_bluetooth_prop)
+vendor_internal_prop(vendor_net_radio_prop)
+vendor_internal_prop(vendor_secure_element_prop)
+vendor_internal_prop(vendor_device_prop)
+vendor_restricted_prop(vendor_radio_prop)
+vendor_restricted_prop(vendor_display_prop)
+vendor_internal_prop(vendor_nfc_prop)
+vendor_internal_prop(vendor_bluetooth_log_prop)
+vendor_internal_prop(vendor_usb_config_prop)
+vendor_internal_prop(vendor_radio_sku_prop)
+vendor_internal_prop(vendor_tcpdump_log_prop)
+vendor_internal_prop(ctl_vendor_rmt_storage_prop)
+vendor_internal_prop(vendor_wifi_sniffer_prop)
+
+#imsrcsservice
+vendor_internal_prop(ctl_vendor_imsrcsservice_prop)
+
+#time service
+vendor_internal_prop(vendor_time_service_prop)
+
+# vendor verbose logging property
+vendor_internal_prop(vendor_logging_prop)

@@ -1,0 +1,20 @@
+# Domain for WfcActivation app
+user=_app seinfo=wfcactivation name=com.google.android.wfcactivation domain=wfc_activation_app levelFrom=all
+
+# Domain for Sprint Hidden Menu
+user=_app isPrivApp=true seinfo=platform name=com.google.android.hiddenmenu domain=sprint_hidden_menu type=app_data_file levelFrom=all
+
+# Domain for vzw omadm trigger
+user=_app isPrivApp=true seinfo=platform name=com.google.omadm.trigger domain=vzw_omadm_trigger type=app_data_file levelFrom=all
+
+# Domain for vzw omadm connmo
+user=_app isPrivApp=true seinfo=platform name=com.android.sdm.plugins.connmo domain=vzw_omadm_connmo type=app_data_file levelFrom=all
+
+# Domain for vzw omadm dcmo
+user=_app isPrivApp=true seinfo=platform name=com.android.sdm.plugins.dcmo domain=vzw_omadm_dcmo type=app_data_file levelFrom=all
+
+# Domain for vzw omadm diagmon
+user=_app isPrivApp=true seinfo=platform name=com.android.sdm.plugins.diagmon domain=vzw_omadm_diagmon type=app_data_file levelFrom=all
+
+# Domain for uscc omadm
+user=_app isPrivApp=true seinfo=platform name=com.android.sdm.plugins.usccdm domain=uscc_omadm type=app_data_file levelFrom=all

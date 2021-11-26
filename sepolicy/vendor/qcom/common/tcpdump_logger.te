@@ -1,0 +1,20 @@
+type tcpdump_logger, domain;
+type tcpdump_logger_exec, exec_type, vendor_file_type, file_type;
+
+userdebug_or_eng(`
+  # make transition from init to its domain
+  init_daemon_domain(tcpdump_logger)
+
+  allow tcpdump_logger self:capability {net_raw};
+  allow tcpdump_logger self:packet_socket { create setopt getopt ioctl read write };
+  allowxperm tcpdump_logger self:packet_socket ioctl 0x8933;
+  allow tcpdump_logger tcpdump_exec:file rx_file_perms;
+  allow tcpdump_logger tcpdump_vendor_data_file:dir create_dir_perms;
+  allow tcpdump_logger tcpdump_vendor_data_file:file create_file_perms;
+  allow tcpdump_logger radio_vendor_data_file:file create_file_perms;
+  allow tcpdump_logger radio_vendor_data_file:dir create_dir_perms;
+  allow tcpdump_logger cnss_vendor_data_file:file create_file_perms;
+  allow tcpdump_logger cnss_vendor_data_file:dir create_dir_perms;
+
+  set_prop(tcpdump_logger, vendor_tcpdump_log_prop)
+')

@@ -1,0 +1,14 @@
+type grilservice_app, domain;
+
+app_domain(grilservice_app)
+
+allow grilservice_app hal_radioext_hwservice:hwservice_manager find;
+allow grilservice_app hal_wifi_ext_hwservice:hwservice_manager find;
+allow grilservice_app app_api_service:service_manager find;
+allow grilservice_app hal_bluetooth_sar_hwservice:hwservice_manager find;
+
+binder_call(grilservice_app, hal_radioext_default)
+binder_call(grilservice_app, hal_wifi_ext)
+
+# this denial on grilservice_app since this AudioMetric functionality is not used in legacy device.
+dontaudit grilservice_app hal_audiometricext_hwservice:hwservice_manager find;

@@ -1,0 +1,6 @@
+typeattribute system_app system_writes_vendor_properties_violators;
+
+userdebug_or_eng(`
+  allow system_app diag_device:chr_file rw_file_perms;
+')
+set_prop(system_app, vendor_bluetooth_prop)
