@@ -39,6 +39,15 @@
         <!-- B y-intercept --> <item>-0.349361641294833436</item>
     </string-array>
 
+    <!-- The package name for the default system textclassifier service.
+         This service must be trusted, as it can be activated without explicit consent of the user.
+         (e.g. com.android.textclassifier/.TextClassifierServiceImpl).
+         If no textclassifier service with the specified name exists on the device (or if this is
+         set to empty string), a default textclassifier will be loaded in the calling app's process.
+         See android.view.textclassifier.TextClassificationManager.
+    -->
+    <string name="config_defaultTextClassifierPackage" translatable="false">com.google.android.as</string>
+
     <!-- Live Captions provided by Google's Device Personalization Service package  -->
     <string name="config_defaultSystemCaptionsManagerService">com.google.android.as/com.google.android.apps.miphone.aiai.captions.SystemCaptionsManagerService</string>
     <string name="config_defaultSystemCaptionsService">com.google.android.as/com.google.android.apps.miphone.aiai.captions.CaptionsService</string>
