@@ -16,6 +16,24 @@
       "message": "We may still see another update Q1 22 but that is to be seen.",
       "revId": "6844456d808a1f81f36cb25d11bb4fb8e8bb67c3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f85c3d2d_ea7bf095",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2021-12-09T21:27:05Z",
+      "side": 1,
+      "message": "Ayy, can always update then. This is true for the vendor/boot we have now.",
+      "parentUuid": "08caafea_fbe3fd57",
+      "revId": "6844456d808a1f81f36cb25d11bb4fb8e8bb67c3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
