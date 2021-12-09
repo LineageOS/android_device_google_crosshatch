@@ -22,6 +22,23 @@
       },
       "revId": "3aa2330c1e45a6aa96ce68168f4f2501d29780a1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ac40ca21_20723f33",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2021-12-09T16:23:49Z",
+      "side": 1,
+      "message": "Picked from b4s4, not from b1c1 tree",
+      "revId": "3aa2330c1e45a6aa96ce68168f4f2501d29780a1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
