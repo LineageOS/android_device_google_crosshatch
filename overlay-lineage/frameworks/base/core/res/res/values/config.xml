@@ -39,12 +39,15 @@
         <!-- B y-intercept --> <item>-0.349361641294833436</item>
     </string-array>
 
-    <!-- Live Captions provided by Google's Device Personalization Service package  -->
+    <!-- Live Captions -->
     <string name="config_defaultSystemCaptionsManagerService">com.google.android.as/com.google.android.apps.miphone.aiai.captions.SystemCaptionsManagerService</string>
     <string name="config_defaultSystemCaptionsService">com.google.android.as/com.google.android.apps.miphone.aiai.captions.CaptionsService</string>
 
     <!-- Recents text and image selection for Pixel Launcher (not supported by Launcher3) -->
     <string name="config_defaultContentSuggestionsService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService</string>
+
+    <!-- Launcher app suggestions -->
+    <string name="config_defaultAppPredictionService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService</string>
 
     <!-- Make AiAi the default role holder for System Intelligence -->
     <string name="config_systemAmbientAudioIntelligence">com.google.android.as</string>
