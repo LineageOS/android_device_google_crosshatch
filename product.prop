@@ -87,6 +87,10 @@ persist.data.mode=concurrent
 persist.bluetooth.bqr.event_mask=14
 # BQR minimum report interval configuration
 persist.bluetooth.bqr.min_interval_ms=500
+# Bluetooth operating voltage in millivolts
+bluetooth.hardware.power.operating_voltage_mv=3300
+# Hearing Aid Audio Support Using Bluetooth LE
+bluetooth.profile.asha.central=true
 
 #
 ## Disable touch heatmap
