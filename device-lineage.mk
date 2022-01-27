@@ -35,6 +35,11 @@ PRODUCT_COPY_FILES += \
 # Google Assistant
 PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 
+# Graphics
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.egl=adreno \
+    ro.hardware.vulkan=adreno
+
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport.vendor \
