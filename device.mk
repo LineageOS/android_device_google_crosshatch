@@ -428,8 +428,11 @@ PRODUCT_COPY_FILES += \
     device/google/crosshatch/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/libnfc-nci.conf \
     device/google/crosshatch/nfc/libese-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libese-nxp.conf
 
+# USB HAL
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service.crosshatch
+    android.hardware.usb-service.crosshatch
+PRODUCT_PACKAGES += \
+    android.hardware.usb.gadget-service.crosshatch
 
 PRODUCT_PACKAGES += \
     libmm-omxcore \
