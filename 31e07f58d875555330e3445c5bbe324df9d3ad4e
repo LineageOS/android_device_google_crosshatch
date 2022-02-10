@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a87e82f8_9dc59b8b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26658
+      },
+      "writtenOn": "2022-02-10T18:06:56Z",
+      "side": 1,
+      "message": "This prevents the topic from being synced:\n\nApplying change number 323368...\nERROR: For 323368, could not determine the project path for project LineageOS/android_device_google_crosshatch\n\nThis looks to be a device-specific patch. Should that be part of the general security topic?",
+      "revId": "31e07f58d875555330e3445c5bbe324df9d3ad4e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
