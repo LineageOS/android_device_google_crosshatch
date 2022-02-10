@@ -23,8 +23,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=blueline \
-    PRIVATE_BUILD_DESC="blueline-user 12 SP1A.210812.016.A2 7979095 release-keys"
+    PRIVATE_BUILD_DESC="blueline-user 12 SP1A.210812.016.C1 8029091 release-keys"
 
-BUILD_FINGERPRINT := google/blueline/blueline:12/SP1A.210812.016.A2/7979095:user/release-keys
+BUILD_FINGERPRINT := google/blueline/blueline:12/SP1A.210812.016.C1/8029091:user/release-keys
 
 $(call inherit-product, vendor/google/blueline/blueline-vendor.mk)
