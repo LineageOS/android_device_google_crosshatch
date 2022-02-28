@@ -46,6 +46,7 @@ lib64/libsecureui_svcsock_system.so
 # product partition
 
 # AiAi
+product/priv-app/DeviceIntelligenceNetworkPrebuilt/DeviceIntelligenceNetworkPrebuilt.apk;PRESIGNED
 product/priv-app/DevicePersonalizationPrebuiltPixel3/DevicePersonalizationPrebuiltPixel3.apk;PRESIGNED
 
 # Audio
