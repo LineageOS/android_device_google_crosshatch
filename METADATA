@@ -1,4 +1,4 @@
 third_party {
-  # would be NOTICE save for sdm845/original-kernel-headers/
+  license_note: "would be NOTICE save for sdm845/original-kernel-headers/"
   license_type: RESTRICTED
 }
