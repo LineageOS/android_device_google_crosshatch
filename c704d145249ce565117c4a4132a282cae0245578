@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1d65fc5f_73189a11",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2022-03-25T07:06:21Z",
+      "side": 1,
+      "message": "we\u0027re missing a line in this change, in device-lineage.mk:\nTARGET_VENDOR_PROP :\u003d $(LOCAL_PATH)/vendor.prop\nso none of the vendor props are getting set.\njust leaving a note here so that we don\u0027t miss it in 19.1",
+      "revId": "c704d145249ce565117c4a4132a282cae0245578",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
