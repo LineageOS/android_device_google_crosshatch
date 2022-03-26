@@ -1,0 +1,5 @@
+vendor.google.wifi_ext::IWifiExt                                u:object_r:hal_wifi_ext_hwservice:s0
+
+# BT HAL HWSERVICE
+hardware.google.bluetooth.sar::IBluetoothSar                    u:object_r:hal_bluetooth_sar_hwservice:s0
+vendor.google.audiometricext::IAudioMetricExt                   u:object_r:hal_audiometricext_hwservice:s0

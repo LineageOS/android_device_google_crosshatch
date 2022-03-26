@@ -1,0 +1,3 @@
+type hal_wifi_ext_hwservice, hwservice_manager_type, vendor_hwservice_type;
+type hal_bluetooth_sar_hwservice, hwservice_manager_type, vendor_hwservice_type;
+type hal_audiometricext_hwservice, hwservice_manager_type;

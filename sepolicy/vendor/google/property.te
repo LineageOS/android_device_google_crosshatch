@@ -1,0 +1,13 @@
+vendor_internal_prop(vendor_build_type_prop)
+vendor_internal_prop(vendor_modem_prop)
+vendor_internal_prop(vendor_ramoops_prop)
+vendor_internal_prop(vendor_shutdown_prop)
+
+# fingerprint
+vendor_internal_prop(vendor_fingerprint_prop)
+
+# hal_health
+vendor_internal_prop(vendor_battery_defender_prop)
+
+# Logger
+vendor_internal_prop(vendor_logger_prop)

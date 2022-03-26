@@ -1,0 +1,1 @@
+allow citadeld debugfs_ipc:dir search;
