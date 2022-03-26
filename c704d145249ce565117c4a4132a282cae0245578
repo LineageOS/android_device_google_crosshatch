@@ -16,6 +16,24 @@
       "message": "we\u0027re missing a line in this change, in device-lineage.mk:\nTARGET_VENDOR_PROP :\u003d $(LOCAL_PATH)/vendor.prop\nso none of the vendor props are getting set.\njust leaving a note here so that we don\u0027t miss it in 19.1",
       "revId": "c704d145249ce565117c4a4132a282cae0245578",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bdc818c3_e78e783e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-03-26T13:34:41Z",
+      "side": 1,
+      "message": "Yeah I\u0027ve fixed this in calyx trees like 2 months ago but I forgot to upload it here :/\n\nWill make sure to pick it this time.",
+      "parentUuid": "1d65fc5f_73189a11",
+      "revId": "c704d145249ce565117c4a4132a282cae0245578",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
