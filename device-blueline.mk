@@ -44,7 +44,3 @@ PRODUCT_COPY_FILES += \
     device/google/crosshatch/nfc/libnfc-nxp.blueline.ese.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-G013B.conf
 
 PRODUCT_PRODUCT_PROPERTIES += ro.com.google.ime.height_ratio=1.2
-
-# Enable iorapd readahead for app starts
-PRODUCT_PRODUCT_PROPERTIES += \
-    iorapd.readahead.enable=true
