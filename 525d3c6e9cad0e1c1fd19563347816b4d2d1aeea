@@ -33,6 +33,23 @@
       "message": "I think this is fine to merge. At least it gets rid of that warning flooding the log every second.\nIf we want iorap in the future we can use the new props:\npersist.device_config.runtime_native_boot.iorap_readahead_enable\u003dtrue\npersist.device_config.runtime_native_boot.iorap_perfetto_enable\u003dtrue\nOf note, both of those props above are set to false on stock 12 blueline rom via ota gms device config.\n",
       "revId": "525d3c6e9cad0e1c1fd19563347816b4d2d1aeea",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a45c2efc_168767b7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-04-05T20:49:39Z",
+      "side": 1,
+      "message": "Makes sense",
+      "revId": "525d3c6e9cad0e1c1fd19563347816b4d2d1aeea",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
