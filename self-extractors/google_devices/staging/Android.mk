@@ -16,7 +16,11 @@
 
 LOCAL_PATH := $(call my-dir)
 
+$(call declare-license-metadata,$(LOCAL_PATH)/vendor.img,legacy_proprietary,proprietary,$(LOCAL_PATH)/../LICENSE,"Vendor Image",vendor)
+
 ifneq ($(filter crosshatch,$(TARGET_DEVICE)),)
   $(call add-radio-file,bootloader.img)
+  $(call declare-license-metadata,$(LOCAL_PATH)/bootloader.img,legacy_proprietary,proprietary,$(LOCAL_PATH)/../LICENSE,"Vendor Bootloader Image",vendor)
   $(call add-radio-file,radio.img)
+  $(call declare-license-metadata,$(LOCAL_PATH)/radio.img,legacy_proprietary,proprietary,$(LOCAL_PATH)/../LICENSE,"Vendor Radio Image",vendor)
 endif
