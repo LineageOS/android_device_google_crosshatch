@@ -394,7 +394,7 @@ system_ext/priv-app/EuiccSupportPixel/esim-full-v0.img
 system_ext/priv-app/EuiccSupportPixel/esim-v1.img
 system_ext/priv-app/EuiccSupportPixelPermissions/EuiccSupportPixelPermissions.apk;PRESIGNED
 system_ext/priv-app/RilConfigService/RilConfigService.apk
-system_ext/priv-app/grilservice/grilservice.apk
+system_ext/priv-app/grilservice/grilservice.apk;PRESIGNED
 
 # VZW
 system_ext/etc/permissions/obdm_permissions.xml
