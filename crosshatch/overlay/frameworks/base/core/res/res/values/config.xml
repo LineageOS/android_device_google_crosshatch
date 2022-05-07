@@ -732,7 +732,7 @@
     <!-- Height of the status bar.
          Do not read this dimen directly. Use {@link SystemBarUtils#getStatusBarHeight} instead.
          -->
-    <dimen name="status_bar_height">28dp</dimen>
+    <dimen name="status_bar_height">171px</dimen>
 
     <dimen name="rounded_corner_radius_top">133px</dimen>
     <dimen name="rounded_corner_radius_bottom">70px</dimen>
