@@ -126,3 +126,6 @@ firmware_directories /vendor/firmware_mnt/image/
 # Input
 /sys/devices/platform/soc/a600000.ssusb/a600000.dwc3/xhci-hcd.1.auto/usb1/1-1/*/*/leds/* brightness 0660 system system
 /sys/devices/platform/soc/a600000.ssusb/a600000.dwc3/xhci-hcd.1.auto/usb1/1-1/*/*/leds/* multi_intensity 0660 system system
+
+#KGSL
+/sys/class/kgsl/kgsl-3d0    perfcounter              0660    root    shell
