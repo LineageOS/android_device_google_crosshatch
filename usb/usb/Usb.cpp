@@ -57,38 +57,39 @@ ScopedAStatus Usb::enableUsbData(const string& in_portName, bool in_enable,
         int64_t in_transactionId) {
     bool result = true;
     std::vector<PortStatus> currentPortStatus;
+    string pullup;
 
     ALOGI("Userspace turn %s USB data signaling. opID:%ld", in_enable ? "on" : "off",
             in_transactionId);
 
     if (in_enable) {
+        if (ReadFileToString(PULLUP_PATH, &pullup)) {
+            pullup = Trim(pullup);
+            if (pullup != kGadgetName) {
+                if (!WriteStringToFile(kGadgetName, PULLUP_PATH)) {
+                    ALOGE("Gadget cannot be pulled up");
+                    result = false;
+                }
+            }
+        }
+
         if (!WriteStringToFile("1", USB_DATA_PATH)) {
             ALOGE("Not able to turn on usb connection notification");
             result = false;
         }
-
-        if (!WriteStringToFile(kGadgetName, PULLUP_PATH)) {
-            ALOGE("Gadget cannot be pulled up");
-            result = false;
-        }
     } else {
-        if (!WriteStringToFile("1", ID_PATH)) {
-            ALOGE("Not able to turn off host mode");
-            result = false;
-        }
-
-        if (!WriteStringToFile("0", VBUS_PATH)) {
-            ALOGE("Not able to set Vbus state");
-            result = false;
+        if (ReadFileToString(PULLUP_PATH, &pullup)) {
+            pullup = Trim(pullup);
+            if (pullup == kGadgetName) {
+                if (!WriteStringToFile("none", PULLUP_PATH)) {
+                    ALOGE("Gadget cannot be pulled down");
+                    result = false;
+                }
+            }
         }
 
         if (!WriteStringToFile("0", USB_DATA_PATH)) {
             ALOGE("Not able to turn on usb connection notification");
-            result = false;
-        }
-
-        if (!WriteStringToFile("none", PULLUP_PATH)) {
-            ALOGE("Gadget cannot be pulled down");
             result = false;
         }
     }
@@ -322,7 +323,8 @@ Usb::Usb()
     : mLock(PTHREAD_MUTEX_INITIALIZER),
       mRoleSwitchLock(PTHREAD_MUTEX_INITIALIZER),
       mPartnerLock(PTHREAD_MUTEX_INITIALIZER),
-      mPartnerUp(false) {
+      mPartnerUp(false),
+      mUsbDataEnabled(true) {
     pthread_condattr_t attr;
     if (pthread_condattr_init(&attr)) {
         ALOGE("pthread_condattr_init failed: %s", strerror(errno));
