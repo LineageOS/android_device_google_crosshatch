@@ -16,6 +16,23 @@
       "message": "Fixes the brightness slider overlapping the time in landscape.",
       "revId": "28d91946dd45c0ee815cdd09b5444589fb20c73c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b8ead3eb_8ad747ea",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-05-31T22:02:42Z",
+      "side": 1,
+      "message": "They probably forgot to remove it in 0d175cd5f6d578e044929f702550b65bfff0598e",
+      "revId": "28d91946dd45c0ee815cdd09b5444589fb20c73c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
