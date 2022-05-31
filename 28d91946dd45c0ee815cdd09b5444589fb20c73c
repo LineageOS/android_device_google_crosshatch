@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1763c55c_e0a62b2e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2022-05-31T20:45:34Z",
+      "side": 1,
+      "message": "Fixes the brightness slider overlapping the time in landscape.",
+      "revId": "28d91946dd45c0ee815cdd09b5444589fb20c73c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
