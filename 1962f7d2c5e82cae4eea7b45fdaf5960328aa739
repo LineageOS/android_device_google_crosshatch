@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cb44d9b6_1b3f6d16",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28183
+      },
+      "writtenOn": "2022-06-27T08:09:11Z",
+      "side": 1,
+      "message": "This is Qualcomm not mtk, so line #L910-L912 is not needed",
+      "revId": "1962f7d2c5e82cae4eea7b45fdaf5960328aa739",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
