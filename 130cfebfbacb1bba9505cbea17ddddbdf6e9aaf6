@@ -50,6 +50,29 @@
       "message": "ping~",
       "revId": "130cfebfbacb1bba9505cbea17ddddbdf6e9aaf6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2549c077_f0539df9",
+        "filename": "device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 918,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-07-06T10:27:38Z",
+      "side": 1,
+      "message": "I don\u0027t think we should blindly set all these properties. There should be a better way to enable volte just for this carrier.",
+      "range": {
+        "startLine": 909,
+        "startChar": 0,
+        "endLine": 918,
+        "endChar": 32
+      },
+      "revId": "130cfebfbacb1bba9505cbea17ddddbdf6e9aaf6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
