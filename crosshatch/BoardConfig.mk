@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-ifdef PHONE_CAR_BOARD_CONFIG
-  include $(PHONE_CAR_BOARD_CONFIG)
+ifdef PHONE_CAR_BOARD_PRODUCT
+  include device/google_car/$(PHONE_CAR_BOARD_PRODUCT)/BoardConfig.mk
 else
   TARGET_BOOTLOADER_BOARD_NAME := crosshatch
   TARGET_SCREEN_DENSITY := 560
