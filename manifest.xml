@@ -18,15 +18,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.authsecret</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IAuthSecret</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.biometrics.fingerprint</name>
         <transport>hwbinder</transport>
         <version>2.2</version>
@@ -171,7 +162,6 @@
         <name>android.hardware.keymaster</name>
         <transport>hwbinder</transport>
         <fqname>@4.0::IKeymasterDevice/default</fqname>
-        <fqname>@4.1::IKeymasterDevice/strongbox</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.light</name>
@@ -227,15 +217,6 @@
         <version>1.2</version>
         <interface>
             <name>INfc</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.oemlock</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOemLock</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -323,15 +304,6 @@
         <version>1.0</version>
         <interface>
             <name>IOffloadControl</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.weaver</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IWeaver</name>
             <instance>default</instance>
         </interface>
     </hal>
