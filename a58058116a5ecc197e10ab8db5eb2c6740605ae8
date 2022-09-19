@@ -22,6 +22,30 @@
       },
       "revId": "a58058116a5ecc197e10ab8db5eb2c6740605ae8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "24e3b39b_d30d4059",
+        "filename": "device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 434,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2022-09-19T22:16:32Z",
+      "side": 1,
+      "message": "Just upstream commit and matches the other pixels",
+      "parentUuid": "c8cc102a_76f153d4",
+      "range": {
+        "startLine": 434,
+        "startChar": 0,
+        "endLine": 434,
+        "endChar": 21
+      },
+      "revId": "a58058116a5ecc197e10ab8db5eb2c6740605ae8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
