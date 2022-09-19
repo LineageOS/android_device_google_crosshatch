@@ -25,6 +25,7 @@
 #include <sys/epoll.h>
 #include <sys/eventfd.h>
 #include <utils/Log.h>
+
 #include <chrono>
 #include <condition_variable>
 #include <mutex>
@@ -64,35 +65,35 @@ using namespace std::chrono;
 using namespace std::chrono_literals;
 
 struct UsbGadget : public IUsbGadget {
-  UsbGadget();
-  unique_fd mInotifyFd;
-  unique_fd mEventFd;
-  unique_fd mEpollFd;
+    UsbGadget();
+    unique_fd mInotifyFd;
+    unique_fd mEventFd;
+    unique_fd mEpollFd;
 
-  unique_ptr<thread> mMonitor;
-  volatile bool mMonitorCreated;
-  vector<string> mEndpointList;
-  // protects the CV.
-  std::mutex mLock;
-  std::condition_variable mCv;
+    unique_ptr<thread> mMonitor;
+    volatile bool mMonitorCreated;
+    vector<string> mEndpointList;
+    // protects the CV.
+    std::mutex mLock;
+    std::condition_variable mCv;
 
-  // Makes sure that only one request is processed at a time.
-  std::mutex mLockSetCurrentFunction;
-  uint64_t mCurrentUsbFunctions;
-  bool mCurrentUsbFunctionsApplied;
+    // Makes sure that only one request is processed at a time.
+    std::mutex mLockSetCurrentFunction;
+    uint64_t mCurrentUsbFunctions;
+    bool mCurrentUsbFunctionsApplied;
 
-  Return<void> setCurrentUsbFunctions(uint64_t functions,
-                                      const sp<V1_0::IUsbGadgetCallback> &callback,
-                                      uint64_t timeout) override;
+    Return<void> setCurrentUsbFunctions(uint64_t functions,
+                                        const sp<V1_0::IUsbGadgetCallback> &callback,
+                                        uint64_t timeout) override;
 
-  Return<void> getCurrentUsbFunctions(const sp<V1_0::IUsbGadgetCallback> &callback) override;
+    Return<void> getCurrentUsbFunctions(const sp<V1_0::IUsbGadgetCallback> &callback) override;
 
-  Return<Status> reset() override;
+    Return<Status> reset() override;
 
-private:
-  Status tearDownGadget();
-  Status setupFunctions(uint64_t functions, const sp<V1_0::IUsbGadgetCallback> &callback,
-                        uint64_t timeout);
+  private:
+    Status tearDownGadget();
+    Status setupFunctions(uint64_t functions, const sp<V1_0::IUsbGadgetCallback> &callback,
+                          uint64_t timeout);
 };
 
 }  // namespace implementation

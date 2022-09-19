@@ -54,7 +54,7 @@ struct Usb : public IUsb {
     Usb();
 
     Return<void> switchRole(const hidl_string &portName, const PortRole &role) override;
-    Return<void> setCallback(const sp<V1_0::IUsbCallback>& callback) override;
+    Return<void> setCallback(const sp<V1_0::IUsbCallback> &callback) override;
     Return<void> queryPortStatus() override;
     Return<void> enableContaminantPresenceDetection(const hidl_string &portName, bool enable);
     Return<void> enableContaminantPresenceProtection(const hidl_string &portName, bool enable);
@@ -72,8 +72,8 @@ struct Usb : public IUsb {
     // Variable to signal partner coming back online after type switch
     bool mPartnerUp;
 
-    private:
-        pthread_t mPoll;
+  private:
+    pthread_t mPoll;
 };
 
 }  // namespace implementation

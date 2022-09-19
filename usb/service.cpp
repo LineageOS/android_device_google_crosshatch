@@ -17,6 +17,7 @@
 #define LOG_TAG "android.hardware.usb@1.3-service.crosshatch"
 
 #include <hidl/HidlTransportSupport.h>
+
 #include "Usb.h"
 #include "UsbGadget.h"
 
@@ -59,5 +60,4 @@ int main() {
     // Under noraml cases, execution will not reach this line.
     ALOGI("USB HAL failed to join thread pool.");
     return 1;
-
 }
