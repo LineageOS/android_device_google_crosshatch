@@ -1,0 +1,1 @@
+type hal_wifi_ext_service, service_manager_type, hal_service_type;
