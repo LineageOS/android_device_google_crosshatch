@@ -18,6 +18,7 @@ allow hal_radioext_default sysfs_soc:file r_file_perms;
 allowxperm hal_radioext_default self:socket ioctl msm_sock_ipc_ioctls;
 
 allow hal_radioext_default hal_wifi_ext_hwservice:hwservice_manager find;
+allow hal_radioext_default hal_wifi_ext_service:service_manager find;
 allow hal_radioext_default hal_wifi_ext:binder call;
 
 userdebug_or_eng(`

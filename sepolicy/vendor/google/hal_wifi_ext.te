@@ -6,3 +6,4 @@ init_daemon_domain(hal_wifi_ext)
 
 # Allow to start the IWifi:wifi_ext service
 add_hwservice(hal_wifi_ext, hal_wifi_ext_hwservice);
+add_service(hal_wifi_ext, hal_wifi_ext_service)
