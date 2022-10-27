@@ -5,3 +5,6 @@ media.mediadrmservice.enable=true
 # Graphics
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
+
+# RIL
+ro.telephony.block_binder_thread_on_incoming_calls=false
