@@ -1099,6 +1099,12 @@ VENDOR_SKIP_FILES=(
     "lib/libdisplayconfig.so"
     "lib64/libdisplayconfig.so"
 
+    # Google battery
+    "bin/hw/vendor.google.google_battery@1.1-service-vendor"
+    "etc/init/vendor.google.google_battery@1.1-service.rc"
+    "lib64/vendor.google.google_battery@1.0.so"
+    "lib64/vendor.google.google_battery@1.1.so"
+
     # IOP
     "lib/vendor.qti.hardware.iop@1.0.so"
     "lib64/vendor.qti.hardware.iop@1.0.so"
