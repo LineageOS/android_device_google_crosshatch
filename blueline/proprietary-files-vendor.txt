@@ -24,7 +24,6 @@ vendor/bin/hw/citadel_updater
 vendor/bin/hw/citadeld
 vendor/bin/hw/init_citadel
 vendor/bin/hw/qcrild
-vendor/bin/hw/vendor.google.google_battery@1.1-service-vendor
 vendor/bin/hw/vendor.google.radioext@1.0-service
 vendor/bin/hw/vendor.google.wifi_ext@1.0-service-vendor
 vendor/bin/hw/vendor.google.wireless_charger@1.3-service-vendor
@@ -171,7 +170,6 @@ vendor/etc/init/init.time_daemon.rc
 vendor/etc/init/init_citadel.rc
 vendor/etc/init/qcrild.rc
 vendor/etc/init/rebootescrow-citadel.rc
-vendor/etc/init/vendor.google.google_battery@1.1-service.rc
 vendor/etc/init/vendor.google.radioext@1.0-service.rc
 vendor/etc/init/vendor.google.wifi_ext@1.0-service.rc
 vendor/etc/init/vendor.google.wireless_charger@1.3-service.rc
@@ -971,8 +969,6 @@ vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
 vendor/lib64/vendor.display.postproc@1.0.so
-vendor/lib64/vendor.google.google_battery@1.0.so
-vendor/lib64/vendor.google.google_battery@1.1.so
 vendor/lib64/vendor.google.radioext@1.0.so
 vendor/lib64/vendor.google.radioext@1.1.so
 vendor/lib64/vendor.google.radioext@1.2.so
