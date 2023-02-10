@@ -692,7 +692,7 @@
     <dimen name="rounded_corner_radius">48px</dimen>
 
     <!-- Adjustment for software rounded corners since corners aren't perfectly round. -->
-    <dimen name="rounded_corner_radius_adjustment">0px</dimen>
+    <dimen name="rounded_corner_radius_adjustment">8px</dimen>
 
     <!-- Shutdown if the battery temperature exceeds (this value * 0.1) Celsius. -->
     <integer name="config_shutdownBatteryTemperature">600</integer>
