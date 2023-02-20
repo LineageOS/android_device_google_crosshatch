@@ -1,5 +1,5 @@
 <!--
-    Copyright (C) 2018 The Android Open Source Project
+    Copyright (C) 2016 The Android Open Source Project
 
     You may obtain a copy of the License at
 
@@ -12,8 +12,8 @@
     limitations under the License.
 -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="75px"
-    android:height="75px"
+    android:width="48px"
+    android:height="48px"
     android:viewportWidth="8"
     android:viewportHeight="8">
 
