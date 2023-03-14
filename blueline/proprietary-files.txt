@@ -272,10 +272,6 @@ product/priv-app/WfcActivation/WfcActivation.apk;PRESIGNED
 
 # system_ext partition
 
-# AptX
-system_ext/lib64/libaptXHD_encoder.so
-system_ext/lib64/libaptX_encoder.so
-
 # Camera extensions
 system_ext/etc/permissions/com.google.android.camera.extensions.xml
 system_ext/framework/com.google.android.camera.extensions.jar
