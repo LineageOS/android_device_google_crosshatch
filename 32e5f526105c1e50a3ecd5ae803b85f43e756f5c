@@ -16,6 +16,23 @@
       "message": "Need to look into this a little closer to see if there\u0027s a better way to fix it.",
       "revId": "32e5f526105c1e50a3ecd5ae803b85f43e756f5c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a562ab91_687c508e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-03-25T06:22:15Z",
+      "side": 1,
+      "message": "`sepolicy_vndr/generic/vendor/common/domain.te:get_prop(domain, vendor_security_patch_level_prop)` - idk why this is in qcom policy and not AOSP policy but /shrug",
+      "revId": "32e5f526105c1e50a3ecd5ae803b85f43e756f5c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
