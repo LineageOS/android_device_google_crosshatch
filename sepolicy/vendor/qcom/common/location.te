@@ -55,3 +55,6 @@ allow location hal_cne_hwservice:hwservice_manager find;
 binder_call(location, cnd)
 
 get_prop(location, wifi_hal_prop)
+
+# xtra-daemon control
+get_prop(location, xtra_control_prop)
