@@ -13,6 +13,7 @@ type sysfs_msm_wlan, sysfs_type, fs_type;
 type sysfs_poweroff, sysfs_type, fs_type;
 type sysfs_rmtfs, sysfs_type, fs_type;
 type sysfs_soc, sysfs_type, fs_type;
+type sysfs_soc_sensitive, sysfs_type, fs_type;
 type sysfs_scsi_devices_0000, sysfs_type, fs_type;
 type sysfs_scsi_devices_other, sysfs_type, fs_type;
 type sysfs_system_sleep_stats, sysfs_type, fs_type;
