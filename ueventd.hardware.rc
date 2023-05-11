@@ -129,3 +129,6 @@ firmware_directories /vendor/firmware_mnt/image/
 
 #KGSL
 /sys/class/kgsl/kgsl-3d0    perfcounter              0660    root    shell
+
+# socinfo
+/sys/devices/soc0           serial_number            0000    root    root
