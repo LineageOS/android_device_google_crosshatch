@@ -132,3 +132,7 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # socinfo
 /sys/devices/soc0           serial_number            0000    root    root
+
+# Charger
+/sys/class/power_supply/battery charge_disable 0660 system system
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pmi8998@2:qcom,qpnp-smb2/power_supply/battery charge_disable 0660 system system
