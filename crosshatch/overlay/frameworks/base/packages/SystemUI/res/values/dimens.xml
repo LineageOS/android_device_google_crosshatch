@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
  * Copyright (c) 2018, The Android Open Source Project
+ * Copyright (C) 2023, The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -42,4 +43,8 @@
      For devices with sensors on the back of the device, this corresponds to the location on the
      screen directly in front of the sensor. -->
     <dimen name="physical_fingerprint_sensor_center_screen_location_y">780px</dimen>
+
+    <!-- Shift the cutout area of the statusbar to the correct position. -->
+    <dimen name="status_bar_padding_start">20dp</dimen>
+    <dimen name="status_bar_padding_end">8dp</dimen>
 </resources>
