@@ -16,6 +16,24 @@
       "message": "This now makes the battery icon overlap with the location privacy indicator. Test: open GPSTest app, observe green dot appears right on the battery icon",
       "revId": "a8290f204914469402a3db45edb1dbaddc0fb28f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0c600669_74290a16",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11409
+      },
+      "writtenOn": "2023-06-11T10:41:14Z",
+      "side": 1,
+      "message": "All parts are now visible, including green dot.",
+      "parentUuid": "4796dd72_39f1179b",
+      "revId": "a8290f204914469402a3db45edb1dbaddc0fb28f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
