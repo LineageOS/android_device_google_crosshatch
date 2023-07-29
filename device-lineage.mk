@@ -28,7 +28,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 
 # Lineage Health
-include hardware/google/pixel/lineage_health/device.mk
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
