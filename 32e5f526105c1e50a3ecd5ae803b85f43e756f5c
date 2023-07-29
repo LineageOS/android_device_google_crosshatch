@@ -33,6 +33,23 @@
       "message": "`sepolicy_vndr/generic/vendor/common/domain.te:get_prop(domain, vendor_security_patch_level_prop)` - idk why this is in qcom policy and not AOSP policy but /shrug",
       "revId": "32e5f526105c1e50a3ecd5ae803b85f43e756f5c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d65e44be_bf21732f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 7118
+      },
+      "writtenOn": "2023-07-29T14:15:13Z",
+      "side": 1,
+      "message": "Forgot about this. We should probably add this in lineage/sepolicy. I imagine all non-qcom and pixels need this.",
+      "revId": "32e5f526105c1e50a3ecd5ae803b85f43e756f5c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
