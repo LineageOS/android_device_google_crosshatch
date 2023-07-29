@@ -153,9 +153,6 @@ on init && property:vendor.skip.init=0
     setprop vendor.thermal.vr_mode -novr
     setprop vendor.thermal.hw_mode -prod
 
-    # Adaptive charge
-    chown system system /sys/class/power_supply/battery/charge_deadline
-
     # Battery Defender
     chown system system /sys/devices/platform/soc/soc:google,charger/charge_stop_level
     chown system system /sys/devices/platform/soc/soc:google,charger/charge_start_level
