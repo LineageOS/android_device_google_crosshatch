@@ -79,9 +79,6 @@ product/etc/CarrierSettings/smarty_gb.pb
 product/etc/CarrierSettings/softbank_jp.pb
 product/etc/CarrierSettings/solomobile_ca.pb
 product/etc/CarrierSettings/spectrum_us.pb
-product/etc/CarrierSettings/sprint_us.pb
-product/etc/CarrierSettings/sprintprepaid_us.pb
-product/etc/CarrierSettings/sprintwholesale_us.pb
 product/etc/CarrierSettings/starhub_sg.pb
 product/etc/CarrierSettings/stc_sa.pb
 product/etc/CarrierSettings/sunrise_ch.pb

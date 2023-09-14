@@ -118,11 +118,6 @@ product/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureu
 product/lib/libsecureuisvc_jni.so
 product/lib64/libsecureuisvc_jni.so
 
-# Sprint
-product/etc/permissions/com.android.sdm.plugins.sprintdm.xml
-product/priv-app/SprintDM/SprintDM.apk
-product/priv-app/SprintHM/SprintHM.apk
-
 # US Cellular
 product/etc/permissions/com.android.sdm.plugins.usccdm.xml
 product/priv-app/USCCDM/USCCDM.apk

@@ -1158,8 +1158,6 @@ vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/Bell/Commercial/CA/mc
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/CSpire/VoLTE/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/Inland/Commercial/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/Rogers/Commercial/CA/mcfg_sw.mbn
-vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/Sprint/Commercial/mcfg_sw.mbn
-vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/Sprint/VoWiFi/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/TMO/Commercial/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/Telus/Commercial/CA/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/NA/USCC/Commercial/mcfg_sw.mbn
@@ -1176,8 +1174,6 @@ vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Koodo/VoLTE/mcf
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Lucky/Commercial/CA/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/MTS/Commercial/CA/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Solo_PC/Commercial/CA/mcfg_sw.mbn
-vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Sprint_FI/Commercial/mcfg_sw.mbn
-vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Sprint_FI_Data/Commercial/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/TMO_FI/Commercial/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/TbayCity/NonVoLTE/mcfg_sw.mbn
 vendor/rfs/msm/mpss/readonly/vendor/mbn/mcfg_sw/generic/Pixel/NA/Telus/Lab/CA/mcfg_sw.mbn
