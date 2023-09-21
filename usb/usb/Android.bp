@@ -29,7 +29,7 @@ cc_binary {
         "Usb.cpp",
     ],
     shared_libs: [
-        "android.frameworks.stats-V1-ndk",
+        "android.frameworks.stats-V2-ndk",
         "android.hardware.usb.gadget@1.0",
         "android.hardware.usb-V1-ndk",
         "libbase",
@@ -46,7 +46,7 @@ cc_binary {
         "libpixelstats",
     ],
     export_shared_lib_headers: [
-        "android.frameworks.stats-V1-ndk",
+        "android.frameworks.stats-V2-ndk",
         "pixelatoms-cpp",
     ],
 }
