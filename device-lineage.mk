@@ -89,6 +89,11 @@ PRODUCT_PACKAGES += \
     android.hardware.identity-support-lib.vendor:64 \
     android.hardware.identity_credential.xml
 
+# Nos
+PRODUCT_PACKAGES += \
+    libkeymaster4support.vendor:64 \
+    libkeymaster4_1support.vendor:64
+
 # Json
 PRODUCT_PACKAGES += \
     libjson
@@ -112,6 +117,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor \
     android.hardware.keymaster@3.0.vendor:32 \
     android.hardware.keymaster@4.0.vendor:32 \
+    android.hardware.keymaster@4.1.vendor:64 \
     android.hardware.neuralnetworks@1.0.vendor:64 \
     android.hardware.neuralnetworks@1.1.vendor:64 \
     android.hardware.neuralnetworks@1.2.vendor:64 \
@@ -124,6 +130,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.3.vendor:64 \
     android.hardware.sensors@1.0.vendor:32 \
     android.hardware.sensors@2.0.vendor \
+    android.hardware.thermal@1.0.vendor:64 \
     android.hardware.weaver@1.0.vendor:64 \
     android.hardware.wifi@1.1.vendor:64 \
     android.hardware.wifi@1.2.vendor:64 \
