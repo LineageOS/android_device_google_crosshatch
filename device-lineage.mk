@@ -105,7 +105,7 @@ PRODUCT_PACKAGES += \
 
 # Misc interfaces
 PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0.vendor:32 \
+    android.frameworks.sensorservice@1.0.vendor \
     android.frameworks.stats@1.0.vendor:64 \
     android.hardware.authsecret@1.0.vendor:64 \
     android.hardware.biometrics.fingerprint@2.1.vendor:64 \
