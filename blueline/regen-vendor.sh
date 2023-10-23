@@ -1036,18 +1036,6 @@ VENDOR_SKIP_FILES=(
     "lib64/libplatformconfig.so"
     "lib64/libstagefrighthw.so"
 
-    # Nos
-    "lib64/libnos.so"
-    "lib64/libnos_client_citadel.so"
-    "lib64/libnos_datagram.so"
-    "lib64/libnos_datagram_citadel.so"
-    "lib64/libnos_transport.so"
-    "lib64/libnosprotos.so"
-    "lib64/nos_app_avb.so"
-    "lib64/nos_app_identity.so"
-    "lib64/nos_app_keymaster.so"
-    "lib64/nos_app_weaver.so"
-
     # Protobuf
     "lib/libprotobuf-cpp-full.so"
     "lib64/libprotobuf-cpp-full.so"

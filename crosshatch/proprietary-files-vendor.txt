@@ -879,7 +879,13 @@ vendor/lib64/libmm-hdcpmgr.so
 vendor/lib64/libmotion_ae.so
 vendor/lib64/libmulawdec.so
 vendor/lib64/libnetmgr.so
+vendor/lib64/libnos.so
 vendor/lib64/libnos_citadeld_proxy.so
+vendor/lib64/libnos_client_citadel.so
+vendor/lib64/libnos_datagram.so
+vendor/lib64/libnos_datagram_citadel.so
+vendor/lib64/libnos_transport.so
+vendor/lib64/libnosprotos.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
@@ -959,6 +965,10 @@ vendor/lib64/libwms.so
 vendor/lib64/libwqe.so
 vendor/lib64/libwvhidl@1.3.so
 vendor/lib64/libxml.so
+vendor/lib64/nos_app_avb.so
+vendor/lib64/nos_app_identity.so
+vendor/lib64/nos_app_keymaster.so
+vendor/lib64/nos_app_weaver.so
 vendor/lib64/qcrild_librilutils.so
 vendor/lib64/rfsa/adsp/libdsp_streamer_add_constant.so
 vendor/lib64/sensors.ssc.so
