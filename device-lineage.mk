@@ -93,10 +93,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libjson
 
-# Protobuf
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-vendorcompat
-
 # Wi-Fi
 PRODUCT_PACKAGES += \
     libwifi-hal:64 \
@@ -143,3 +139,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power-V1-ndk_platform.vendor:64 \
     android.hardware.rebootescrow-V1-ndk_platform.vendor:64 \
     libgui_shim
+
+# VNDK
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full.so
