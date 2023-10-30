@@ -25,10 +25,6 @@ PRODUCT_PACKAGES += \
     SettingsOverlayG013C \
     SettingsOverlayG013D \
 
-# Setup wizard overlay packages for ActiveEdge
-PRODUCT_PACKAGES += \
-    PixelSetupWizardOverlayActiveEdge \
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.insmod.crosshatch.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.cfg
 
