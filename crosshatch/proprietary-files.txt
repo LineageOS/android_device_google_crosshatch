@@ -115,8 +115,8 @@ product/priv-app/TetheringEntitlement/TetheringEntitlement.apk
 
 # SecureUI
 product/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk
-product/lib/libsecureuisvc_jni.so
-product/lib64/libsecureuisvc_jni.so
+product/lib/libsecureuisvc_jni.so|2537ca0ab3b43350ca046881d4889c78596433c5
+product/lib64/libsecureuisvc_jni.so|a8f9dd9e459a8037386156169201e4c04ddc1343
 
 # Sprint
 product/etc/permissions/com.android.sdm.plugins.sprintdm.xml
