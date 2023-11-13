@@ -152,3 +152,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power-V1-ndk_platform.vendor:64 \
     android.hardware.rebootescrow-V1-ndk_platform.vendor:64 \
     libgui_shim
+
+# VNDK
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcrypto-v33.so
