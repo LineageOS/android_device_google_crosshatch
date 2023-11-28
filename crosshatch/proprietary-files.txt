@@ -12,34 +12,22 @@ app/uimremoteserver/uimremoteserver.apk
 etc/permissions/com.qualcomm.qcrilmsgtunnel.xml
 etc/permissions/com.quicinc.cne.CNEService.xml
 etc/permissions/qcrilhook.xml
-etc/permissions/telephonyservice.xml
 etc/permissions/uimremoteclient.xml
 etc/permissions/uimremoteserver.xml
-framework/QtiTelephonyServicelibrary.jar
 framework/qcrilhook.jar
 framework/uimremoteclientlibrary.jar
 framework/uimremoteserverlibrary.jar
-lib/lib-imsvideocodec.so
-lib/lib-imsvt.so
-lib/lib-imsvtextutils.so
-lib/lib-imsvtutils.so
-lib/libqcbor_system.so
-lib/librcc.so
-lib/libsdm-disp-apis.so
 lib64/lib-imsvideocodec.so
 lib64/lib-imsvt.so
 lib64/lib-imsvtextutils.so
 lib64/lib-imsvtutils.so
 lib64/libimscamera_jni.so
 lib64/libimsmedia_jni.so
-lib64/libqcbor_system.so
 lib64/librcc.so
-lib64/libsdm-disp-apis.so
 priv-app/CNEService/CNEService.apk
 priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
 # SecureUI
-lib/libsecureui_svcsock_system.so
 lib64/libsecureui_svcsock_system.so
 
 # product partition
@@ -108,7 +96,6 @@ product/priv-app/TetheringEntitlement/TetheringEntitlement.apk
 
 # SecureUI
 product/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk
-product/lib/libsecureuisvc_jni.so|2537ca0ab3b43350ca046881d4889c78596433c5
 product/lib64/libsecureuisvc_jni.so|a8f9dd9e459a8037386156169201e4c04ddc1343
 
 # Sprint
@@ -145,98 +132,8 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar
 # Permissions
 system_ext/etc/permissions/privapp-permissions-google-se.xml:system_ext/etc/permissions/privapp-permissions-google-se-lineage.xml
 
-# Qualcomm misc
-system_ext/framework/com.qualcomm.qti.uceservice-V2.0-java.jar
-system_ext/framework/com.qualcomm.qti.uceservice-V2.1-java.jar
-system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.data.latency-V1.0-java.jar
-system_ext/framework/vendor.qti.hardware.soter-V1.0-java.jar
-system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar
-system_ext/framework/vendor.qti.voiceprint-V1.0-java.jar
-system_ext/lib/com.qualcomm.qti.ant@1.0.so
-system_ext/lib/com.qualcomm.qti.imscmservice@1.0.so
-system_ext/lib/com.qualcomm.qti.uceservice@2.0.so
-system_ext/lib/com.qualcomm.qti.uceservice@2.1.so
-system_ext/lib/libadsprpc_system.so
-system_ext/lib/libcdsprpc_system.so
-system_ext/lib/libdiag_system.so
-system_ext/lib/libmdsprpc_system.so
-system_ext/lib/libsdsprpc_system.so
-system_ext/lib/vendor.display.color@1.0.so
-system_ext/lib/vendor.display.color@1.1.so
-system_ext/lib/vendor.display.color@1.2.so
-system_ext/lib/vendor.display.postproc@1.0.so
-system_ext/lib/vendor.google.wifi_ext@1.0.so
-system_ext/lib/vendor.qti.hardware.alarm@1.0.so
-system_ext/lib/vendor.qti.hardware.data.latency@1.0.so
-system_ext/lib/vendor.qti.hardware.qseecom@1.0.so
-system_ext/lib/vendor.qti.hardware.qteeconnector@1.0.so
-system_ext/lib/vendor.qti.hardware.radio.am@1.0.so
-system_ext/lib/vendor.qti.hardware.radio.ims@1.0.so
-system_ext/lib/vendor.qti.hardware.radio.ims@1.1.so
-system_ext/lib/vendor.qti.hardware.radio.ims@1.2.so
-system_ext/lib/vendor.qti.hardware.radio.ims@1.3.so
-system_ext/lib/vendor.qti.hardware.radio.ims@1.4.so
-system_ext/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
-system_ext/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so
-system_ext/lib/vendor.qti.hardware.radio.qtiradio@1.0.so
-system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.0.so
-system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.1.so
-system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.2.so
-system_ext/lib/vendor.qti.hardware.radio.uim@1.0.so
-system_ext/lib/vendor.qti.hardware.radio.uim@1.1.so
-system_ext/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so
-system_ext/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so
-system_ext/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so
-system_ext/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
-system_ext/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
-system_ext/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
-system_ext/lib/vendor.qti.hardware.scve.panorama@1.0.so
-system_ext/lib/vendor.qti.hardware.soter@1.0.so
-system_ext/lib/vendor.qti.hardware.tui_comm@1.0.so
-system_ext/lib/vendor.qti.ims.callinfo@1.0.so
-system_ext/lib/vendor.qti.imsrtpservice@1.0.so
-system_ext/lib64/com.qualcomm.qti.ant@1.0.so
-system_ext/lib64/com.qualcomm.qti.imscmservice@1.0.so
-system_ext/lib64/com.qualcomm.qti.uceservice@2.0.so
-system_ext/lib64/com.qualcomm.qti.uceservice@2.1.so
-system_ext/lib64/libadsprpc_system.so
-system_ext/lib64/libcdsprpc_system.so
+# Qualcomm IMS
 system_ext/lib64/libdiag_system.so
-system_ext/lib64/libmdsprpc_system.so
-system_ext/lib64/vendor.display.color@1.0.so
-system_ext/lib64/vendor.display.color@1.1.so
-system_ext/lib64/vendor.display.color@1.2.so
-system_ext/lib64/vendor.display.postproc@1.0.so
-system_ext/lib64/vendor.google.wifi_ext@1.0.so
-system_ext/lib64/vendor.qti.hardware.alarm@1.0.so
-system_ext/lib64/vendor.qti.hardware.data.latency@1.0.so
-system_ext/lib64/vendor.qti.hardware.qseecom@1.0.so
-system_ext/lib64/vendor.qti.hardware.qteeconnector@1.0.so
-system_ext/lib64/vendor.qti.hardware.radio.am@1.0.so
-system_ext/lib64/vendor.qti.hardware.radio.ims@1.0.so
-system_ext/lib64/vendor.qti.hardware.radio.ims@1.1.so
-system_ext/lib64/vendor.qti.hardware.radio.ims@1.2.so
-system_ext/lib64/vendor.qti.hardware.radio.ims@1.3.so
-system_ext/lib64/vendor.qti.hardware.radio.ims@1.4.so
-system_ext/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
-system_ext/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so
-system_ext/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so
-system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so
-system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so
-system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so
-system_ext/lib64/vendor.qti.hardware.radio.uim@1.0.so
-system_ext/lib64/vendor.qti.hardware.radio.uim@1.1.so
-system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
-system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
-system_ext/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
-system_ext/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
-system_ext/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
-system_ext/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
-system_ext/lib64/vendor.qti.hardware.scve.panorama@1.0.so
-system_ext/lib64/vendor.qti.hardware.soter@1.0.so
-system_ext/lib64/vendor.qti.hardware.tui_comm@1.0.so
-system_ext/lib64/vendor.qti.ims.callinfo@1.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@1.0.so
 
 # Radio
