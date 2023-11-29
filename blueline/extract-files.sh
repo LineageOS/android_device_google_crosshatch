@@ -55,6 +55,12 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        product/etc/permissions/uimremoteclient.xml | product/etc/permissions/uimremoteserver.xml)
+            sed -i "s|/system/framework/|/product/framework/|g" "${2}"
+            ;;
+        system_ext/etc/permissions/qcrilhook.xml)
+            sed -i 's|/system/framework/|/system_ext/framework/|g' "${2}"
+            ;;
         vendor/bin/hw/android.hardware.rebootescrow-service.citadel)
             "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
             ;;
