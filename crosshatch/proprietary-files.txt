@@ -58,12 +58,6 @@ product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk;PRESIGNED
 # Camera extensions
 product/app/PixelCameraServicesCrosshatch/PixelCameraServicesCrosshatch.apk;PRESIGNED
 
-# Charger
-product/etc/res/images/charger/battery_fail.png
-product/etc/res/images/charger/battery_scale.png
-product/etc/res/images/charger/main_font.png
-product/etc/res/values/charger/animation.txt
-
 # CNE
 product/etc/cne/Nexus/ATT/ATT_profiles.xml
 product/etc/cne/Nexus/ROW/ROW_profiles.xml
