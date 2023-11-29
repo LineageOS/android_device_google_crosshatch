@@ -1,36 +1,5 @@
 # All blobs are extracted from Google factory images for each new ASB
 
-# system partition
-
-# Qualcomm misc
-app/QtiTelephonyService/QtiTelephonyService.apk
-app/atfwd/atfwd.apk
-app/datastatusnotification/datastatusnotification.apk
-app/ims/ims.apk
-app/uceShimService/uceShimService.apk
-app/uimremoteclient/uimremoteclient.apk
-app/uimremoteserver/uimremoteserver.apk
-etc/permissions/com.qualcomm.qcrilmsgtunnel.xml
-etc/permissions/com.quicinc.cne.CNEService.xml
-etc/permissions/qcrilhook.xml
-etc/permissions/uimremoteclient.xml
-etc/permissions/uimremoteserver.xml
-framework/qcrilhook.jar
-framework/uimremoteclientlibrary.jar
-framework/uimremoteserverlibrary.jar
-lib64/lib-imsvideocodec.so
-lib64/lib-imsvt.so
-lib64/lib-imsvtextutils.so
-lib64/lib-imsvtutils.so
-lib64/libimscamera_jni.so
-lib64/libimsmedia_jni.so
-lib64/librcc.so
-priv-app/CNEService/CNEService.apk
-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-
-# SecureUI
-lib64/libsecureui_svcsock_system.so
-
 # product partition
 
 # AiAi
@@ -45,12 +14,6 @@ product/priv-app/AmbientSensePrebuilt/AmbientSensePrebuilt.apk;PRESIGNED
 
 # Camera extensions
 product/app/PixelCameraServicesCrosshatch/PixelCameraServicesCrosshatch.apk;PRESIGNED
-
-# CNE
-product/etc/cne/Nexus/ATT/ATT_profiles.xml
-product/etc/cne/Nexus/ROW/ROW_profiles.xml
-product/etc/cne/Nexus/VZW/VZW_profiles.xml
-product/etc/cne/andsfCne.xml
 
 # Felica
 product/app/MobileFeliCaClient/MobileFeliCaClient.apk;PRESIGNED
@@ -79,6 +42,14 @@ product/etc/sysconfig/pixel_2018_exclusive.xml
 product/etc/sysconfig/pixel_experience_2017.xml
 product/etc/sysconfig/pixel_experience_2018.xml
 
+# Qualcomm Radio
+system/app/uimremoteclient/uimremoteclient.apk:product/app/uimremoteclient/uimremoteclient.apk
+system/app/uimremoteserver/uimremoteserver.apk:product/app/uimremoteserver/uimremoteserver.apk
+system/etc/permissions/uimremoteclient.xml:product/etc/permissions/uimremoteclient.xml
+system/etc/permissions/uimremoteserver.xml:product/etc/permissions/uimremoteserver.xml
+system/framework/uimremoteclientlibrary.jar:product/framework/uimremoteclientlibrary.jar
+system/framework/uimremoteserverlibrary.jar:product/framework/uimremoteserverlibrary.jar
+
 # Radio
 product/etc/permissions/com.android.sdm.plugins.connmo.xml
 product/etc/permissions/com.android.sdm.plugins.dcmo.xml
@@ -94,10 +65,6 @@ product/priv-app/DMService/DMService.apk
 product/priv-app/DiagMon/DiagMon.apk
 product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
 product/priv-app/TetheringEntitlement/TetheringEntitlement.apk
-
-# SecureUI
-product/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk
-product/lib64/libsecureuisvc_jni.so|a8f9dd9e459a8037386156169201e4c04ddc1343
 
 # Sprint
 product/etc/permissions/com.android.sdm.plugins.sprintdm.xml
@@ -126,6 +93,14 @@ product/priv-app/WfcActivation/WfcActivation.apk;PRESIGNED
 system_ext/etc/permissions/com.google.android.camera.extensions.xml
 system_ext/framework/com.google.android.camera.extensions.jar
 
+# CNE
+product/etc/cne/Nexus/ATT/ATT_profiles.xml:system_ext/etc/cne/Nexus/ATT/ATT_profiles.xml
+product/etc/cne/Nexus/ROW/ROW_profiles.xml:system_ext/etc/cne/Nexus/ROW/ROW_profiles.xml
+product/etc/cne/Nexus/VZW/VZW_profiles.xml:system_ext/etc/cne/Nexus/VZW/VZW_profiles.xml
+product/etc/cne/andsfCne.xml:system_ext/etc/cne/andsfCne.xml
+system/etc/permissions/com.quicinc.cne.CNEService.xml:system_ext/etc/permissions/com.quicinc.cne.CNEService.xml
+system/priv-app/CNEService/CNEService.apk:system_ext/priv-app/CNEService/CNEService.apk
+
 # Hotword
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
@@ -134,8 +109,26 @@ system_ext/framework/com.android.hotwordenrollment.common.util.jar
 system_ext/etc/permissions/privapp-permissions-google-se.xml:system_ext/etc/permissions/privapp-permissions-google-se-lineage.xml
 
 # Qualcomm IMS
+system/app/ims/ims.apk:system_ext/app/ims/ims.apk
+system/lib64/lib-imsvideocodec.so:system_ext/lib64/lib-imsvideocodec.so
+system/lib64/lib-imsvt.so:system_ext/lib64/lib-imsvt.so
+system/lib64/lib-imsvtextutils.so:system_ext/lib64/lib-imsvtextutils.so
+system/lib64/lib-imsvtutils.so:system_ext/lib64/lib-imsvtutils.so
+system/lib64/libimscamera_jni.so:system_ext/lib64/libimscamera_jni.so
+system/lib64/libimsmedia_jni.so:system_ext/lib64/libimsmedia_jni.so
+system/lib64/librcc.so:system_ext/lib64/librcc.so
 system_ext/lib64/libdiag_system.so
 system_ext/lib64/vendor.qti.imsrtpservice@1.0.so
+
+# Qualcomm Radio
+system/app/QtiTelephonyService/QtiTelephonyService.apk:system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
+system/app/atfwd/atfwd.apk:system_ext/app/atfwd/atfwd.apk
+system/app/datastatusnotification/datastatusnotification.apk:system_ext/app/datastatusnotification/datastatusnotification.apk
+system/app/uceShimService/uceShimService.apk:system_ext/app/uceShimService/uceShimService.apk
+system/etc/permissions/com.qualcomm.qcrilmsgtunnel.xml:system_ext/etc/permissions/com.qualcomm.qcrilmsgtunnel.xml
+system/etc/permissions/qcrilhook.xml:system_ext/etc/permissions/qcrilhook.xml
+system/framework/qcrilhook.jar:system_ext/framework/qcrilhook.jar
+system/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk:system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
 # Radio
 system_ext/etc/permissions/com.android.omadm.radioconfig.xml
@@ -151,6 +144,11 @@ system_ext/priv-app/EuiccSupportPixel/esim-v1.img
 system_ext/priv-app/EuiccSupportPixelPermissions/EuiccSupportPixelPermissions.apk;PRESIGNED
 system_ext/priv-app/RilConfigService/RilConfigService.apk
 system_ext/priv-app/grilservice/grilservice.apk;PRESIGNED
+
+# SecureUI
+product/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk:system_ext/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk
+system/lib64/libsecureui_svcsock_system.so:system_ext/lib64/libsecureui_svcsock_system.so
+system_ext/lib64/libsecureuisvc_jni.so|a8f9dd9e459a8037386156169201e4c04ddc1343
 
 # VZW
 system_ext/etc/permissions/obdm_permissions.xml
