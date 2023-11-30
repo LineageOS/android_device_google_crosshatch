@@ -1,0 +1,14 @@
+# All firmware images are extracted from Google factory images for each new ASB
+
+abl.img;AB
+aop.img;AB
+cmnlib.img;AB
+cmnlib64.img;AB
+devcfg.img;AB
+hyp.img;AB
+keymaster.img;AB
+modem.img;AB
+qupfw.img;AB
+tz.img;AB
+xbl.img;AB
+xbl_config.img;AB
