@@ -148,6 +148,7 @@ system_ext/priv-app/grilservice/grilservice.apk;PRESIGNED
 product/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk:system_ext/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk
 system/lib64/libsecureui_svcsock_system.so:system_ext/lib64/libsecureui_svcsock_system.so
 system_ext/lib64/libsecureuisvc_jni.so|a8f9dd9e459a8037386156169201e4c04ddc1343
+system_ext/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # VZW
 system_ext/etc/permissions/obdm_permissions.xml
