@@ -1,5 +1,9 @@
 [
   {
+    "repository": "android_device_google_gs-common",
+    "target_path": "device/google/gs-common"
+  },
+  {
     "repository": "android_kernel_google_msm-4.9",
     "target_path": "kernel/google/msm-4.9"
   },
