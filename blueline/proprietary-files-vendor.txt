@@ -25,7 +25,6 @@ vendor/bin/hw/citadeld
 vendor/bin/hw/init_citadel
 vendor/bin/hw/qcrild
 vendor/bin/hw/vendor.google.radioext@1.0-service
-vendor/bin/hw/vendor.google.wifi_ext@1.0-service-vendor
 vendor/bin/hw/vendor.google.wireless_charger@1.3-service-vendor
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
@@ -171,7 +170,6 @@ vendor/etc/init/init_citadel.rc
 vendor/etc/init/qcrild.rc
 vendor/etc/init/rebootescrow-citadel.rc
 vendor/etc/init/vendor.google.radioext@1.0-service.rc
-vendor/etc/init/vendor.google.wifi_ext@1.0-service.rc
 vendor/etc/init/vendor.google.wireless_charger@1.3-service.rc
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
@@ -235,7 +233,6 @@ vendor/etc/vintf/manifest/android.hardware.identity.strongbox.xml
 vendor/etc/vintf/manifest/android.hardware.keymaster@4.1-service.citadel.xml
 vendor/etc/vintf/manifest/android.hardware.weaver@1.0-service.citadel.xml
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
-vendor/etc/vintf/manifest/manifest_wifi_ext.xml
 vendor/etc/vintf/manifest/rebootescrow-citadel.xml
 vendor/etc/vintf/manifest/vendor.google.wireless_charger@1.3-service-vendor.xml
 vendor/firmware/CAMERA_ICP.elf
@@ -757,7 +754,6 @@ vendor/lib64/egl/libGLESv2_adreno.so
 vendor/lib64/egl/libQTapGLES.so
 vendor/lib64/egl/libq3dtools_adreno.so
 vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/google_wifi_firmware_config_info_cc_proto.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/camera.sdm845.so
@@ -986,8 +982,6 @@ vendor/lib64/vendor.google.radioext@1.1.so
 vendor/lib64/vendor.google.radioext@1.2.so
 vendor/lib64/vendor.google.radioext@1.3.so
 vendor/lib64/vendor.google.wifi_ext@1.0.so
-vendor/lib64/vendor.google.wifi_ext@1.1.so
-vendor/lib64/vendor.google.wifi_ext@1.2.so
 vendor/lib64/vendor.google.wireless_charger@1.0.so
 vendor/lib64/vendor.google.wireless_charger@1.1.so
 vendor/lib64/vendor.google.wireless_charger@1.2.so

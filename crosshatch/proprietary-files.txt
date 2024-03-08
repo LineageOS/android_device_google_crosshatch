@@ -156,3 +156,12 @@ system_ext/etc/permissions/vzw_mvs_permissions.xml
 system_ext/priv-app/MyVerizonServices/MyVerizonServices.apk;PRESIGNED
 system_ext/priv-app/OBDM_Permissions/OBDM_Permissions.apk;PRESIGNED
 system_ext/priv-app/obdm_stub/obdm_stub.apk;PRESIGNED
+
+# vendor partition
+
+# Wi-Fi service
+vendor/bin/hw/vendor.google.wifi_ext-service-vendor|1edcbf349a1fcf471f726bcbb5eb31a2e6db89fa
+vendor/etc/init/vendor.google.wifi_ext-service.rc|8565ca57da131819441d6fb87abfcae134ed2ef9
+vendor/etc/vintf/manifest/manifest_wifi_ext_aidl.xml|6c411f5a63ebc252698fc880d8813ca8c9c63d9c
+vendor/lib64/google_wifi_firmware_config_info_cc_proto.so|d40e09d8c4640f28efdd659e49e8ee6a727ef4a2
+vendor/lib64/vendor.google.wifi_ext-V3-ndk.so|d199582834b5b266426ae8dac5692cd1bb2b9552
