@@ -174,10 +174,9 @@
             <instance>default</instance>
         </interface>
       </hal>
-    <hal format="hidl" optional="true">
+    <hal format="aidl" optional="true">
         <name>vendor.google.wifi_ext</name>
-        <transport>hwbinder</transport>
-        <version>1.2</version>
+        <version>1-3</version>
         <interface>
             <name>IWifiExt</name>
             <instance>default</instance>
