@@ -763,8 +763,6 @@ VENDOR_SKIP_FILES=(
     "lib64/libhwc2onfbadapter.so"
     "lib64/libhwminijail.so"
     "lib64/libipanat.so"
-    "lib64/libkeymaster4_1support.so"
-    "lib64/libkeymaster4support.so"
     "lib64/libkeystore-engine-wifi-hidl.so"
     "lib64/libkeystore-wifi-hidl.so"
     "lib64/libloc_core.so"
@@ -1003,9 +1001,6 @@ VENDOR_SKIP_FILES=(
     "lib64/android.hardware.identity-support-lib.so"
     "lib64/libcppbor_external.so"
     "lib64/libcppcose_rkp.so"
-    "lib64/libkeymaster_messages.so"
-    "lib64/libkeymaster_portable.so"
-    "lib64/libpuresoftkeymasterdevice.so"
     "lib64/libsoft_attestation_cert.so"
 
     # Json

@@ -862,6 +862,10 @@ vendor/lib64/libhdr_tm.so
 vendor/lib64/libhexagon_nn_stub.so
 vendor/lib64/libidl.so
 vendor/lib64/libizat_core.so
+vendor/lib64/libkeymaster4_1support.so
+vendor/lib64/libkeymaster4support.so
+vendor/lib64/libkeymaster_messages.so
+vendor/lib64/libkeymaster_portable.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
@@ -892,6 +896,7 @@ vendor/lib64/libpdnotifier.so
 vendor/lib64/libperipheral_client.so
 vendor/lib64/libpixelstats.so
 vendor/lib64/libpower_anomaly_data.so
+vendor/lib64/libpuresoftkeymasterdevice.so
 vendor/lib64/libqcbor.so
 vendor/lib64/libqcci_legacy.so
 vendor/lib64/libqcmaputils.so

@@ -89,11 +89,6 @@ PRODUCT_PACKAGES += \
     android.hardware.identity-support-lib.vendor:64 \
     android.hardware.identity_credential.xml
 
-# Nos
-PRODUCT_PACKAGES += \
-    libkeymaster4support.vendor:64 \
-    libkeymaster4_1support.vendor:64
-
 # Json
 PRODUCT_PACKAGES += \
     libjson

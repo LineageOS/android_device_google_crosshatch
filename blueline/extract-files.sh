@@ -61,7 +61,7 @@ function blob_fixup() {
         system_ext/etc/permissions/qcrilhook.xml)
             sed -i 's|/system/framework/|/system_ext/framework/|g' "${2}"
             ;;
-        vendor/bin/hw/android.hardware.rebootescrow-service.citadel)
+        vendor/bin/hw/android.hardware.rebootescrow-service.citadel | vendor/lib64/libkeymaster4_1support.so | vendor/lib64/libkeymaster4support.so | vendor/lib64/libkeymaster_portable.so)
             "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
             ;;
     esac
