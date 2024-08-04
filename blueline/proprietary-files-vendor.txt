@@ -396,7 +396,6 @@ vendor/lib/libOpenCL-pixel.so
 vendor/lib/libOpenCL.so
 vendor/lib/libQSEEComAPI.so
 vendor/lib/libQTEEConnector_vendor.so
-vendor/lib/libRSDriver_adreno.so
 vendor/lib/libSecureUILib.so
 vendor/lib/libStDrvInt.so
 vendor/lib/libSubSystemShutdown.so
@@ -470,8 +469,6 @@ vendor/lib/libqseed3.so
 vendor/lib/libqti-utils.so
 vendor/lib/libqtikeymaster4.so
 vendor/lib/librpmb.so
-vendor/lib/librs_adreno.so
-vendor/lib/librs_adreno_sha1.so
 vendor/lib/libsdedrm.so
 vendor/lib/libsdm-color.so
 vendor/lib/libsdm-diag.so
@@ -623,7 +620,6 @@ vendor/lib64/libOpenCL-pixel.so
 vendor/lib64/libOpenCL.so
 vendor/lib64/libQSEEComAPI.so
 vendor/lib64/libQTEEConnector_vendor.so
-vendor/lib64/libRSDriver_adreno.so
 vendor/lib64/libSecureUILib.so
 vendor/lib64/libStDrvInt.so
 vendor/lib64/libSubSystemShutdown.so
@@ -712,8 +708,6 @@ vendor/lib64/libqseed3.so
 vendor/lib64/libqti-utils.so
 vendor/lib64/libqtikeymaster4.so
 vendor/lib64/librpmb.so
-vendor/lib64/librs_adreno.so
-vendor/lib64/librs_adreno_sha1.so
 vendor/lib64/librtxproto.so
 vendor/lib64/libsdedrm.so
 vendor/lib64/libsdm-color.so

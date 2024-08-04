@@ -338,10 +338,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-qti-display \
     vendor.qti.hardware.display.allocator@1.0-service
 
-# RenderScript HAL
-PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl
-
 # Health HAL
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl-crosshatch \
