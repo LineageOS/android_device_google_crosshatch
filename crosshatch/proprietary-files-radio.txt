@@ -130,7 +130,7 @@ vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so|6b0a93fea15929f446c0819fc5411268b09
 vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so|edde36e3eaf91a7c26e378dc17c312b99e2cc65b
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so|dfe17b80d07b431615c35cbd3403f0c0c9455c6f
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|29c39c454cd7c11368db5c480d151e0487f4e0ea
-vendor/lib64/vendor.qti.imsrtpservice@3.0.so|91cc47edc34172234d56156e7e69fa5b4871dd21
+vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor|91cc47edc34172234d56156e7e69fa5b4871dd21
 
 # QMI - from coral - TP1A.221005.002.B2
 vendor/bin/irsc_util|f194faebe803843eb855a72e172367e02dc49ecd
