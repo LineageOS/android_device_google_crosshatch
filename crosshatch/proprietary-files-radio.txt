@@ -1,3 +1,6 @@
+# libril-qcril-hook-oem depends on libril, which is a gnu makefile target
+# libcne, libwqe depend on libwpa_client, which is a gnu makefile target
+
 # CNE - from coral - TP1A.221005.002.B2
 vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink|8c05c492f3673a0e52d86dbd01c144d502fe51f5
 vendor/bin/cnd|00c98e93cb936320d90af32a26078e6e97a8c5eb
@@ -35,12 +38,12 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml|f76c894f3c6d5b6ed35113a088dc3174c9
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml|14d136e7fcc682311757d3edc0b9d3eaeba11815
 vendor/etc/init/cnd-generic.rc|5ec06d42d32b58bf5c73b77d485606c477d57324
 vendor/lib/libxml.so|b453fbd6fcaae2d13f51a8838cf975de8d562e20
-vendor/lib64/libcne.so|1eb5ae1fdd51f05e25d38afd8a793d8adb0ed1cf
+vendor/lib64/libcne.so;DISABLE_CHECKELF|1eb5ae1fdd51f05e25d38afd8a793d8adb0ed1cf
 vendor/lib64/libcneapiclient.so|a3bd1e0e85f0684fe6c999f5dc17ffdbc14e8f24
 vendor/lib64/libcneoplookup.so|573229322afd00b1bfb553f0eef72ce4e2c99ff4
 vendor/lib64/libcneqmiutils.so|975806b9492bef88558a38dc2ca7eda379904c08
 vendor/lib64/libwms.so|dd94e8a33e1259d125226e7225b078da49ac2328
-vendor/lib64/libwqe.so|3fc0932d6c08d69c2bf24e66f6b65e2834337563
+vendor/lib64/libwqe.so;DISABLE_CHECKELF|3fc0932d6c08d69c2bf24e66f6b65e2834337563
 vendor/lib64/libxml.so|99af70488a54858bb911c8241fea9471e040f045
 vendor/lib64/vendor.qti.data.factory@2.0.so|3ecbbc3fc0c611979978027ad911533fe48f78dc
 vendor/lib64/vendor.qti.data.factory@2.1.so|9f8086e5968b7502959dc6e8aa41457356e9bd97
@@ -221,7 +224,7 @@ vendor/lib/libqsocket.so|b9be629fb5c1da56a9ba1dfe01a8abe6b1a2d05f
 vendor/lib/libril-qc-logger.so|2d4bde4843e91783861643286b6863089608fece
 vendor/lib/libril-qc-ltedirectdisc.so|e1a929ee4f7bc2394d7ab7a5ea61674ca47087d3
 vendor/lib/libril-qc-radioconfig.so|e2f7c4f8d7c108e4fea26c5d0a0a75051347f35b
-vendor/lib/libril-qcril-hook-oem.so|d98260243d7aaf7dc6ebd208325bb37bfb7b39d1
+vendor/lib/libril-qcril-hook-oem.so;DISABLE_CHECKELF|d98260243d7aaf7dc6ebd208325bb37bfb7b39d1
 vendor/lib/librilqmiservices.so|0735d5611fc368f25cec99640776d460bab50234
 vendor/lib/librmnetctl.so|3643f5bf87e482aa23557dd642af2a5aa9dfc67e
 vendor/lib/libsettings.so|ee4bc5640099fd1bacba90d5ddf245434edbe958
@@ -250,7 +253,7 @@ vendor/lib64/libril-qc-hal-qmi.so|2d21a34234abcbd0528e55b13bd0870843534e6c
 vendor/lib64/libril-qc-logger.so|490ad87ff29473f5ab64be3233b425462a86cbf0
 vendor/lib64/libril-qc-ltedirectdisc.so|5b9bb1c54b1b073bf07b39ca4c29e4f046be3b56
 vendor/lib64/libril-qc-radioconfig.so|f2938d064c8159107239e55c2d9b484f280f60dc
-vendor/lib64/libril-qcril-hook-oem.so|56f358a44218deee55e9c14e9b660f1569d46fd5
+vendor/lib64/libril-qcril-hook-oem.so;DISABLE_CHECKELF|56f358a44218deee55e9c14e9b660f1569d46fd5
 vendor/lib64/librilqmiservices.so|348b20fa0a0ddcf43cbc691d458e83e027246a22
 vendor/lib64/librmnetctl.so|6f27803437a7983849c0619eada9992cfb10b344
 vendor/lib64/libsettings.so|c65a4bdc14028a5724818f2ceb7536a3073707c7
