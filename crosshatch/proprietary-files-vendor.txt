@@ -397,7 +397,7 @@ vendor/lib/libGPQTEEC_vendor.so
 vendor/lib/libGPTEE_vendor.so
 vendor/lib/libGPreqcancel.so
 vendor/lib/libGPreqcancel_svc.so
--vendor/lib/libMpeg4SwEncoder.so
+vendor/lib/libMpeg4SwEncoder.so
 vendor/lib/libOmxAlacDecSw.so
 vendor/lib/libOmxAmrwbplusDec.so
 vendor/lib/libOmxApeDecSw.so
@@ -429,7 +429,7 @@ vendor/lib/libaudioalsa.so
 vendor/lib/libbase64.so
 vendor/lib/libbccQTI.so
 vendor/lib/libbluetooth_audio_session_qti.so
--vendor/lib/libbtnv.so
+vendor/lib/libbtnv.so
 vendor/lib/libc2d30_bltlib.so
 vendor/lib/libcameradepthcalibrator.so
 vendor/lib/libcdsp_default_listener.so
@@ -490,7 +490,7 @@ vendor/lib/libsdm-color.so
 vendor/lib/libsdm-diag.so
 vendor/lib/libsdm-disp-vndapis.so
 vendor/lib/libsdmextension.so
--vendor/lib/libsdsprpc.so
+vendor/lib/libsdsprpc.so
 vendor/lib/libsecureui.so
 vendor/lib/libsecureui_svcsock.so
 vendor/lib/libsensorslog.so
@@ -635,7 +635,7 @@ vendor/lib64/libGPQTEEC_vendor.so
 vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
--vendor/lib64/libMpeg4SwEncoder.so
+vendor/lib64/libMpeg4SwEncoder.so
 vendor/lib64/libOmxAlacDecSw.so
 vendor/lib64/libOmxAmrwbplusDec.so
 vendor/lib64/libOmxApeDecSw.so
@@ -664,7 +664,7 @@ vendor/lib64/libaudioalsa.so
 vendor/lib64/libbase64.so
 vendor/lib64/libbccQTI.so
 vendor/lib64/libbluetooth_audio_session_qti.so
--vendor/lib64/libbtnv.so
+vendor/lib64/libbtnv.so
 vendor/lib64/libc2d30_bltlib.so
 vendor/lib64/libcameradepthcalibrator.so
 vendor/lib64/libcamxfdalgov7.so
@@ -742,7 +742,7 @@ vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
--vendor/lib64/libsdsprpc.so
+vendor/lib64/libsdsprpc.so
 vendor/lib64/libsecureui.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libsensorslog.so
