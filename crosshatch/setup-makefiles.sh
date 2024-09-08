@@ -42,6 +42,9 @@ function lib_to_package_fixup_vendor_variants() {
             vendor.qti.imsrtpservice@3.0)
             echo "$1_vendor"
             ;;
+        libprotobuf-cpp-full)
+            echo "libprotobuf-cpp-full-vendorcompat"
+            ;;
         libprotobuf-cpp-lite-21.12)
             echo "libprotobuf-cpp-lite"
             ;;
