@@ -66,6 +66,12 @@ function blob_fixup() {
         vendor/bin/hw/android.hardware.rebootescrow-service.citadel)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
+            "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
+            ;;
+        vendor/lib64/android.hardware.keymaster@4.1-impl.nos.so | \
+            vendor/lib64/libwvhidl@1.3.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
             ;;
         *)
             return 1
