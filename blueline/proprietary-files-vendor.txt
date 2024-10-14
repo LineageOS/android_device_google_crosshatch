@@ -385,7 +385,6 @@ vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib/hw/sound_trigger.primary.sdm845.so
 vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
 vendor/lib/hw/vulkan.adreno.so
-vendor/lib/lib-dplmedia.so
 vendor/lib/libAlacSwDec.so
 vendor/lib/libApeSwDec.so
 vendor/lib/libC2D2.so
@@ -624,7 +623,6 @@ vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/hw/sound_trigger.primary.sdm845.so
 vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
 vendor/lib64/hw/vulkan.adreno.so
-vendor/lib64/lib-dplmedia.so
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libC2D2.so
