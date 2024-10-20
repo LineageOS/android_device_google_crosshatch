@@ -22,9 +22,8 @@ TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT=blueline \
-    PRIVATE_BUILD_DESC="blueline-user 12 SP1A.210812.016.C2 8618562 release-keys"
-
-BUILD_FINGERPRINT := google/blueline/blueline:12/SP1A.210812.016.C2/8618562:user/release-keys
+    BuildDesc="blueline-user 12 SP1A.210812.016.C2 8618562 release-keys" \
+    BuildFingerprint=google/blueline/blueline:12/SP1A.210812.016.C2/8618562:user/release-keys \
+    DeviceProduct=blueline
 
 $(call inherit-product, vendor/google/blueline/blueline-vendor.mk)
