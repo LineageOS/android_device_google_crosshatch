@@ -102,7 +102,7 @@ PRODUCT_PACKAGES += \
     libkeymaster4support.vendor:64 \
     libkeymaster4_1support.vendor:64 \
     libcppbor_external.vendor \
-    libcrypto_shim
+    libcrypto_shim.vendor
 
 # Json
 PRODUCT_PACKAGES += \
