@@ -1,4 +1,3 @@
-# libril-qcril-hook-oem depends on libril, which is a gnu makefile target
 # libcne, libwqe depend on libwpa_client, which is a gnu makefile target
 
 # CNE - from coral - TP1A.221005.002.B2
@@ -224,7 +223,7 @@ vendor/lib/libqsocket.so|b9be629fb5c1da56a9ba1dfe01a8abe6b1a2d05f
 vendor/lib/libril-qc-logger.so|2d4bde4843e91783861643286b6863089608fece
 vendor/lib/libril-qc-ltedirectdisc.so|e1a929ee4f7bc2394d7ab7a5ea61674ca47087d3
 vendor/lib/libril-qc-radioconfig.so|e2f7c4f8d7c108e4fea26c5d0a0a75051347f35b
-vendor/lib/libril-qcril-hook-oem.so;DISABLE_CHECKELF|d98260243d7aaf7dc6ebd208325bb37bfb7b39d1
+vendor/lib/libril-qcril-hook-oem.so|d98260243d7aaf7dc6ebd208325bb37bfb7b39d1
 vendor/lib/librilqmiservices.so|0735d5611fc368f25cec99640776d460bab50234
 vendor/lib/librmnetctl.so|3643f5bf87e482aa23557dd642af2a5aa9dfc67e
 vendor/lib/libsettings.so|ee4bc5640099fd1bacba90d5ddf245434edbe958
@@ -253,7 +252,7 @@ vendor/lib64/libril-qc-hal-qmi.so|2d21a34234abcbd0528e55b13bd0870843534e6c
 vendor/lib64/libril-qc-logger.so|490ad87ff29473f5ab64be3233b425462a86cbf0
 vendor/lib64/libril-qc-ltedirectdisc.so|5b9bb1c54b1b073bf07b39ca4c29e4f046be3b56
 vendor/lib64/libril-qc-radioconfig.so|f2938d064c8159107239e55c2d9b484f280f60dc
-vendor/lib64/libril-qcril-hook-oem.so;DISABLE_CHECKELF|56f358a44218deee55e9c14e9b660f1569d46fd5
+vendor/lib64/libril-qcril-hook-oem.so|56f358a44218deee55e9c14e9b660f1569d46fd5
 vendor/lib64/librilqmiservices.so|348b20fa0a0ddcf43cbc691d458e83e027246a22
 vendor/lib64/librmnetctl.so|6f27803437a7983849c0619eada9992cfb10b344
 vendor/lib64/libsettings.so|c65a4bdc14028a5724818f2ceb7536a3073707c7
