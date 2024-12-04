@@ -82,6 +82,7 @@ function blob_fixup() {
             vendor/lib64/libnos_citadeld_proxy.so)
             [ "$2" = "" ] && return 0
             sed -i "s/android.frameworks.stats-V1-ndk_platform.so/android.frameworks.stats-V1-ndk.so\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
+            "${PATCHELF}" --replace-needed "pixelatoms-cpp.so" "pixelatoms-cpp-legacy.so" "${2}"
             ;;
         vendor/bin/hw/vendor.qti.media.c2@1.0-service)
             [ "$2" = "" ] && return 0
