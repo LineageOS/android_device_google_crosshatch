@@ -666,7 +666,6 @@ vendor/lib64/libc2d30_bltlib.so
 vendor/lib64/libcameradepthcalibrator.so
 vendor/lib64/libcamxfdalgov7.so
 vendor/lib64/libcamxfdengine.so
-vendor/lib64/libcamxncs.so
 vendor/lib64/libcamxstatscore.so
 vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libcdsp_default_listener.so
