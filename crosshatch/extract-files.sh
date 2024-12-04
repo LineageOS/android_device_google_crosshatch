@@ -61,8 +61,15 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/bin/hw/android.hardware.identity@1.0-service.citadel | \
+            vendor/lib64/android.hardware.identity@1.0-impl.nos.so)
+            [ "$2" = "" ] && return 0
+            sed -i "s/android.hardware.identity-V3-ndk_platform.so/android.hardware.identity-V3-ndk.so\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
+            sed -i "s/android.hardware.keymaster-V3-ndk_platform.so/android.hardware.keymaster-V3-ndk.so\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
+            ;;
         vendor/bin/hw/android.hardware.rebootescrow-service.citadel)
             [ "$2" = "" ] && return 0
+            sed -i "s/android.hardware.rebootescrow-V1-ndk_platform.so/android.hardware.rebootescrow-V1-ndk.so\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
             "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
             "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
             ;;
@@ -70,6 +77,19 @@ function blob_fixup() {
             vendor/lib64/libwvhidl@1.3.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
+            ;;
+        vendor/bin/hw/citadeld | \
+            vendor/lib64/libnos_citadeld_proxy.so)
+            [ "$2" = "" ] && return 0
+            sed -i "s/android.frameworks.stats-V1-ndk_platform.so/android.frameworks.stats-V1-ndk.so\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
+            ;;
+        vendor/bin/hw/vendor.qti.media.c2@1.0-service)
+            [ "$2" = "" ] && return 0
+            sed -i "s/libavservices_minijail_vendor.so/libavservices_minijail.so\x00\x00\x00\x00\x00\x00\x00/" "${2}"
+            ;;
+        vendor/lib64/hw/com.qti.chi.override.so)
+            [ "$2" = "" ] && return 0
+            sed -i "s/android.hardware.power-V1-ndk_platform.so/android.hardware.power-V1-ndk.so\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
             ;;
         *)
             return 1

@@ -65,8 +65,7 @@ PRODUCT_PACKAGES += \
 # Codec2
 PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor:32 \
-    libavservices_minijail_vendor:32 \
-    libavservices_minijail.vendor:64 \
+    libavservices_minijail.vendor \
     libcodec2_hidl@1.0.vendor:32 \
     libcodec2_vndk.vendor \
     libstagefright_bufferpool@2.0.1.vendor
@@ -139,11 +138,14 @@ PRODUCT_PACKAGES += \
 # Misc interfaces
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
+    android.frameworks.stats-V1-ndk.vendor:64 \
     android.frameworks.stats@1.0.vendor:64 \
     android.hardware.authsecret@1.0.vendor:64 \
     android.hardware.biometrics.fingerprint@2.1.vendor:64 \
     android.hardware.biometrics.fingerprint@2.2.vendor:64 \
     android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.identity-V3-ndk.vendor:64
+    android.hardware.keymaster-V3-ndk.vendor:64
     android.hardware.keymaster@3.0.vendor:32 \
     android.hardware.keymaster@4.0.vendor:32 \
     android.hardware.keymaster@4.1.vendor:64 \
@@ -152,6 +154,7 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.2.vendor:64 \
     android.hardware.neuralnetworks@1.3.vendor:64 \
     android.hardware.oemlock@1.0.vendor:64 \
+    android.hardware.power-V1-ndk.vendor:64
     android.hardware.radio.config@1.0.vendor:64 \
     android.hardware.radio.config@1.1.vendor:64 \
     android.hardware.radio.config@1.2.vendor:64 \
@@ -160,6 +163,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.3.vendor:64 \
     android.hardware.radio@1.4.vendor:64 \
     android.hardware.radio@1.5.vendor:64 \
+    android.hardware.rebootescrow-V1-ndk.vendor:64 \
     android.hardware.secure_element@1.1.vendor:64 \
     android.hardware.secure_element@1.2.vendor:64 \
     android.hardware.sensors@1.0.vendor:32 \
@@ -177,14 +181,6 @@ PRODUCT_PACKAGES += \
 
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
-
-# Shims
-PRODUCT_PACKAGES += \
-    android.frameworks.stats-V1-ndk_platform.vendor:64 \
-    android.hardware.identity-V3-ndk_platform.vendor:64 \
-    android.hardware.keymaster-V3-ndk_platform.vendor:64 \
-    android.hardware.power-V1-ndk_platform.vendor:64 \
-    android.hardware.rebootescrow-V1-ndk_platform.vendor:64
 
 # VNDK
 PRODUCT_PACKAGES += \
