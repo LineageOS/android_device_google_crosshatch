@@ -773,7 +773,7 @@ vendor/lib64/nos_app_identity.so
 vendor/lib64/nos_app_keymaster.so
 vendor/lib64/nos_app_weaver.so
 vendor/lib64/pixelatoms-cpp.so:vendor/lib64/pixelatoms-cpp-legacy.so;FIX_SONAME
-vendor/lib64/rfsa/adsp/libdsp_streamer_add_constant.so
+vendor/lib64/rfsa/adsp/libdsp_streamer_add_constant.so:vendor/lib/rfsa/adsp/libdsp_streamer_add_constant.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
