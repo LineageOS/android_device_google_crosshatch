@@ -96,7 +96,7 @@ TARGET_RECOVERY_FSTAB := device/google/crosshatch/fstab.hardware
 endif
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_UI_LIB := \
-    librecovery_ui_pixel \
+    //hardware/google/pixel/recovery:librecovery_ui_pixel
     libfstab
 
 ifneq ($(filter %_mainline,$(TARGET_PRODUCT)),)
