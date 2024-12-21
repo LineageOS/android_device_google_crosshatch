@@ -467,9 +467,6 @@ PRODUCT_PACKAGES_DEBUG += \
     libgoogle_camera_hal_tests
 endif
 
-PRODUCT_PACKAGES += \
-    sensors.$(PRODUCT_HARDWARE)
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:vendor/etc/sensors/hals.conf
 
