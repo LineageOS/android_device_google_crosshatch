@@ -62,6 +62,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
+# Display
+$(call soong_config_set,qtidisplay,drmpp,true)
+
 # Identity credential
 PRODUCT_PACKAGES += \
     android.hardware.identity_credential.xml
