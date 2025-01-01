@@ -248,15 +248,6 @@ SOUND_TRIGGER_FEATURE_LPMA_ENABLED := true
 AUDIO_FEATURE_ENABLED_MAXX_AUDIO := true
 AUDIO_FEATURE_ENABLED_24BITS_CAMCORDER := true
 
-# Graphics
-TARGET_USES_GRALLOC1 := true
-TARGET_USES_HWC2 := true
-
-# Display
-TARGET_USES_DISPLAY_RENDER_INTENTS := true
-TARGET_USES_COLOR_METADATA := true
-TARGET_USES_DRM_PP := true
-
 # Vendor Interface Manifest
 DEVICE_MANIFEST_FILE := device/google/crosshatch/manifest.xml
 DEVICE_MATRIX_FILE := device/google/crosshatch/compatibility_matrix.xml
