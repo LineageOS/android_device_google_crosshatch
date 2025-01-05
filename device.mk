@@ -429,22 +429,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb.gadget-service.crosshatch
 
-PRODUCT_PACKAGES += \
-    libmm-omxcore \
-    libOmxCore \
-    libstagefrighthw \
-    libOmxVdec \
-    libOmxVenc \
-    libc2dcolorconvert
-
-# Enable Codec 2.0
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.media.codec2=2 \
-
-# Disable OMX
-PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.media.omx=0 \
-
 # Create input surface on the framework side
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.c2inputsurface=-1 \
@@ -593,8 +577,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
-    $(LOCAL_PATH)/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
-    $(LOCAL_PATH)/media_codecs_omx.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_omx.xml \
+    $(LOCAL_PATH)/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
 
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.snd_card.open.retries=50
@@ -605,10 +588,6 @@ PRODUCT_COPY_FILES += \
 # GPS configuration file
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf
-
-# Vendor seccomp policy files for media components:
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
 
 ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
 # Subsystem ramdump
