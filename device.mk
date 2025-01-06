@@ -23,6 +23,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom/sdm845 \
     hardware/qcom/wlan/legacy \
     vendor/google/camera \
+    vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um \
     vendor/qcom/sdm845 \
     vendor/google/interfaces \
     vendor/google_devices/common/proprietary/confirmatioui_hal \
