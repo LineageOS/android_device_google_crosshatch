@@ -22,6 +22,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/qcom/sdm845 \
     hardware/qcom/wlan/legacy \
+    hardware/qcom-caf/bootctrl \
     vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -143,10 +144,6 @@ PRODUCT_PACKAGES += \
 # Use Sdcardfs
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.sys.sdcardfs=1
-
-PRODUCT_PACKAGES += \
-    bootctrl.sdm845 \
-    bootctrl.sdm845.recovery
 
 # Userdata Checkpointing OTA GC
 PRODUCT_PACKAGES += \
@@ -466,9 +463,8 @@ endif
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-impl-pixel-legacy \
-    android.hardware.boot@1.2-impl-pixel-legacy.recovery \
-    android.hardware.boot@1.2-service \
+    android.hardware.boot-service.qti \
+    android.hardware.boot-service.qti.recovery
 
 # Vibrator HAL
 PRODUCT_PACKAGES += \
