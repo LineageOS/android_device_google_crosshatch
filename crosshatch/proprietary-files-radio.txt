@@ -1,5 +1,3 @@
-# libcne, libwqe depend on libwpa_client, which is a gnu makefile target
-
 # CNE - from coral - TP1A.221005.002.B2
 vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink|8c05c492f3673a0e52d86dbd01c144d502fe51f5
 vendor/bin/cnd|00c98e93cb936320d90af32a26078e6e97a8c5eb
@@ -37,12 +35,12 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml|f76c894f3c6d5b6ed35113a088dc3174c9
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml|14d136e7fcc682311757d3edc0b9d3eaeba11815
 vendor/etc/init/cnd-generic.rc|5ec06d42d32b58bf5c73b77d485606c477d57324
 vendor/lib/libxml.so|b453fbd6fcaae2d13f51a8838cf975de8d562e20
-vendor/lib64/libcne.so;DISABLE_CHECKELF|1eb5ae1fdd51f05e25d38afd8a793d8adb0ed1cf
+vendor/lib64/libcne.so|1eb5ae1fdd51f05e25d38afd8a793d8adb0ed1cf
 vendor/lib64/libcneapiclient.so|a3bd1e0e85f0684fe6c999f5dc17ffdbc14e8f24
 vendor/lib64/libcneoplookup.so|573229322afd00b1bfb553f0eef72ce4e2c99ff4
 vendor/lib64/libcneqmiutils.so|975806b9492bef88558a38dc2ca7eda379904c08
 vendor/lib64/libwms.so|dd94e8a33e1259d125226e7225b078da49ac2328
-vendor/lib64/libwqe.so;DISABLE_CHECKELF|3fc0932d6c08d69c2bf24e66f6b65e2834337563
+vendor/lib64/libwqe.so|3fc0932d6c08d69c2bf24e66f6b65e2834337563
 vendor/lib64/libxml.so|99af70488a54858bb911c8241fea9471e040f045
 vendor/lib64/vendor.qti.data.factory@2.0.so|3ecbbc3fc0c611979978027ad911533fe48f78dc
 vendor/lib64/vendor.qti.data.factory@2.1.so|9f8086e5968b7502959dc6e8aa41457356e9bd97
