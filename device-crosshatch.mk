@@ -20,6 +20,9 @@ include device/google/crosshatch/device-common.mk
 
 DEVICE_PACKAGE_OVERLAYS += device/google/crosshatch/crosshatch/overlay
 
+# CHRE
+$(call soong_config_set,chre,chre_daemon_dsp_library,//vendor/google/crosshatch:libsdsprpc)
+
 # SKU specific RROs
 PRODUCT_PACKAGES += \
     SettingsOverlayG013C \
