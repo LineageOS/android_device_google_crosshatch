@@ -33,6 +33,10 @@ PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 # Lineage Health
 include hardware/google/pixel/lineage_health/device.mk
 
+$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/charge_disable)
+$(call soong_config_set,lineage_health,charging_control_charging_enabled,0)
+$(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
+
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
