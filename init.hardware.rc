@@ -290,9 +290,6 @@ on post-fs-data
 on zygote-start
     # zygote is started in common init.rc
     # and now we can continue initialize /data/
-    mkdir /data/vendor/ipa 0770 radio radio
-    chown radio radio /data/vendor/ipa
-
     # Create the directories used by the Wireless subsystem
     mkdir /data/vendor/wifi 0771 wifi wifi
     mkdir /data/vendor/wifi/wpa 0770 wifi wifi
@@ -662,11 +659,6 @@ service cnss-daemon /vendor/bin/cnss-daemon -n -l
    class late_start
    user system
    group system inet wifi
-
-service ipacm /vendor/bin/ipacm
-    class main
-    user radio
-    group radio inet
 
 service loc_launcher /vendor/bin/loc_launcher
     class late_start
