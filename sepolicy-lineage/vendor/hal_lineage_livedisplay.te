@@ -10,3 +10,5 @@ vndbinder_use(hal_lineage_livedisplay_qti)
 # Allow LiveDisplay to store files under /data/vendor/display and access them
 allow hal_lineage_livedisplay_qti display_vendor_data_file:dir rw_dir_perms;
 allow hal_lineage_livedisplay_qti display_vendor_data_file:file create_file_perms;
+
+binder_call(hal_lineage_livedisplay_qti, servicemanager)
