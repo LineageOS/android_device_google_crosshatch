@@ -1,1 +1,0 @@
-../crosshatch/AndroidBoard.mk
