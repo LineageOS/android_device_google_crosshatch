@@ -20,7 +20,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/camera \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/qcom/sdm845 \
+    hardware/qcom/sdm845/display \
+    hardware/qcom/sdm845/gps \
     hardware/qcom/wlan/legacy \
     hardware/qcom-caf/bootctrl \
     vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um
