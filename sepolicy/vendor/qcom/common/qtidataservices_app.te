@@ -5,6 +5,7 @@ net_domain(qtidataservices_app)
 hwbinder_use(qtidataservices_app)
 
 allow qtidataservices_app hal_datafactory_hwservice:hwservice_manager find;
+allow qtidataservices_app activity_service:service_manager find;
 allow qtidataservices_app location_service:service_manager find;
 allow qtidataservices_app radio_service:service_manager find;
 allow qtidataservices_app registry_service:service_manager find;
