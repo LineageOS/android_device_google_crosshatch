@@ -20,6 +20,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/camera \
     hardware/google/interfaces \
     hardware/google/pixel \
+    hardware/qcom/audio \
     hardware/qcom/sdm845/display \
     hardware/qcom/sdm845/gps \
     hardware/qcom/wlan/legacy \
