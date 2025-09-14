@@ -76,9 +76,6 @@ PRODUCT_PROPERTY_OVERRIDES += aaudio.mmap_exclusive_policy=2
 # A low number, like 48, might increase power consumption or stress the system.
 PRODUCT_PROPERTY_OVERRIDES += aaudio.hw_burst_min_usec=2000
 
-# A2DP offload enabled for compilation
-AUDIO_FEATURE_ENABLED_A2DP_OFFLOAD := true
-
 # A2DP offload supported
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.bluetooth.a2dp_offload.supported=true
@@ -90,6 +87,18 @@ persist.bluetooth.a2dp_offload.disabled=false
 # A2DP offload DSP supported encoder list
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
+
+# Audio
+$(call soong_config_set,qtiaudio,feature_24bits_camcorder,true)
+$(call soong_config_set,qtiaudio,feature_a2dp_offload,true)
+$(call soong_config_set,qtiaudio,feature_cirrus_spkr_protection,true)
+$(call soong_config_set,qtiaudio,feature_flicker_sensor_input,true)
+$(call soong_config_set,qtiaudio,feature_hwdep_cal,true)
+$(call soong_config_set,qtiaudio,feature_maxx_audio,true)
+$(call soong_config_set,qtiaudio,feature_multi_voice_sessions,true)
+$(call soong_config_set,qtiaudio,feature_snd_monitor,true)
+$(call soong_config_set,qtiaudio,feature_usb_tunnel,true)
+$(call soong_config_set,qtiaudio,feature_sound_trigger,true)
 
 # Modem loging file
 PRODUCT_COPY_FILES += \
