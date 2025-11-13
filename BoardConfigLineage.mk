@@ -36,4 +36,11 @@ BOARD_SEPOLICY_DIRS += device/google/crosshatch/sepolicy-lineage/dynamic
 BOARD_SEPOLICY_DIRS += device/google/crosshatch/sepolicy-lineage/vendor
 
 # Verified Boot
+ifneq (,$(AVB_CUSTOM_KEY_PATH))
+BOARD_AVB_ALGORITHM := $(AVB_CUSTOM_ALGORITHM)
+BOARD_AVB_KEY_PATH := $(AVB_CUSTOM_KEY_PATH)
+endif
+
+ifneq ($(WITH_AVB),true)
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
+endif
